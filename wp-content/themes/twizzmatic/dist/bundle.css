@@ -617,7 +617,7 @@ h1, h2, h3, h4,
             font-family: "Morganite", sans-serif;
             text-transform: uppercase;
             font-size: 100px;
-            line-height: 1; }
+            line-height: .8; }
             @media screen and (min-width: 768px) {
               #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item {
                 font-size: 150px; } }
