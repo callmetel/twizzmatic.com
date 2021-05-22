@@ -606,7 +606,8 @@ h1, h2, h3, h4,
         font-size: 11px;
         font-family: "Space Grotesk", sans-serif;
         font-weight: bold;
-        letter-spacing: .16em; }
+        letter-spacing: .16em;
+        color: #ffa62b; }
         #main-header .header-container .nav-menu-trigger .bar:first-of-type {
           margin-bottom: 13px; }
         #main-header .header-container .nav-menu-trigger .bar:last-of-type:before {
@@ -624,7 +625,8 @@ h1, h2, h3, h4,
       margin: auto 0 auto auto;
       font-size: 12px;
       font-weight: bold;
-      letter-spacing: .16em; }
+      letter-spacing: .16em;
+      color: #ffffff; }
   #main-header .nav-wrapper {
     background: #ffa62b;
     top: 0;
