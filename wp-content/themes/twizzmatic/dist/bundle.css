@@ -48,7 +48,8 @@ button::-moz-focus-inner {
 html,
 body {
   width: 100vw;
-  height: 100%; }
+  height: 100%;
+  font-family: "Space Grotesk", sans-serif; }
 
 body {
   text-align: left;
@@ -333,7 +334,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Galano Grotesque", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -517,6 +518,31 @@ template {
  */
 [hidden] {
   display: none; }
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(static/media/SpaceGrotesk-Regular.6e40f57f.woff2) format("woff2"), url(static/media/SpaceGrotesk-Regular.01fbea93.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(static/media/SpaceGrotesk-Bold.faa66eff.woff2) format("woff2"), url(static/media/SpaceGrotesk-Bold.2c4aae42.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Morganite';
+  src: url(static/media/Morganite-ExtraBold.d37c9864.woff2) format("woff2"), url(static/media/Morganite-ExtraBold.fac2d6d5.woff) format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-family: "Morganite", sans-serif; }
 
 .fs {
   width: 100vw;

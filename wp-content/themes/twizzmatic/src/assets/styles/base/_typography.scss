@@ -2,9 +2,41 @@
 //==================== WEBFONTS: ==================
 //==================================================
 
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('#{$path-font}/SpaceGrotesk-Regular.woff2') format('woff2'),
+        url('#{$path-font}/SpaceGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('#{$path-font}/SpaceGrotesk-Bold.woff2') format('woff2'),
+        url('#{$path-font}/SpaceGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morganite';
+    src: url('#{$path-font}/Morganite-ExtraBold.woff2') format('woff2'),
+        url('#{$path-font}/Morganite-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 
 // #Global
+
+h1,h2,h3,h4,
+.h1,.h2,.h3,.h4 {
+  font-family: $hfont;
+}
+
 h1 {
 }
 
