@@ -1,0 +1,40 @@
+// #Text-Variables
+$hfont  	 : 'Forever Freedom', sans-serif;
+$hfontalt  : 'Forever Freedom Outline', sans-serif;
+$bfont  	 : 'Galano Grotesque', sans-serif;
+$cfont  	 : 'Permanent Marker', sans-serif;
+
+$light : 300;
+$norm  : 400;
+$med   : 500;
+$semi  : 600;
+$bold  : bold;
+
+$white	: #ffffff;
+$black 	: #000000;
+
+$inherit : inherit;
+$trans	 : transparent;
+
+$trans-fast  : all 150ms ease-in-out;
+$trans-slow  : all 300ms ease-in-out;
+$trans-cubic : cubic-bezier(0.48, 0.96, 0.57, 1.02);
+
+
+// #Breakpoints
+// $breakpoints: (
+//   'large':  ( max-width: 1200px )
+// );
+
+$breakpoints: (
+  'small':  767px,
+  'medium': 980px,
+  'large':  1200px
+) !default;
+
+
+// #File-Paths
+$path-img  : '../../assets/img';
+$path-font : '../../assets/fonts';
+
+$breakpoint-tablet: 1200px;

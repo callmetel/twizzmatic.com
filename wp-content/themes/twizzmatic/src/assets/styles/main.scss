@@ -1,12 +1,41 @@
 /*!
-* Theme Name: wp-blank
-* Description: Blank Wordpress theme for building custom front-end
+* Theme Name: TwizzMatic
+* Description: Wordpress theme for TwizzMatic
 * Version: 1.0
-* Author: Irmantas Tamašauskas
+* Author: JSDFY LLC
 * Tags: wordpress, html, javascript, sass, css, postcss, webpack, babel
 *
 * License: MIT
 * License URI: http://opensource.org/licenses/mit-license.php
 */
 
-@import "./base/base.scss";
+// #Imports
+
+// Bower
+@import 
+  'bower_components/neat/app/assets/stylesheets/neat';
+
+// #Utiities
+@import
+  'utilities/mixins',
+  'utilities/placeholders',
+  'utilities/variables',
+  'utilities/grid-settings';
+
+// #Base
+@import
+  'base/base',
+  'base/typography';
+
+// #Layout
+@import
+  'layout/global',
+  'layout/header',
+  'layout/footer';
+
+// #Modules
+@import
+  'modules/buttons',
+  'modules/preloader';
+
+// #Pages

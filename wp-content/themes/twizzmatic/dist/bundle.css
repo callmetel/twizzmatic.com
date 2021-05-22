@@ -1,14 +1,237 @@
 /*!
-* Theme Name: wp-blank
-* Description: Blank Wordpress theme for building custom front-end
+* Theme Name: TwizzMatic
+* Description: Wordpress theme for TwizzMatic
 * Version: 1.0
-* Author: Irmantas Tamašauskas
+* Author: JSDFY LLC
 * Tags: wordpress, html, javascript, sass, css, postcss, webpack, babel
 *
 * License: MIT
 * License URI: http://opensource.org/licenses/mit-license.php
 */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  *::after {
+    box-sizing: inherit; }
+  *::before {
+    box-sizing: inherit; }
+  *:before {
+    box-sizing: border-box; }
+  *:after {
+    box-sizing: border-box; }
+  *:focus {
+    outline: 0 !important; }
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+::-moz-selection,
+::-moz-selection {
+  color: #ffffff;
+  background-color: #000000; }
+
+::selection,
+::-moz-selection {
+  color: #ffffff;
+  background-color: #000000; }
+
+html,
+body {
+  width: 100vw;
+  height: 100%; }
+
+body {
+  text-align: left;
+  background-color: #000000;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden !important; }
+  body.locked {
+    overflow: hidden !important;
+    height: 100vh; }
+  body main {
+    width: 100%;
+    height: 100%; }
+    body main #main-content {
+      width: 100%;
+      height: 100%; }
+
+a, a:visited, a:active {
+  color: #ffffff;
+  transition: all 300ms cubic-bezier(0.48, 0.96, 0.57, 1.02);
+  text-decoration: none; }
+
+a:hover {
+  transition: all 350ms cubic-bezier(0.48, 0.96, 0.57, 1.02); }
+
+.screen-reader, .sr-only {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+  .screen-reader a:focus, .sr-only a:focus {
+    position: relative;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: auto; }
+
+.desktop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0; }
+
+.cursor {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 80%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  visibility: hidden;
+  z-index: 9999;
+  filter: blur(0.8px);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.35); }
+
+.fs {
+  width: 100vw;
+  height: 100vh; }
+
+#social-links {
+  right: 40px;
+  bottom: 30px;
+  position: fixed;
+  z-index: 9999;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  opacity: 0; }
+  #social-links .social-trigger img {
+    width: 50px; }
+  #social-links .social-trigger:not(.closed) {
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+  #social-links .social-icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 170px; }
+    #social-links .social-icons a.icon {
+      width: auto;
+      display: block;
+      margin-left: 10px; }
+      #social-links .social-icons a.icon img {
+        height: 20px; }
+
+#main-header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 60px;
+  height: 100vh;
+  border-right: 2px solid #ffffff;
+  z-index: 99999;
+  -ms-transform: translateX(-62px);
+      transform: translateX(-62px); }
+  #main-header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.18);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  #main-header .navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-transform: rotate(90deg) translate(-15px, -30px);
+        transform: rotate(90deg) translate(-15px, -30px);
+    width: 100vh;
+    padding: 0 30px;
+    -ms-transform-origin: left;
+        transform-origin: left; }
+    #main-header .navbar .menu-trigger {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
+    #main-header .navbar span.burger {
+      display: block;
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+      #main-header .navbar span.burger span.line {
+        width: 35px;
+        height: 1px;
+        background: #ffffff;
+        display: block;
+        margin: 0 auto; }
+        #main-header .navbar span.burger span.line:nth-of-type(2) {
+          margin: 10px auto;
+          width: 22px; }
+    #main-header .navbar span.text {
+      color: #ffffff;
+      font-family: "Galano Grotesque", sans-serif;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: .44em;
+      margin-left: 20px; }
+    #main-header .navbar .nav-logo {
+      display: block;
+      margin: 5px auto 0; }
+      #main-header .navbar .nav-logo img {
+        width: auto;
+        height: 30px; }
+    #main-header .navbar span.credits {
+      color: #ffffff;
+      font-family: "Galano Grotesque", sans-serif;
+      text-transform: uppercase;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: .44em;
+      height: 40px; }
+      #main-header .navbar span.credits span.author:after {
+        content: "";
+        display: inline-block;
+        height: 40px;
+        width: 1px;
+        background: #fff;
+        margin: auto 14px auto 10px;
+        vertical-align: middle; }
 
 /*# sourceMappingURL=bundle.css.map*/
-
-/* test */
