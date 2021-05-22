@@ -31,7 +31,7 @@
 	// Regular Desktop Breakpoints
 		
 		$desktop: new-breakpoint(min-width 1100px);
-		$md-desktop: new-breakpoint(min-width 1441px max-width 1599px);
+		$md-desktop: new-breakpoint(min-width 1366px);
 		
 	// Large Desktop Breakpoints	
 
@@ -40,9 +40,12 @@
 
 	// Narrow Desktop Breakpoints
 
+		$tablet: new-breakpoint(min-width 981px);
+		$sm-tablet: new-breakpoint(min-width 768px);
+
 		$xs-mobile: new-breakpoint(max-width 480px);
 		$xs-sm-mobile: new-breakpoint(max-width 650px);
-		$sm-mobile: new-breakpoint(max-width 768px);
+		$sm-mobile: new-breakpoint(max-width 767px);
 		$md-mobile: new-breakpoint(max-width 992px);
 		$mobile-short: new-breakpoint(min-width 580px max-height 550px);
 		$mobile: new-breakpoint(max-width 1024px);

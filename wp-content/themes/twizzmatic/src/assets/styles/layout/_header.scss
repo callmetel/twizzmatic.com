@@ -30,6 +30,19 @@
 					padding: 0!important;
 
 					.menu-item {
+						font-family: $hfont;
+						text-transform: uppercase;
+						font-size: 60px;
+						line-height: 1;
+
+						@include media($md-desktop) {
+							font-size: 200px;
+						}
+
+						@include media($sm-tablet) {
+							font-size: 100px;
+						}
+
 						a {
 							color: $white;
 						}
