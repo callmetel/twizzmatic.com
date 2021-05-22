@@ -38,6 +38,7 @@ button::-moz-focus-inner {
 html,
 body {
   @include size(100vw, 100%);
+  min-height: 100vh;
   font-family: $bfont;
 }
 
