@@ -11,21 +11,23 @@
 		@include size(100vw, 100vh);
 		z-index: 99998;
 		overflow: hidden;
-		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		padding: 30px;
+		
+		.menu-main-menu-container {
+			@include size(100%, 100%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
-		nav {
-			text-align: left;
+			#header-menu {
+				text-align: left;
 
-			ul {
 				.menu-item {
 					a {
 						color: $white;
 					}
 				}
-			}
+			}	
 		}
 	}
 }

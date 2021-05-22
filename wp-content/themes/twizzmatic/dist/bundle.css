@@ -566,16 +566,19 @@ template {
     height: 100vh;
     z-index: 99998;
     overflow: hidden;
-    padding: 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center; }
-    #main-header .nav-wrapper nav {
-      text-align: left; }
-      #main-header .nav-wrapper nav ul .menu-item a {
-        color: #ffffff; }
+    padding: 30px; }
+    #main-header .nav-wrapper .menu-main-menu-container {
+      width: 100%;
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+      #main-header .nav-wrapper .menu-main-menu-container #header-menu {
+        text-align: left; }
+        #main-header .nav-wrapper .menu-main-menu-container #header-menu .menu-item a {
+          color: #ffffff; }
 
 /*# sourceMappingURL=bundle.css.map*/
