@@ -44,6 +44,13 @@ function enqueue_theme_scripts() {
     true
   );
 
+  /* Specify CSS bundle path */
+    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
+
+  /* Specify JS bundle path */
+    wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js', array('jquery'), '1.0.0');
+    wp_enqueue_script('bootstrap-js');
+
   // Required comment-reply script
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
