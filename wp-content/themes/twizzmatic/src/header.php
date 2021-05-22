@@ -12,11 +12,14 @@
   <body <?php body_class(); ?>>
     <div class="wrapper">
       <header id="main-header" class="header" role="banner">
-        <a href="#" class="nav-menu-trigger">
-          <span class="bar"></span>
-          <span class="bar">MENU</span>
-        </a>
-        <a href="#" class="sound-trigger">SOUND <span class="status">ON</span></a>
+        <div class="header-container">
+          <a href="#" class="nav-menu-trigger">
+            <span class="bar"></span>
+            <span class="bar">MENU</span>
+          </a>
+          <a href="#" class="sound-trigger">SOUND <span class="status">ON</span></a>  
+        </div>
+        
         <div class="nav-wrapper">
           <nav class="nav" role="navigation">
             <?php 

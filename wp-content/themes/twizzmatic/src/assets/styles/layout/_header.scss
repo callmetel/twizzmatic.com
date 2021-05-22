@@ -5,31 +5,33 @@
 	@include size(100vw, auto);
 	z-index: 99999;
 
-	.nav-menu-trigger {
-		display: block;
-    @include size(60px,20px);
-    @include position(fixed, top 35px left 10vw);
-    z-index: 9999999;
+	.header-container {
+		width: 80vw;
+		margin: 0 auto;
 
-    .bar {
-    	width: 100px;
-    	display: flex;
-    	align-items: center;
-    	font-size: 11px;
-    	font-family: $bfont;
-    	font-weight: bold;
-    	letter-spacing: .1em;
+		.nav-menu-trigger {
+			display: block;
+			
+	    .bar {
+	    	width: 100px;
+	    	display: flex;
+	    	align-items: center;
+	    	font-size: 11px;
+	    	font-family: $bfont;
+	    	font-weight: bold;
+	    	letter-spacing: .1em;
 
-    	&:first-of-type {
-    		margin-bottom: 13px;
-    	}
+	    	&:first-of-type {
+	    		margin-bottom: 13px;
+	    	}
 
-    	&:before {
-    		content: '';
-    		@include size(100%, 8px);
-    		background: $white;
-    	}
-    }
+	    	&:before {
+	    		content: '';
+	    		@include size(100%, 8px);
+	    		background: $white;
+	    	}
+	    }
+		}	
 	}
 
 	.nav-wrapper {
