@@ -609,13 +609,14 @@ h1, h2, h3, h4,
         letter-spacing: .16em; }
         #main-header .header-container .nav-menu-trigger .bar:first-of-type {
           margin-bottom: 13px; }
+        #main-header .header-container .nav-menu-trigger .bar:first-of-type:before {
+          margin-right: 10px; }
         #main-header .header-container .nav-menu-trigger .bar:before {
           content: '';
           display: block;
           width: 100%;
           height: 8px;
-          background: #ffffff;
-          margin-right: 10px; }
+          background: #ffffff; }
     #main-header .header-container .sound-trigger {
       display: block;
       margin: auto 0 auto auto; }

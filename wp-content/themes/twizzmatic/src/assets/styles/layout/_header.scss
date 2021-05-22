@@ -30,12 +30,17 @@
 	    		margin-bottom: 13px;
 	    	}
 
+	    	&:first-of-type {
+	    		&:before {
+	    			margin-right: 10px;
+	    		}
+	    	}
+
 	    	&:before {
 	    		content: '';
 	    		display: block;
 	    		@include size(100%, 8px);
 	    		background: $white;
-	    		margin-right: 10px;
 	    	}
 	    }
 		}	
