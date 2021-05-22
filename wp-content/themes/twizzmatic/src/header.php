@@ -11,13 +11,21 @@
   </head>
   <body <?php body_class(); ?>>
     <div class="wrapper">
-      <header class="header" role="banner">
-        <div class="header__logo logo">
-          <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Logo" class="logo__image">
-          </a>
+      <header id="main-header" class="header" role="banner">
+        <a href="#" class="nav-menu-trigger">
+          <span class="bar"></span>
+          <span class="bar">MENU</span>
+        </a>
+        <a href="#" class="sound-trigger">SOUND <span class="status">ON</span></a>
+        <div class="nav-wrapper">
+          <nav class="nav" role="navigation">
+            <?php 
+              wp_nav_menu( array $args = array(
+                  'theme_location' => 'primary',
+                  'menu_id' => 'header-menu',
+              ) ); 
+            ?>
+          </nav>  
         </div>
       </header>
-      <nav class="nav" role="navigation">
-        <?php wp_nav_menu() ?>
-      </nav>
+      
