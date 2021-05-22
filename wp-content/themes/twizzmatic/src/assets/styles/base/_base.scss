@@ -32,7 +32,7 @@ button::-moz-focus-inner {
 ::selection,
 ::-moz-selection {
   color: $white;
-  background-color: $black;
+  background-color: $darkgreen;
 }
 
 html,
@@ -42,7 +42,7 @@ body {
 
 body {
   text-align: left;
-  background-color: var(--blue);
+  background-color: $darkgreen;
   background: linear-gradient(180deg, rgba(27,38,44,1) 0%, rgba(22,31,37,1) 35%, rgba(16,22,27,1) 100%);
   @include size(100vw, 100%);
   position: relative;

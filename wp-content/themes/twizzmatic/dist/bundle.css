@@ -38,12 +38,12 @@ button::-moz-focus-inner {
 ::-moz-selection,
 ::-moz-selection {
   color: #ffffff;
-  background-color: #000000; }
+  background-color: #1b262c; }
 
 ::selection,
 ::-moz-selection {
   color: #ffffff;
-  background-color: #000000; }
+  background-color: #1b262c; }
 
 html,
 body {
@@ -52,7 +52,7 @@ body {
 
 body {
   text-align: left;
-  background-color: var(--blue);
+  background-color: #1b262c;
   background: linear-gradient(180deg, #1b262c 0%, #161f25 35%, #10161b 100%);
   width: 100vw;
   height: 100%;
@@ -156,5 +156,25 @@ a:hover {
   width: 100vw;
   height: auto;
   z-index: 99999; }
+  #main-header .nav-wrapper {
+    background: #ffa62b;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99998;
+    overflow: hidden;
+    padding: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+    #main-header .nav-wrapper nav {
+      text-align: left; }
+      #main-header .nav-wrapper nav ul .menu-item a {
+        color: #ffffff; }
 
 /*# sourceMappingURL=bundle.css.map*/
