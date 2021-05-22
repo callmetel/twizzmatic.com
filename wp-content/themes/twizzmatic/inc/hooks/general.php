@@ -39,3 +39,4 @@ function custom_settings_post_ids( $post_ids = [] ) {
 
   return wp_parse_args( THEME_SETTINGS['custom_settings_post_ids'], $post_ids );
 } // end custom_settings_post_ids
+
