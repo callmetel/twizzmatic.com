@@ -15,7 +15,7 @@
         <div class="header-container">
           <a href="#" class="nav-menu-trigger">
             <span class="bar"></span>
-            <span class="bar">MENU</span>
+            <span class="bar"><span class="open">MENU</span><span class="close">CLOSE</span></span>
           </a>
           <a href="#" class="sound-trigger">SOUND <span class="status">ON</span></a>  
         </div>

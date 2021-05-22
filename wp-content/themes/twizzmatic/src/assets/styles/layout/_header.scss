@@ -42,12 +42,19 @@
 	    		@include size(100%, 8px);
 	    		background: $white;
 	    	}
+
+	    	.close {
+	    		display: none;
+	    	}
 	    }
 		}	
 
 		.sound-trigger {
 			display: block;
 			margin: auto 0 auto auto;
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: .16em;
 		}
 	}
 
@@ -58,6 +65,8 @@
 		z-index: 99998;
 		overflow: hidden;
 		padding: 50px 30px 30px;
+		transform: translateY(-150%);
+		transition: transform .3s $trans-cubic;
 		
 		nav {
 			@include size(100%, 100%);
@@ -98,6 +107,28 @@
 					}
 				}	
 			}	
+		}
+	}
+}
+
+body.nav-open {
+	#main-header {
+		.nav-menu-trigger {
+			.bar {
+				color: $white!important;
+
+				.open {
+					display: none;
+				}
+
+				.close {
+					display: initial;
+				}
+			}
+		}
+
+		.nav-wrapper {
+			transform: translateY(0);
 		}
 	}
 }
