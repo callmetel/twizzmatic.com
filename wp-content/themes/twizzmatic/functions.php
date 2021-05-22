@@ -187,6 +187,17 @@ require get_theme_file_path( '/inc/hooks.php' );
 require get_theme_file_path( '/inc/includes.php' );
 require get_theme_file_path( '/inc/template-tags.php' );
 
+/* Specify CSS bundle path */
+function loadStyles() {
+  wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
+}
+
+/* Specify JS bundle path */
+function loadScripts() {
+  wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js', array('jquery'), '1.0.0');
+  wp_enqueue_script('bootstrap-js');
+}
+
 // Run theme setup
 add_action( 'init', __NAMESPACE__ . '\theme_setup' );
 add_action( 'after_setup_theme', __NAMESPACE__ . '\build_theme_support' );
