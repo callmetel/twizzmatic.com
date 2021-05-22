@@ -673,6 +673,14 @@ h1, h2, h3, h4,
             #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item a {
               color: #ffffff; }
 
+body.nav-dark .nav-menu-trigger .bar {
+  color: #006a71; }
+  body.nav-dark .nav-menu-trigger .bar:before {
+    background: #1b262c; }
+
+body.nav-dark .sound-trigger {
+  color: #1b262c; }
+
 body.nav-open #main-header .nav-menu-trigger .bar {
   color: #ffffff !important; }
   body.nav-open #main-header .nav-menu-trigger .bar .open {

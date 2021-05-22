@@ -114,6 +114,22 @@
 	}
 }
 
+body.nav-dark {
+	.nav-menu-trigger {
+		.bar {
+			color: $green;
+
+			&:before {
+				background: $darkgreen;
+			}
+		}
+	}
+
+	.sound-trigger {
+		color: $darkgreen;
+	}
+}
+
 body.nav-open {
 	#main-header {
 		.nav-menu-trigger {
