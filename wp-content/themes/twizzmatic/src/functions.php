@@ -34,4 +34,29 @@ if (function_exists('register_sidebar')) {
   ));
 }
 
+// Allow SVG Uploads
+	function cc_mime_types($mimes) {
+	  $mimes['svg'] = 'image/svg+xml';
+	  return $mimes;
+	}
+	add_filter('upload_mimes', 'cc_mime_types');
+
+	// Add Shortcode Functionality for Menus 
+	function print_menu_shortcode($atts, $content = null) {
+	    extract(shortcode_atts(array( 'id' => null, 'class' => null, 'name' => null, ), $atts));
+	    return wp_nav_menu( array( 'menu_id' => $id, 'menu_class' => $class, 'menu' => $name, 'echo' => false ) );
+	}
+	add_shortcode('menu', 'print_menu_shortcode');  // add using this shortcode [menu id="custom-id" class="custom-class" name="Menu Name"]
+
+	// Removing Default Image Link
+
+	function wpb_imagelink_setup() {
+	    $image_set = get_option( 'image_default_link_type' );
+	     
+	    if ($image_set !== 'none') {
+	        update_option('image_default_link_type', 'none');
+	    }
+	}
+	add_action('admin_init', 'wpb_imagelink_setup', 10);
+
 ?>
