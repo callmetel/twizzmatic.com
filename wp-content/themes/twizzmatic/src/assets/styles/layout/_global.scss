@@ -1,5 +1,13 @@
 // #Global Styles
 
+body {
+	&:not(.page-shop) {
+		#woofc-count {
+			display: none!important;
+		}
+	}
+}
+
 // Fullscreen
 .fs {	
 	@include size(100vw,100vh);

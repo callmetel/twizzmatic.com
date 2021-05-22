@@ -546,6 +546,9 @@ h1, h2, h3, h4,
   font-weight: bold;
   text-transform: uppercase; }
 
+body:not(.page-shop) #woofc-count {
+  display: none !important; }
+
 .fs {
   width: 100vw;
   height: 100vh; }
