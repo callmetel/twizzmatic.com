@@ -2,8 +2,8 @@
 node_modules
 .idea
 #dist
-*.css.map
-*.js.map
+#*.css.map
+#*.js.map
 
 # -----------------------------------------------------------------
 # .gitignore for WordPress @salcode
