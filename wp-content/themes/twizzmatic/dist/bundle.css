@@ -680,6 +680,7 @@ body.nav-open #main-header .nav-menu-trigger .bar {
 
 body.nav-open #main-header .nav-wrapper {
   -ms-transform: translateY(0);
-      transform: translateY(0); }
+      transform: translateY(0);
+  opacity: 1; }
 
 /*# sourceMappingURL=bundle.css.map*/
