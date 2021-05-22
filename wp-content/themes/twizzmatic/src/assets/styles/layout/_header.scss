@@ -20,9 +20,12 @@
 			align-items: center;
 
 			.menu-main-menu-container {
-				width: 100%;
-				margin: auto 0;
+				margin: auto;
 				text-align: left;
+
+				@include media($sm-tablet) {
+					width: 80%;
+				}
 
 
 				#header-menu {
@@ -32,11 +35,11 @@
 					.menu-item {
 						font-family: $hfont;
 						text-transform: uppercase;
-						font-size: 60px;
+						font-size: 100px;
 						line-height: 1;
 
 						@include media($sm-tablet) {
-							font-size: 100px;
+							font-size: 150px;
 						}
 
 						@include media($md-desktop) {
