@@ -616,12 +616,12 @@ h1, h2, h3, h4,
             text-transform: uppercase;
             font-size: 60px;
             line-height: 1; }
-            @media screen and (min-width: 1366px) {
-              #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item {
-                font-size: 200px; } }
             @media screen and (min-width: 768px) {
               #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item {
                 font-size: 100px; } }
+            @media screen and (min-width: 1366px) {
+              #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item {
+                font-size: 200px; } }
             #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item a {
               color: #ffffff; }
 
