@@ -15,12 +15,9 @@
     // Display a page parent's slug
     $post_data = get_post($post->post_parent);
     $parent_slug = $post_data->post_name;
-
-    $categories = get_the_category();
-    $category = $categories[0]->slug;
   ?>
 
-  <body <?php body_class(array('page-'.$post_slug, 'parent-page-'.$parent_slug, 'cat-'.$category)); ?>>
+  <body <?php body_class(array('page-'.$post_slug, 'parent-page-'.$parent_slug)); ?>>
     <div class="wrapper">
       <header id="main-header" class="header" role="banner">
         <div class="header-container">
