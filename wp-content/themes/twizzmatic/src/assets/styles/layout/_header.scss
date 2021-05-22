@@ -24,7 +24,7 @@
 	    	font-size: 11px;
 	    	font-family: $bfont;
 	    	font-weight: bold;
-	    	letter-spacing: .1em;
+	    	letter-spacing: .16em;
 
 	    	&:first-of-type {
 	    		margin-bottom: 13px;
@@ -35,6 +35,7 @@
 	    		display: block;
 	    		@include size(100%, 8px);
 	    		background: $white;
+	    		margin-right: 10px;
 	    	}
 	    }
 		}	
