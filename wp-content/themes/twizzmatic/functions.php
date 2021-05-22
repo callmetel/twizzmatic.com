@@ -198,6 +198,10 @@ function loadScripts() {
   wp_enqueue_script('bootstrap-js');
 }
 
+/* Register styles and scripts */
+add_action('wp_enqueue_scripts', 'loadStyles');
+add_action('wp_enqueue_scripts', 'loadScripts');
+
 // Run theme setup
 add_action( 'init', __NAMESPACE__ . '\theme_setup' );
 add_action( 'after_setup_theme', __NAMESPACE__ . '\build_theme_support' );
