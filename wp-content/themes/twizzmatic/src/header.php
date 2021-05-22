@@ -20,7 +20,7 @@
         <div class="nav-wrapper">
           <nav class="nav" role="navigation">
             <?php 
-              wp_nav_menu( array $args = array(
+              wp_nav_menu( array(
                   'theme_location' => 'primary',
                   'menu_id' => 'header-menu',
               ) ); 
