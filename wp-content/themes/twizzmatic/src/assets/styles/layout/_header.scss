@@ -5,13 +5,40 @@
 	@include size(100vw, auto);
 	z-index: 99999;
 
+	.nav-menu-trigger {
+		display: block;
+    @include size(60px,20px);
+    @include position(fixed, top 35px left 10vw);
+    z-index: 9999999;
+
+    .bar {
+    	width: 100px;
+    	display: flex;
+    	align-items: center;
+    	font-size: 11px;
+    	font-family: $bfont;
+    	font-weight: bold;
+    	letter-spacing: .1em;
+
+    	&:first-of-type {
+    		margin-bottom: 13px;
+    	}
+
+    	&:before {
+    		content: '';
+    		@include size(100%, 8px);
+    		background: $white;
+    	}
+    }
+	}
+
 	.nav-wrapper {
 		background: $yellow;
 		@include position(fixed, top 0 left 0);
 		@include size(100vw, 100vh);
 		z-index: 99998;
 		overflow: hidden;
-		padding: 30px;
+		padding: 50px 30px 30px;
 		
 		nav {
 			@include size(100%, 100%);
@@ -24,7 +51,7 @@
 				text-align: left;
 
 				@include media($sm-tablet) {
-					width: 80%;
+					width: 80vw;
 				}
 
 
