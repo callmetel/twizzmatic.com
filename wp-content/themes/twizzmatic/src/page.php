@@ -3,7 +3,7 @@
   <main>
     <?php
       if(is_front_page()):
-        get_template_part( 'partials/home' );
+        get_template_part( 'partials/home/*' );
       else:
     ?>
       <section>
