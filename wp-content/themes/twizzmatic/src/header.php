@@ -9,7 +9,18 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <?php wp_head(); ?>
   </head>
-  <body <?php body_class(); ?>>
+  <?php 
+    global $post;
+    $post_slug = $post->post_name;
+    // Display a page parent's slug
+    $post_data = get_post($post->post_parent);
+    $parent_slug = $post_data->post_name;
+
+    $categories = get_the_category();
+    $category = $categories[0]->slug;
+  ?>
+
+  <body <?php body_class(array('page-'.$post_slug, 'parent-page-'.$parent_slug, 'cat-'.$category)); ?>>
     <div class="wrapper">
       <header id="main-header" class="header" role="banner">
         <div class="header-container">
