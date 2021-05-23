@@ -592,6 +592,9 @@ h1, h2, h3, h4,
 body:not(.page-shop) #woofc-count {
   display: none !important; }
 
+section {
+  padding: 100px 0; }
+
 .row {
   width: 80vw;
   margin: 0 auto; }
