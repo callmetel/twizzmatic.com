@@ -118,18 +118,22 @@
 }
 
 body.nav-dark {
-	.nav-menu-trigger {
-		.bar {
-			color: $green;
+	#main-header {
+		.header-container {
+			.nav-menu-trigger {
+				.bar {
+					color: $green;
 
-			&:before {
-				background: $darkgreen;
+					&:before {
+						background: $darkgreen;
+					}
+				}
+			}	
+
+			.sound-trigger {
+				color: $darkgreen;
 			}
 		}
-	}
-
-	.sound-trigger {
-		color: $darkgreen;
 	}
 }
 

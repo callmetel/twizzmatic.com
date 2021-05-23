@@ -793,12 +793,12 @@ section {
             #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item a {
               color: #ffffff; }
 
-body.nav-dark .nav-menu-trigger .bar {
+body.nav-dark #main-header .header-container .nav-menu-trigger .bar {
   color: #006a71; }
-  body.nav-dark .nav-menu-trigger .bar:before {
+  body.nav-dark #main-header .header-container .nav-menu-trigger .bar:before {
     background: #1b262c; }
 
-body.nav-dark .sound-trigger {
+body.nav-dark #main-header .header-container .sound-trigger {
   color: #1b262c; }
 
 body.nav-open #main-header .nav-menu-trigger .bar {
@@ -983,6 +983,9 @@ button:not(.is-search-submit) {
      -moz-appearance: none !important;
           appearance: none !important;
   border: 0 !important; }
+
+.page-bio {
+  background: #ffffff !important; }
 
 #contact-info {
   margin-bottom: 20px; }
