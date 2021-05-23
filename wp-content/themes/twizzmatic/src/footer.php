@@ -1,5 +1,5 @@
       <footer id="main-footer">
-        <div class="prefooter">
+        <div class="prefooter section">
           <div class="row grid grid-2">
             <div class="col">
               <h4 class="prefooter-title">Stay In <span>Touch</span></h4>
@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-        <div class="footer">
+        <div class="footer section">
           <div class="row grid grid-2">
             <div class="col">
               <?php echo do_shortcode('[menu name="Footer Menu" id="footer-menu"]'); ?>

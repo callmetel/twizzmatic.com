@@ -1,7 +1,7 @@
 // #Footer-Styles
 
 #main-footer {
-	.prefooter {
+	.section {
 		.row {
 
 			@include media($md-tablet) {
@@ -19,154 +19,156 @@
 				> :last-child {
 					margin-bottom: auto; 
 				}
-				
-				.prefooter-title {
-					font-family: $hfont;
-					letter-spacing: 0.04em;
-					text-transform: uppercase;
-					color: $white;
-					line-height: .8;
-					font-size: 100px;
-
-					span {
-						color: $yellow;
-						display: block;
-					}
-
-					@include media($sm-tablet) {
-						font-size: 160px;
-					}
-
-					@include media($sm-desktop) {
-						font-size: 200px;
-					}
-
-					@include media($desktop) {
-						font-size: 240px;
-					}
-				}
-
-				.social-icons {
-					display: flex;
-					align-items: center;
-					margin-top: 50px;
-
-					.icon {
-						margin-left: 20px;
-
-						&:last-of-type {
-							margin-right: auto;
-						}
-					}
-				}
-
-				.yikes-mailchimp-container {
-					width: 100%;
-
-					.edit-link {
-						display: none;
-					}
-
-					form {
-						input,textarea {
-							background: $trans;
-							color: $white;
-							text-transform: uppercase;
-							border: 0;
-							border-bottom: 5px solid $white;
-							letter-spacing: 0.08em;
-							padding: 20px;
-							margin-bottom: 50px;
-							font-size: 16px;
-
-							&::placeholder {
-								color: $gray;
-								font-weight: 400;
-							}
-						}
-
-						button {
-							&.signup-submit {
-								width: auto!important;
-								margin: 0 0 0 auto!important;
-							}
-						}
-					}
-				}
 			}
 		}
-	}
 
-	.footer {
-		margin-top: 100px;
-
-		#footer-menu {
-			list-style: none;
-			padding: 0;
-
-			.menu-item {
-				display: inline;
-				padding-right: 20px;
-				font-size: 13px;
-				font-weight: 400;
-				letter-spacing: .14em;
+		&.prefooter {
+			.prefooter-title {
+				font-family: $hfont;
+				letter-spacing: 0.04em;
 				text-transform: uppercase;
-
-				&:last-of-type {
-					padding-right: 0;
-				}
-
-				a {
-					color: $gray;
-				}
-			}
-		}
-
-		form.is-search-form {
-
-			&.is-form-style-3 {
-				label {
-					width: calc(100% - 70px)!important;
-				}
-			}
-
-			input.is-search-input {
-				background: #161f25!important;
-				border-color:#161f25!important;
 				color: $white;
-				font-family: $bfont;
-				font-size: 16px;
-				letter-spacing: 0.08em;
-				text-transform: uppercase;
-				padding: 10px 20px;
-				height: 70px;
+				line-height: .8;
+				font-size: 100px;
 
-				&::placeholder {
-					color: $gray;
+				span {
+					color: $yellow;
+					display: block;
+				}
+
+				@include media($sm-tablet) {
+					font-size: 160px;
+				}
+
+				@include media($sm-desktop) {
+					font-size: 200px;
+				}
+
+				@include media($desktop) {
+					font-size: 240px;
 				}
 			}
 
-			button.is-search-submit {
-				background: #161f25!important;
-				border-color:#161f25!important;
-				border-radius: 0!important;
-				@include size(70px, 70px);
+			.social-icons {
+				display: flex;
+				align-items: center;
+				margin-top: 50px;
 
-				.is-search-icon {
-					padding: 0!important;
+				.icon {
+					margin-left: 20px;
+
+					&:last-of-type {
+						margin-right: auto;
+					}
+				}
+			}
+
+			.yikes-mailchimp-container {
+				width: 100%;
+
+				.edit-link {
+					display: none;
+				}
+
+				form {
+					input,textarea {
+						background: $trans;
+						color: $white;
+						text-transform: uppercase;
+						border: 0;
+						border-bottom: 5px solid $white;
+						letter-spacing: 0.08em;
+						padding: 20px;
+						margin-bottom: 50px;
+						font-size: 16px;
+
+						&::placeholder {
+							color: $gray;
+							font-weight: 400;
+						}
+					}
+
+					button {
+						&.signup-submit {
+							width: auto!important;
+							margin: 0 0 0 auto!important;
+						}
+					}
+				}
+			}
+		}
+
+		&.footer {
+			margin-top: 100px;
+
+			#footer-menu {
+				list-style: none;
+				padding: 0;
+
+				.menu-item {
+					display: inline;
+					padding-right: 20px;
+					font-size: 13px;
+					font-weight: 400;
+					letter-spacing: .14em;
+					text-transform: uppercase;
+
+					&:last-of-type {
+						padding-right: 0;
+					}
+
+					a {
+						color: $gray;
+					}
+				}
+			}
+
+			form.is-search-form {
+
+				&.is-form-style-3 {
+					label {
+						width: calc(100% - 70px)!important;
+					}
+				}
+
+				input.is-search-input {
 					background: #161f25!important;
 					border-color:#161f25!important;
-					color: $gray;
-					display: flex!important;
-					align-items: center;
-					justify-content: center;
+					color: $white;
+					font-family: $bfont;
+					font-size: 16px;
+					letter-spacing: 0.08em;
+					text-transform: uppercase;
+					padding: 10px 20px;
+					height: 70px;
+
+					&::placeholder {
+						color: $gray;
+					}
+				}
+
+				button.is-search-submit {
+					background: #161f25!important;
+					border-color:#161f25!important;
+					border-radius: 0!important;
 					@include size(70px, 70px);
 
-					svg {
-						width: 50%;
+					.is-search-icon {
+						padding: 0!important;
+						background: #161f25!important;
+						border-color:#161f25!important;
+						color: $gray;
+						display: flex!important;
+						align-items: center;
+						justify-content: center;
+						@include size(70px, 70px);
 
-						path {
-							fill: $gray;
+						svg {
+							width: 50%;
+
+							path {
+								fill: $gray;
+							}
 						}
 					}
 				}
