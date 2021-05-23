@@ -1,25 +1,32 @@
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<?php 
+  if (have_posts()): while (have_posts()) : the_post();
+
+  // Get ACF Fields
+  
+  $title = the_title();
+  $post_categories = get_post_primary_category($post->ID, 'category'); 
+  $main_category = $post_categories['primary_category'];
+  $content = get_field('content');
+  $image = get_field('main_image');
+  $link = get_field('link');
+?>
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php if (has_post_thumbnail()): ?>0
-      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-        <?php the_post_thumbnail(array(120, 120)); ?>
-      </a>
-    <?php endif; ?>
-    <h2>
-      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-    </h2>    
-    <?php the_excerpt(); ?>
-    <span class="date">
-      <time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-        <?php the_date(); ?> <?php the_time(); ?>
-      </time>
-    </span>
-    <span class="author"><?php _e('by', 'wp-blank'); ?> <?php the_author_posts_link(); ?></span>
-    <span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __('Add comment', 'wp-blank'), __('1 Comment', 'wp-blank'), __('% Comments', 'wp-blank')); ?></span>
+    <a href="<?php echo $link; ?>" target="_blank" class="post-image" style="background-image:url('<?php echo $image; ?>')"></a>
+    <div class="post-content">
+      <h2 class="post-title">
+        <a href="<?php echo $link; ?>" target="_blank">
+          <?php echo $title; ?>
+        </a>
+      </h2>
+      <p class="post-category">
+        <a href="<?php echo $link; ?>" target="_blank">
+          <?php echo $title; ?>
+        </a>
+      </p>
+      <div class="post-excerpt">
+        <?php echo $main_category; ?>
+      </div>
+    </div>
   </article>
 <?php endwhile; ?>
-<?php else: ?>
-  <article>
-    <h2><?php _e('Sorry, nothing to display.', 'wp-blank'); ?></h2>
-  </article>
 <?php endif; ?>

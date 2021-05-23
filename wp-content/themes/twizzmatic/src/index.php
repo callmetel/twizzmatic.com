@@ -5,9 +5,11 @@
     	<div class="row">
         <div class="col">
 		      <h1 class="page-title"><?php single_post_title(); ?></h1>
-		      <?php get_template_part('loop'); ?>
+		      <div class="posts-filter"><?php get_sidebar(); ?></div>
+		      <div class="posts-grid">
+		      	<?php get_template_part('loop'); ?>	
+		      </div>
 		      <?php get_template_part('pagination'); ?>
-		      <?php get_sidebar(); ?>
 		    </div>
 		  </div>
     </section>
