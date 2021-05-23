@@ -13,6 +13,13 @@ body {
 	margin: 0 auto;
 }
 
+.center-cols {
+	@include media($sm-tablet) {
+	  display: flex;
+	  align-items: center;
+	}
+}
+
 .grid {
   display: grid;
 }
@@ -74,6 +81,7 @@ body {
 .gap-40 {
   grid-gap: 40px;
 }
+
 
 // Fullscreen
 .fs {	

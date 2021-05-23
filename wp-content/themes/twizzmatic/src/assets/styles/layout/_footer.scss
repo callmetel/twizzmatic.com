@@ -2,29 +2,35 @@
 
 #main-footer {
 	.prefooter {
-		.prefooter-title {
-			font-family: $hfont;
-			letter-spacing: 0.04em;
-			text-transform: uppercase;
-			color: $white;
-			line-height: .8;
-			font-size: 100px;
+		.col {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+			.prefooter-title {
+				font-family: $hfont;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				color: $white;
+				line-height: .8;
+				font-size: 100px;
 
-			span {
-				color: $yellow;
-				display: block;
-			}
+				span {
+					color: $yellow;
+					display: block;
+				}
 
-			@include media($sm-tablet) {
-				font-size: 160px;
-			}
+				@include media($sm-tablet) {
+					font-size: 160px;
+				}
 
-			@include media($sm-desktop) {
-				font-size: 200px;
-			}
+				@include media($sm-desktop) {
+					font-size: 200px;
+				}
 
-			@include media($desktop) {
-				font-size: 240px;
+				@include media($desktop) {
+					font-size: 240px;
+				}
 			}
 		}
 	}
