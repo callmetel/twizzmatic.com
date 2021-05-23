@@ -105,3 +105,24 @@ h6 {
     }
   }
 }
+
+.pull-quote {
+  position: relative;
+  font-family: $hfont;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 100px;
+  color: $darkgreen;
+
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    @include size(90px,70px);
+    background-image: url('#{$path-img}/quote.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

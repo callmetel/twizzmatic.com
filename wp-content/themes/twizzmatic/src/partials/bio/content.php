@@ -13,7 +13,7 @@
 			<div class="bio-image">
 				<img src="<?php echo $image; ?>" alt="TwizzMatic">
 			</div>
-			<div class="bio-quote">
+			<div class="bio-quote pull-quote">
 				<?php echo $quote; ?>
 			</div>
 		</div>
