@@ -1,5 +1,12 @@
 // #Footer-Styles
 
+body.light-background {
+	#main-footer {
+		background-color: $darkgreen;
+		background: $gradient;
+	}
+}
+
 #main-footer {
 	.section {
 		.row {

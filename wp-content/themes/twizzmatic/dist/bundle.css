@@ -521,14 +521,21 @@ template {
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url(static/media/SpaceGrotesk-Regular.6e40f57f.woff2) format("woff2"), url(static/media/SpaceGrotesk-Regular.01fbea93.woff) format("woff");
+  src: url(static/media/SpaceGrotesk-Light.001a0dee.woff2) format("woff2"), url(static/media/SpaceGrotesk-Light.6b5451a0.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(static/media/SpaceGrotesk-Regular.cd54a361.woff2) format("woff2"), url(static/media/SpaceGrotesk-Regular.eca3adc5.woff) format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url(static/media/SpaceGrotesk-Bold.faa66eff.woff2) format("woff2"), url(static/media/SpaceGrotesk-Bold.2c4aae42.woff) format("woff");
+  src: url(static/media/SpaceGrotesk-Bold.f226a1c6.woff2) format("woff2"), url(static/media/SpaceGrotesk-Bold.11968971.woff) format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
@@ -795,12 +802,12 @@ section {
             #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item a {
               color: #ffffff; }
 
-body.nav-dark #main-header .header-container .nav-menu-trigger .bar {
+body.light-background #main-header .header-container .nav-menu-trigger .bar {
   color: #006a71; }
-  body.nav-dark #main-header .header-container .nav-menu-trigger .bar:before {
+  body.light-background #main-header .header-container .nav-menu-trigger .bar:before {
     background: #1b262c; }
 
-body.nav-dark #main-header .header-container .sound-trigger {
+body.light-background #main-header .header-container .sound-trigger {
   color: #1b262c; }
 
 body.nav-open #main-header .nav-menu-trigger .bar {
@@ -814,6 +821,10 @@ body.nav-open #main-header .nav-wrapper {
   -ms-transform: translateY(0);
       transform: translateY(0);
   opacity: 1; }
+
+body.light-background #main-footer {
+  background-color: #1b262c;
+  background: linear-gradient(180deg, #1b262c 0%, #161f25 35%, #030506 100%); }
 
 @media screen and (min-width: 981px) {
   #main-footer .section .row {
@@ -1001,6 +1012,12 @@ button:not(.is-search-submit) {
     @media screen and (min-width: 641px) {
       .page-bio #bio-content .row .col.col-1 {
         display: block; } }
+    .page-bio #bio-content .row .col.col-1 .bio-image {
+      display: block;
+      width: 100%; }
+      .page-bio #bio-content .row .col.col-1 .bio-image img {
+        display: block;
+        width: 100%; }
   @media screen and (min-width: 641px) {
     .page-bio #bio-content .row .col.col-2 .bio-title {
       font-size: 200px; } }

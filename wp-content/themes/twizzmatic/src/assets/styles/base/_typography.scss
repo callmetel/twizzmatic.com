@@ -4,6 +4,15 @@
 
 @font-face {
     font-family: 'Space Grotesk';
+    src: url('#{$path-font}/SpaceGrotesk-Light.woff2') format('woff2'),
+        url('#{$path-font}/SpaceGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
     src: url('#{$path-font}/SpaceGrotesk-Regular.woff2') format('woff2'),
         url('#{$path-font}/SpaceGrotesk-Regular.woff') format('woff');
     font-weight: normal;

@@ -18,6 +18,16 @@
 					@include media($lg-mobile) {
 						display: block;
 					}
+
+					.bio-image {
+						display: block;
+						width: 100%;
+
+						img {
+							display: block;
+							width: 100%;
+						}
+					}
 				}
 
 				&.col-2 {
