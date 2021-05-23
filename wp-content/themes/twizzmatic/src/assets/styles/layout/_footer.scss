@@ -2,46 +2,53 @@
 
 #main-footer {
 	.prefooter {
-		.col {
-			display: flex;
-			flex-direction: column;
+		.row {
 
-			> :first-child {
-				margin-top: auto; 
+			@include media($md-tablet) {
+				column-gap: 5.5%;
 			}
 
-			> :last-child {
-				margin-bottom: auto; 
-			}
-			
-			.prefooter-title {
-				font-family: $hfont;
-				letter-spacing: 0.04em;
-				text-transform: uppercase;
-				color: $white;
-				line-height: .8;
-				font-size: 100px;
+			.col {
+				display: flex;
+				flex-direction: column;
 
-				span {
-					color: $yellow;
-					display: block;
+				> :first-child {
+					margin-top: auto; 
 				}
 
-				@include media($sm-tablet) {
-					font-size: 160px;
+				> :last-child {
+					margin-bottom: auto; 
+				}
+				
+				.prefooter-title {
+					font-family: $hfont;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+					color: $white;
+					line-height: .8;
+					font-size: 100px;
+
+					span {
+						color: $yellow;
+						display: block;
+					}
+
+					@include media($sm-tablet) {
+						font-size: 160px;
+					}
+
+					@include media($sm-desktop) {
+						font-size: 200px;
+					}
+
+					@include media($desktop) {
+						font-size: 240px;
+					}
 				}
 
-				@include media($sm-desktop) {
-					font-size: 200px;
+				.yikes-mailchimp-container {
+					width: 100%;
 				}
-
-				@include media($desktop) {
-					font-size: 240px;
-				}
-			}
-
-			.yikes-mailchimp-container {
-				width: 100%;
 			}
 		}
 	}

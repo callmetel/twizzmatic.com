@@ -758,35 +758,40 @@ body.nav-open #main-header .nav-wrapper {
       transform: translateY(0);
   opacity: 1; }
 
-#main-footer .prefooter .col {
+@media screen and (min-width: 981px) {
+  #main-footer .prefooter .row {
+    -moz-column-gap: 5.5%;
+         column-gap: 5.5%; } }
+
+#main-footer .prefooter .row .col {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  #main-footer .prefooter .col > :first-child {
+  #main-footer .prefooter .row .col > :first-child {
     margin-top: auto; }
-  #main-footer .prefooter .col > :last-child {
+  #main-footer .prefooter .row .col > :last-child {
     margin-bottom: auto; }
-  #main-footer .prefooter .col .prefooter-title {
+  #main-footer .prefooter .row .col .prefooter-title {
     font-family: "Morganite", sans-serif;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
     line-height: .8;
     font-size: 100px; }
-    #main-footer .prefooter .col .prefooter-title span {
+    #main-footer .prefooter .row .col .prefooter-title span {
       color: #ffa62b;
       display: block; }
     @media screen and (min-width: 768px) {
-      #main-footer .prefooter .col .prefooter-title {
+      #main-footer .prefooter .row .col .prefooter-title {
         font-size: 160px; } }
     @media screen and (min-width: 1025px) {
-      #main-footer .prefooter .col .prefooter-title {
+      #main-footer .prefooter .row .col .prefooter-title {
         font-size: 200px; } }
     @media screen and (min-width: 1100px) {
-      #main-footer .prefooter .col .prefooter-title {
+      #main-footer .prefooter .row .col .prefooter-title {
         font-size: 240px; } }
-  #main-footer .prefooter .col .yikes-mailchimp-container {
+  #main-footer .prefooter .row .col .yikes-mailchimp-container {
     width: 100%; }
 
 /*# sourceMappingURL=bundle.css.map*/
