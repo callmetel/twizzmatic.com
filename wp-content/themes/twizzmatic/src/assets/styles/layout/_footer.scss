@@ -63,6 +63,7 @@
 							letter-spacing: 0.08em;
 							padding: 20px;
 							margin-bottom: 50px;
+							font-size: 16px;
 
 							&::placeholder {
 								color: $gray;
@@ -73,7 +74,7 @@
 						button {
 							&.signup-submit {
 								width: auto!important;
-								margin: 0!important;
+								margin: 0 0 0 auto!important;
 							}
 						}
 					}
