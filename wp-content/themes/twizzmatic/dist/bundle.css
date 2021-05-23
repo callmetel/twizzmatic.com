@@ -793,6 +793,8 @@ body.nav-open #main-header .nav-wrapper {
         font-size: 240px; } }
   #main-footer .prefooter .row .col .yikes-mailchimp-container {
     width: 100%; }
+    #main-footer .prefooter .row .col .yikes-mailchimp-container .edit-link {
+      display: none; }
     #main-footer .prefooter .row .col .yikes-mailchimp-container form input, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea {
       background: transparent;
       color: #ffffff;

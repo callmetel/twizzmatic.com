@@ -49,6 +49,10 @@
 				.yikes-mailchimp-container {
 					width: 100%;
 
+					.edit-link {
+						display: none;
+					}
+
 					form {
 						input,textarea {
 							background: $trans;
