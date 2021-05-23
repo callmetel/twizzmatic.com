@@ -1013,6 +1013,7 @@ button:not(.is-search-submit) {
       .page-bio #bio-content .row .col.col-1 {
         display: block; } }
     .page-bio #bio-content .row .col.col-1 .bio-image {
+      margin-top: 100px;
       display: block;
       width: 100%; }
       .page-bio #bio-content .row .col.col-1 .bio-image img {
@@ -1033,6 +1034,18 @@ button:not(.is-search-submit) {
   @media screen and (min-width: 1100px) {
     .page-bio #bio-content .row .col.col-2 .bio-title {
       font-size: 400px; } }
+  .page-bio #bio-content .row .col.col-2 .full-bio {
+    padding-top: 50px; }
+    @media screen and (min-width: 641px) {
+      .page-bio #bio-content .row .col.col-2 .full-bio {
+        padding-top: 100px; } }
+    .page-bio #bio-content .row .col.col-2 .full-bio p {
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      font-size: 18px;
+      line-height: 2; }
+      .page-bio #bio-content .row .col.col-2 .full-bio p:not(:last-of-type) {
+        padding-bottom: 40px; }
 
 #contact-info {
   margin-bottom: 20px; }
