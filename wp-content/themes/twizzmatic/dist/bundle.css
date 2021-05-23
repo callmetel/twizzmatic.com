@@ -832,7 +832,8 @@ body.nav-open #main-header .nav-wrapper {
     margin: 0 0 0 auto !important; }
 
 #main-footer .section.footer {
-  margin: 100px 0 45px; }
+  padding: 100px 0 45px;
+  background: #030506; }
   #main-footer .section.footer #footer-menu {
     list-style: none;
     padding: 0; }
