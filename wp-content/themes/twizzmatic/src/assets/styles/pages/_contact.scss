@@ -25,7 +25,7 @@
  				font-size: 50px;
  			}
 
- 			@include media($lg-tablet) {
+ 			@include media($sm-desktop) {
  				font-size: 70px;
  			}
  		}
