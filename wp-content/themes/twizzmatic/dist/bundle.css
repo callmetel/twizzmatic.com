@@ -716,7 +716,7 @@ body:not(.page-shop) #woofc-count {
       -ms-flex-align: center;
           align-items: center; }
       #main-header .nav-wrapper nav .menu-main-menu-container {
-        margin: 35px auto auto 0;
+        margin: 45px auto auto 0;
         text-align: left;
         width: 80vw; }
         @media screen and (min-width: 768px) {
@@ -730,7 +730,7 @@ body:not(.page-shop) #woofc-count {
             text-transform: uppercase;
             font-size: 100px;
             line-height: .8;
-            letter-spacing: 0.02em; }
+            letter-spacing: 0.04em; }
             @media screen and (min-width: 768px) {
               #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item {
                 font-size: 150px; } }

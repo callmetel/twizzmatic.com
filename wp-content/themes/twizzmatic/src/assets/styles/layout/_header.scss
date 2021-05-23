@@ -78,7 +78,7 @@
 			align-items: center;
 
 			.menu-main-menu-container {
-				margin: 35px auto auto 0;
+				margin: 45px auto auto 0;
 				text-align: left;
 				width: 80vw;
 
@@ -96,7 +96,7 @@
 						text-transform: uppercase;
 						font-size: 100px;
 						line-height: .8;
-						letter-spacing: 0.02em;
+						letter-spacing: 0.04em;
 
 						@include media($sm-tablet) {
 							font-size: 150px;
