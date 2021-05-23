@@ -762,9 +762,11 @@ body.nav-open #main-header .nav-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
+      flex-direction: column; }
+  #main-footer .prefooter .col > :first-child {
+    margin-top: auto; }
+  #main-footer .prefooter .col > :last-child {
+    margin-bottom: auto; }
   #main-footer .prefooter .col .prefooter-title {
     font-family: "Morganite", sans-serif;
     letter-spacing: 0.04em;
@@ -784,5 +786,7 @@ body.nav-open #main-header .nav-wrapper {
     @media screen and (min-width: 1100px) {
       #main-footer .prefooter .col .prefooter-title {
         font-size: 240px; } }
+  #main-footer .prefooter .col .yikes-mailchimp-container {
+    width: 100%; }
 
 /*# sourceMappingURL=bundle.css.map*/

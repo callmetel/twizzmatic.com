@@ -5,7 +5,14 @@
 		.col {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+
+			> :first-child {
+				margin-top: auto; 
+			}
+
+			> :last-child {
+				margin-bottom: auto; 
+			}
 			
 			.prefooter-title {
 				font-family: $hfont;
@@ -31,6 +38,10 @@
 				@include media($desktop) {
 					font-size: 240px;
 				}
+			}
+
+			.yikes-mailchimp-container {
+				width: 100%;
 			}
 		}
 	}
