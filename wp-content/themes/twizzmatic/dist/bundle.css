@@ -814,4 +814,26 @@ body.nav-open #main-header .nav-wrapper {
         color: #bbb2a6;
         font-weight: 400; }
 
+input[type="submit"] {
+  background: #ffa62b;
+  color: #1b262c;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-align: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-transform: uppercase;
+  padding: 20px;
+  min-width: 200px;
+  max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    input[type="submit"] {
+      font-size: 26px; } }
+
 /*# sourceMappingURL=bundle.css.map*/
