@@ -124,6 +124,13 @@
 	}
 
 	form.is-search-form {
+
+		&.is-form-style-3 {
+			> label {
+				width: calc(100% - 70px)!important;
+			}
+		}
+
 		input {
 			&.is-search-input {
 				background: #161f25!important;
@@ -133,11 +140,31 @@
 				font-size: 16px;
 				letter-spacing: 0.08em;
 				text-transform: uppercase;
-				padding: 20px;
-				height: 90px;
+				padding: 10px 20px;
+				height: 70px;
 
 				&::placeholder {
 					color: $gray;
+				}
+			}
+		}
+
+		button {
+			&.is-search-submit {
+				background: #161f25!important;
+				border-color:#161f25!important;
+				border-radius: 0!important;
+				@include size(70px, 70px);
+
+				.is-search-icon {
+					padding: 0!important;
+					background: #161f25!important;
+					border-color:#161f25!important;
+					color: $gray;
+					display: flex!important;
+					align-items: center;
+					justify-content: center;
+					@include size(70px, 70px);
 				}
 			}
 		}
