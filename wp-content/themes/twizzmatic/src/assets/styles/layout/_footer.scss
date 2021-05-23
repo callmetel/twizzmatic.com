@@ -8,6 +8,12 @@ body.light-background {
 }
 
 #main-footer {
+	padding-top: 50px;
+
+	@include media($lg-mobile) {
+		padding-top: 100px;
+	}
+
 	.section {
 		.row {
 

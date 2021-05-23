@@ -826,151 +826,151 @@ body.light-background #main-footer {
   background-color: #1b262c;
   background: linear-gradient(180deg, #1b262c 0%, #161f25 35%, #030506 100%); }
 
-@media screen and (min-width: 981px) {
-  #main-footer .section .row {
-    -moz-column-gap: 5.5%;
-         column-gap: 5.5%; } }
-
-#main-footer .section .row .col {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  #main-footer .section .row .col > :first-child {
-    margin-top: auto; }
-  #main-footer .section .row .col > :last-child {
-    margin-bottom: auto; }
-
-#main-footer .section.prefooter .prefooter-title {
-  font-family: "Morganite", sans-serif;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  line-height: .8;
-  font-size: 100px; }
-  #main-footer .section.prefooter .prefooter-title span {
-    color: #ffa62b;
-    display: block; }
-  @media screen and (min-width: 768px) {
-    #main-footer .section.prefooter .prefooter-title {
-      font-size: 160px; } }
-  @media screen and (min-width: 1025px) {
-    #main-footer .section.prefooter .prefooter-title {
-      font-size: 200px; } }
-  @media screen and (min-width: 1100px) {
-    #main-footer .section.prefooter .prefooter-title {
-      font-size: 240px; } }
-
-#main-footer .section.prefooter .social-icons {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  margin-top: 50px; }
-  #main-footer .section.prefooter .social-icons .icon {
-    margin-left: 20px; }
-    #main-footer .section.prefooter .social-icons .icon:last-of-type {
-      margin-right: auto; }
-
-#main-footer .section.prefooter .yikes-mailchimp-container {
-  width: 100%; }
-  #main-footer .section.prefooter .yikes-mailchimp-container .edit-link {
-    display: none; }
-  #main-footer .section.prefooter .yikes-mailchimp-container form input, #main-footer .section.prefooter .yikes-mailchimp-container form textarea {
-    background: transparent;
-    color: #ffffff;
+#main-footer {
+  padding-top: 50px; }
+  @media screen and (min-width: 641px) {
+    #main-footer {
+      padding-top: 100px; } }
+  @media screen and (min-width: 981px) {
+    #main-footer .section .row {
+      -moz-column-gap: 5.5%;
+           column-gap: 5.5%; } }
+  #main-footer .section .row .col {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    #main-footer .section .row .col > :first-child {
+      margin-top: auto; }
+    #main-footer .section .row .col > :last-child {
+      margin-bottom: auto; }
+  #main-footer .section.prefooter .prefooter-title {
+    font-family: "Morganite", sans-serif;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    border: 0;
-    border-bottom: 5px solid #ffffff;
-    letter-spacing: 0.08em;
-    padding: 20px;
-    margin-bottom: 50px;
-    font-size: 16px; }
-    #main-footer .section.prefooter .yikes-mailchimp-container form input::-moz-placeholder, #main-footer .section.prefooter .yikes-mailchimp-container form textarea::-moz-placeholder {
-      color: #bbb2a6;
-      font-weight: 400; }
-    #main-footer .section.prefooter .yikes-mailchimp-container form input:-ms-input-placeholder, #main-footer .section.prefooter .yikes-mailchimp-container form textarea:-ms-input-placeholder {
-      color: #bbb2a6;
-      font-weight: 400; }
-    #main-footer .section.prefooter .yikes-mailchimp-container form input::placeholder, #main-footer .section.prefooter .yikes-mailchimp-container form textarea::placeholder {
-      color: #bbb2a6;
-      font-weight: 400; }
-  @media screen and (min-width: 768px) {
-    #main-footer .section.prefooter .yikes-mailchimp-container form button.signup-submit {
-      width: auto !important;
-      margin: 0 0 0 auto !important; } }
-
-#main-footer .section.footer {
-  padding: 100px 0 45px; }
-  @media screen and (max-width: 767px) {
-    #main-footer .section.footer .row {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; } }
-  #main-footer .section.footer #footer-menu {
-    list-style: none;
-    padding: 0; }
+    color: #ffffff;
+    line-height: .8;
+    font-size: 100px; }
+    #main-footer .section.prefooter .prefooter-title span {
+      color: #ffa62b;
+      display: block; }
+    @media screen and (min-width: 768px) {
+      #main-footer .section.prefooter .prefooter-title {
+        font-size: 160px; } }
+    @media screen and (min-width: 1025px) {
+      #main-footer .section.prefooter .prefooter-title {
+        font-size: 200px; } }
+    @media screen and (min-width: 1100px) {
+      #main-footer .section.prefooter .prefooter-title {
+        font-size: 240px; } }
+  #main-footer .section.prefooter .social-icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 50px; }
+    #main-footer .section.prefooter .social-icons .icon {
+      margin-left: 20px; }
+      #main-footer .section.prefooter .social-icons .icon:last-of-type {
+        margin-right: auto; }
+  #main-footer .section.prefooter .yikes-mailchimp-container {
+    width: 100%; }
+    #main-footer .section.prefooter .yikes-mailchimp-container .edit-link {
+      display: none; }
+    #main-footer .section.prefooter .yikes-mailchimp-container form input, #main-footer .section.prefooter .yikes-mailchimp-container form textarea {
+      background: transparent;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 0;
+      border-bottom: 5px solid #ffffff;
+      letter-spacing: 0.08em;
+      padding: 20px;
+      margin-bottom: 50px;
+      font-size: 16px; }
+      #main-footer .section.prefooter .yikes-mailchimp-container form input::-moz-placeholder, #main-footer .section.prefooter .yikes-mailchimp-container form textarea::-moz-placeholder {
+        color: #bbb2a6;
+        font-weight: 400; }
+      #main-footer .section.prefooter .yikes-mailchimp-container form input:-ms-input-placeholder, #main-footer .section.prefooter .yikes-mailchimp-container form textarea:-ms-input-placeholder {
+        color: #bbb2a6;
+        font-weight: 400; }
+      #main-footer .section.prefooter .yikes-mailchimp-container form input::placeholder, #main-footer .section.prefooter .yikes-mailchimp-container form textarea::placeholder {
+        color: #bbb2a6;
+        font-weight: 400; }
+    @media screen and (min-width: 768px) {
+      #main-footer .section.prefooter .yikes-mailchimp-container form button.signup-submit {
+        width: auto !important;
+        margin: 0 0 0 auto !important; } }
+  #main-footer .section.footer {
+    padding: 100px 0 45px; }
     @media screen and (max-width: 767px) {
-      #main-footer .section.footer #footer-menu {
-        margin-top: 30px;
-        text-align: center; } }
-    #main-footer .section.footer #footer-menu .menu-item {
-      display: inline;
-      padding-right: 20px;
-      font-size: 11px;
-      line-height: 1.2;
-      font-weight: 400;
-      letter-spacing: .14em;
-      text-transform: uppercase; }
+      #main-footer .section.footer .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; } }
+    #main-footer .section.footer #footer-menu {
+      list-style: none;
+      padding: 0; }
       @media screen and (max-width: 767px) {
-        #main-footer .section.footer #footer-menu .menu-item {
-          font-size: 13px; } }
-      #main-footer .section.footer #footer-menu .menu-item:last-of-type {
-        padding-right: 0; }
-      #main-footer .section.footer #footer-menu .menu-item a {
-        color: #bbb2a6; }
-  #main-footer .section.footer form.is-search-form.is-form-style-3 label {
-    width: calc(100% - 70px) !important; }
-  #main-footer .section.footer form.is-search-form input.is-search-input {
-    background: #161f25 !important;
-    border-color: #161f25 !important;
-    color: #ffffff;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    height: 70px; }
-    #main-footer .section.footer form.is-search-form input.is-search-input::-moz-placeholder {
-      color: #bbb2a6; }
-    #main-footer .section.footer form.is-search-form input.is-search-input:-ms-input-placeholder {
-      color: #bbb2a6; }
-    #main-footer .section.footer form.is-search-form input.is-search-input::placeholder {
-      color: #bbb2a6; }
-  #main-footer .section.footer form.is-search-form button.is-search-submit {
-    background: #161f25 !important;
-    border-color: #161f25 !important;
-    border-radius: 0 !important;
-    width: 70px;
-    height: 70px; }
-    #main-footer .section.footer form.is-search-form button.is-search-submit .is-search-icon {
-      padding: 0 !important;
+        #main-footer .section.footer #footer-menu {
+          margin-top: 30px;
+          text-align: center; } }
+      #main-footer .section.footer #footer-menu .menu-item {
+        display: inline;
+        padding-right: 20px;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: .14em;
+        text-transform: uppercase; }
+        @media screen and (max-width: 767px) {
+          #main-footer .section.footer #footer-menu .menu-item {
+            font-size: 13px; } }
+        #main-footer .section.footer #footer-menu .menu-item:last-of-type {
+          padding-right: 0; }
+        #main-footer .section.footer #footer-menu .menu-item a {
+          color: #bbb2a6; }
+    #main-footer .section.footer form.is-search-form.is-form-style-3 label {
+      width: calc(100% - 70px) !important; }
+    #main-footer .section.footer form.is-search-form input.is-search-input {
       background: #161f25 !important;
       border-color: #161f25 !important;
-      color: #bbb2a6;
-      display: -ms-flexbox !important;
-      display: flex !important;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      color: #ffffff;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      height: 70px; }
+      #main-footer .section.footer form.is-search-form input.is-search-input::-moz-placeholder {
+        color: #bbb2a6; }
+      #main-footer .section.footer form.is-search-form input.is-search-input:-ms-input-placeholder {
+        color: #bbb2a6; }
+      #main-footer .section.footer form.is-search-form input.is-search-input::placeholder {
+        color: #bbb2a6; }
+    #main-footer .section.footer form.is-search-form button.is-search-submit {
+      background: #161f25 !important;
+      border-color: #161f25 !important;
+      border-radius: 0 !important;
       width: 70px;
       height: 70px; }
-      #main-footer .section.footer form.is-search-form button.is-search-submit .is-search-icon svg {
-        width: 50%; }
-        #main-footer .section.footer form.is-search-form button.is-search-submit .is-search-icon svg path {
-          fill: #bbb2a6; }
+      #main-footer .section.footer form.is-search-form button.is-search-submit .is-search-icon {
+        padding: 0 !important;
+        background: #161f25 !important;
+        border-color: #161f25 !important;
+        color: #bbb2a6;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        width: 70px;
+        height: 70px; }
+        #main-footer .section.footer form.is-search-form button.is-search-submit .is-search-icon svg {
+          width: 50%; }
+          #main-footer .section.footer form.is-search-form button.is-search-submit .is-search-icon svg path {
+            fill: #bbb2a6; }
 
 input[type="submit"]:not(.is-search-submit),
 button[type="submit"]:not(.is-search-submit),
