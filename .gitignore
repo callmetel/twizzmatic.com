@@ -38,8 +38,8 @@ node_modules
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
 wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
+#!wp-content/mu-plugins/
+#!wp-content/plugins/
 !wp-content/themes/
 
 # ignore all mu-plugins, plugins, and themes

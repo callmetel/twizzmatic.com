@@ -24,8 +24,13 @@
           </div>
         </div>
         <div class="footer">
-          <div class="row">
-            
+          <div class="row grid grid-2">
+            <div class="col">
+              <?php echo do_shortcode('[menu name="Footer Menu" id="footer-menu"]'); ?>
+            </div>
+            <div class="col">
+              <?php echo do_shortcode('[ivory-search id="45" title="Search"]'); ?>
+            </div>
           </div>
         </div>
       </footer>
