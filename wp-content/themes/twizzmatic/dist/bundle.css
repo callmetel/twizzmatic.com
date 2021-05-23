@@ -793,16 +793,21 @@ body.nav-open #main-header .nav-wrapper {
         font-size: 240px; } }
   #main-footer .prefooter .row .col .yikes-mailchimp-container {
     width: 100%; }
-    #main-footer .prefooter .row .col .yikes-mailchimp-container form input {
+    #main-footer .prefooter .row .col .yikes-mailchimp-container form input, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea {
       background: transparent;
       color: #ffffff;
       text-transform: uppercase;
-      border: 0; }
-      #main-footer .prefooter .row .col .yikes-mailchimp-container form input::-moz-placeholder {
-        color: #bbb2a6; }
-      #main-footer .prefooter .row .col .yikes-mailchimp-container form input:-ms-input-placeholder {
-        color: #bbb2a6; }
-      #main-footer .prefooter .row .col .yikes-mailchimp-container form input::placeholder {
-        color: #bbb2a6; }
+      border: 0;
+      border-bottom: 5px solid #ffffff;
+      letter-spacing: 0.08em; }
+      #main-footer .prefooter .row .col .yikes-mailchimp-container form input::-moz-placeholder, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea::-moz-placeholder {
+        color: #bbb2a6;
+        font-weight: 400; }
+      #main-footer .prefooter .row .col .yikes-mailchimp-container form input:-ms-input-placeholder, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea:-ms-input-placeholder {
+        color: #bbb2a6;
+        font-weight: 400; }
+      #main-footer .prefooter .row .col .yikes-mailchimp-container form input::placeholder, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea::placeholder {
+        color: #bbb2a6;
+        font-weight: 400; }
 
 /*# sourceMappingURL=bundle.css.map*/

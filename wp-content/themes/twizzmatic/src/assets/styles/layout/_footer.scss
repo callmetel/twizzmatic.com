@@ -50,14 +50,17 @@
 					width: 100%;
 
 					form {
-						input {
+						input,textarea {
 							background: $trans;
 							color: $white;
 							text-transform: uppercase;
 							border: 0;
+							border-bottom: 5px solid $white;
+							letter-spacing: 0.08em;
 
 							&::placeholder {
 								color: $gray;
+								font-weight: 400;
 							}
 						}
 					}
