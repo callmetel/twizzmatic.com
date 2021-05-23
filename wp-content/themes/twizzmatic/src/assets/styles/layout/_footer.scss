@@ -68,6 +68,11 @@
 								color: $gray;
 								font-weight: 400;
 							}
+
+							&.yikes-easy-mc-submit-button {
+								width: auto!important;
+								margin: 0!important;
+							}
 						}
 					}
 				}
