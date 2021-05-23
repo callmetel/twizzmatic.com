@@ -8,7 +8,7 @@
 
     	$('.nav-menu-trigger').click(function(e){
     		e.preventDefault();
-    		$('body').toggleClass('nav-open');
+    		$('body').toggleClass('nav-open locked');
     	});
 
     /*********************

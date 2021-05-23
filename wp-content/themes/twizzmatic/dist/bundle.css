@@ -701,9 +701,9 @@ body:not(.page-shop) #woofc-count {
     height: 100vh;
     z-index: 99998;
     overflow: hidden;
-    padding: 50px 30px 30px;
-    -ms-transform: translateY(-150%);
-        transform: translateY(-150%);
+    padding: 50px 30px 0;
+    -ms-transform: translateY(-130%);
+        transform: translateY(-130%);
     opacity: 0;
     transition: transform .35s ease-in-out, opacity .2s ease-in-out; }
     #main-header .nav-wrapper nav {
@@ -714,7 +714,8 @@ body:not(.page-shop) #woofc-count {
       -ms-flex-direction: column;
           flex-direction: column;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+      overflow-y: auto; }
       #main-header .nav-wrapper nav .menu-main-menu-container {
         margin: 0 auto auto 0;
         text-align: left;
