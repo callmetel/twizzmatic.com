@@ -104,17 +104,33 @@
 			padding: 100px 0 45px;
 			background: $darkergreen;
 
+			.row {
+				@include media($max-mobile) {
+					display: flex;
+    			flex-direction: column-reverse;
+				}
+			}
+
 			#footer-menu {
 				list-style: none;
 				padding: 0;
 
+				@include media($max-mobile) {
+					margin-top: 30px;
+					text-align: center;
+				}
+
 				.menu-item {
 					display: inline;
 					padding-right: 20px;
-					font-size: 13px;
+					font-size: 11px;
 					font-weight: 400;
 					letter-spacing: .14em;
 					text-transform: uppercase;
+
+					@include media($max-mobile) {
+						font-size: 13px;
+					}
 
 					&:last-of-type {
 						padding-right: 0;
