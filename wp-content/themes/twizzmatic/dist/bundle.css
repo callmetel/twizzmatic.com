@@ -536,9 +536,9 @@ template {
 
 @font-face {
   font-family: 'Morganite';
-  src: url(static/media/Morganite-ExtraBold.d37c9864.woff2) format("woff2"), url(static/media/Morganite-ExtraBold.fac2d6d5.woff) format("woff");
+  src: url(static/media/Morganite-ExtraBold.9e3f1e8a.woff2) format("woff2"), url(static/media/Morganite-ExtraBold.8bd02449.woff) format("woff");
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
   font-display: swap; }
 
 h1, h2, h3, h4,
