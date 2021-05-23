@@ -1006,9 +1006,9 @@ button:not(.is-search-submit) {
     #contact-info .contact-email .email-address:after {
       content: '';
       display: block;
-      width: 70%;
+      width: 75%;
       height: 2px;
       background: #ffffff;
-      margin-top: 100px; }
+      margin: 100px 0 0 auto; }
 
 /*# sourceMappingURL=bundle.css.map*/
