@@ -827,9 +827,10 @@ body.nav-open #main-header .nav-wrapper {
     #main-footer .section.prefooter .yikes-mailchimp-container form input::placeholder, #main-footer .section.prefooter .yikes-mailchimp-container form textarea::placeholder {
       color: #bbb2a6;
       font-weight: 400; }
-  #main-footer .section.prefooter .yikes-mailchimp-container form button.signup-submit {
-    width: auto !important;
-    margin: 0 0 0 auto !important; }
+  @media screen and (min-width: 768px) {
+    #main-footer .section.prefooter .yikes-mailchimp-container form button.signup-submit {
+      width: auto !important;
+      margin: 0 0 0 auto !important; } }
 
 #main-footer .section.footer {
   padding: 100px 0 45px;

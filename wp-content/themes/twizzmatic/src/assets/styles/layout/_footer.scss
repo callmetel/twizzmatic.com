@@ -90,8 +90,10 @@
 
 					button {
 						&.signup-submit {
-							width: auto!important;
-							margin: 0 0 0 auto!important;
+							@include media($sm-tablet) {
+								width: auto!important;
+								margin: 0 0 0 auto!important;	
+							}
 						}
 					}
 				}
