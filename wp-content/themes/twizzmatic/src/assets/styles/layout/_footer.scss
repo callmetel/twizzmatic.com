@@ -161,6 +161,14 @@
 					align-items: center;
 					justify-content: center;
 					@include size(70px, 70px);
+
+					svg {
+						width: 50%;
+
+						path {
+							fill: $gray;
+						}
+					}
 				}
 			}
 		}

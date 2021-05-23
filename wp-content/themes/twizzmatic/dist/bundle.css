@@ -881,6 +881,10 @@ body.nav-open #main-header .nav-wrapper {
           justify-content: center;
       width: 70px;
       height: 70px; }
+      #main-footer .footer form.is-search-form button.is-search-submit .is-search-icon svg {
+        width: 50%; }
+        #main-footer .footer form.is-search-form button.is-search-submit .is-search-icon svg path {
+          fill: #bbb2a6; }
 
 input[type="submit"]:not(.is-search-submit),
 button[type="submit"]:not(.is-search-submit),
