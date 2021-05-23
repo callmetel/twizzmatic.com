@@ -1041,7 +1041,8 @@ button:not(.is-search-submit) {
         display: block;
         width: 100%; }
     .page-bio #bio-content .row .col.col-1 .bio-quote {
-      margin-top: 100px; }
+      margin-top: 100px;
+      padding-right: 10px; }
   .page-bio #bio-content .row .col.col-2 .bio-title {
     font-size: 150px; }
     @media screen and (min-width: 641px) {
