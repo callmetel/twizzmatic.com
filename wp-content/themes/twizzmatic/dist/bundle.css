@@ -836,8 +836,7 @@ body.nav-open #main-header .nav-wrapper {
       margin: 0 0 0 auto !important; } }
 
 #main-footer .section.footer {
-  padding: 100px 0 45px;
-  background: #030506; }
+  padding: 100px 0 45px; }
   @media screen and (max-width: 767px) {
     #main-footer .section.footer .row {
       display: -ms-flexbox;
