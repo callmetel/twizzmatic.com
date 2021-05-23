@@ -84,8 +84,13 @@ h6 {
     content: '';
     display: block;
     width: 30%;
-    height: 20px;
+    height: 10px;
     background: $yellow;
-    margin-top: 50px;
+    margin-top: 20px;
+
+    @include media($lg-mobile) {
+      height: 20px;
+      margin-top: 50px;
+    }
   }
 }

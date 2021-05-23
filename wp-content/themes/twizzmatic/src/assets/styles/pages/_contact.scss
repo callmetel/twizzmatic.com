@@ -1,5 +1,8 @@
  #contact-info {
- 	margin-bottom: 50px;
+
+ 	@include media($sm-tablet) {
+		margin-bottom: 50px;
+	}
 
  	.contact-email {
  		text-align: right;
@@ -44,7 +47,11 @@
  				width: 75%;
  				height: 2px;
  				background: $white;
- 				margin: 100px 0 0 auto;
+ 				margin: 50px 0 0 auto;
+
+ 				@include media($sm-tablet) {
+	 				margin: 100px 0 0 auto;
+	 			}
  			}
  		}
  	}
