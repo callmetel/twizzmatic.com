@@ -1,7 +1,7 @@
 <?php 
 	// Get ACF Fields
 	
-	$title = get_field('title');
+	$title = the_field('title');
 ?>
 
 <section id="contact-banner">
