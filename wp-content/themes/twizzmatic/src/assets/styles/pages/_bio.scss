@@ -1,4 +1,52 @@
 
 .page-bio {
 	background: $white!important;
+
+	#bio-content {
+		.row {
+			@include media($lg-mobile) {
+				display: grid;
+				grid-template-columns: 26% 70%;
+				column-gap: 4%;
+			}
+
+			.col {
+
+				&.col-1 {
+					display: none;
+
+					@include media($lg-mobile) {
+						display: block;
+					}
+				}
+
+				&.col-2 {
+					.bio-title {
+
+						@include media($lg-mobile) {
+					    font-size: 200px;
+					  }
+
+					  @include media($md-tablet) {
+					    font-size: 250px;
+					  }
+
+						
+						@include media($md-tablet) {
+							font-size: 300px; 
+						}
+
+						@include media($md-tablet) {
+							font-size: 300px; 
+						}
+
+						@include media($desktop) {
+							font-size: 400px; 
+						}
+					}	
+				}
+			}
+		}
+	}
+
 }

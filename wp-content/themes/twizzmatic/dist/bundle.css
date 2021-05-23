@@ -544,7 +544,8 @@ h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
   font-family: "Morganite", sans-serif;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.04em; }
 
 .title--large {
   font-family: "Morganite", sans-serif;
@@ -986,6 +987,34 @@ button:not(.is-search-submit) {
 
 .page-bio {
   background: #ffffff !important; }
+  @media screen and (min-width: 641px) {
+    .page-bio #bio-content .row {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 26% 70%;
+          grid-template-columns: 26% 70%;
+      -moz-column-gap: 4%;
+           column-gap: 4%; } }
+  .page-bio #bio-content .row .col.col-1 {
+    display: none; }
+    @media screen and (min-width: 641px) {
+      .page-bio #bio-content .row .col.col-1 {
+        display: block; } }
+  @media screen and (min-width: 641px) {
+    .page-bio #bio-content .row .col.col-2 .bio-title {
+      font-size: 200px; } }
+  @media screen and (min-width: 981px) {
+    .page-bio #bio-content .row .col.col-2 .bio-title {
+      font-size: 250px; } }
+  @media screen and (min-width: 981px) {
+    .page-bio #bio-content .row .col.col-2 .bio-title {
+      font-size: 300px; } }
+  @media screen and (min-width: 981px) {
+    .page-bio #bio-content .row .col.col-2 .bio-title {
+      font-size: 300px; } }
+  @media screen and (min-width: 1100px) {
+    .page-bio #bio-content .row .col.col-2 .bio-title {
+      font-size: 400px; } }
 
 #contact-info {
   margin-bottom: 20px; }
