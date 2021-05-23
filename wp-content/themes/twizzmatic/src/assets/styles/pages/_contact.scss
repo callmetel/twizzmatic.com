@@ -1,0 +1,29 @@
+ #contact-info {
+ 	.contact-email {
+ 		text-align: right;
+ 		color: $white;
+ 		font-family: $bfont;
+ 		font-weight: bold;
+ 		text-transform: uppercase;
+ 		letter-spacing: 0.04em;
+
+ 		.email-title {
+ 			display: block;
+ 			font-size: 20px;
+
+ 			@include media($sm-tablet) {
+ 				font-size: 40px;
+ 			}
+ 		}
+
+ 		.email-address {
+ 			display: block;
+ 			font-size: 30px;
+ 			color: $yellow;
+
+ 			@include media($sm-tablet) {
+ 				font-size: 70px;
+ 			}
+ 		}
+ 	}
+ }
