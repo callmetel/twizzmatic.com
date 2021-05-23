@@ -716,7 +716,7 @@ body:not(.page-shop) #woofc-count {
       -ms-flex-align: center;
           align-items: center; }
       #main-header .nav-wrapper nav .menu-main-menu-container {
-        margin: 45px auto auto 0;
+        margin: 0 auto auto 0;
         text-align: left;
         width: 80vw; }
         @media screen and (min-width: 768px) {
