@@ -3,7 +3,7 @@
 
   // Get ACF Fields
   
-  $title = the_title();
+  $title = get_the_title();
   $post_content = get_field('content');
   $image = get_field('main_image');
   $link = get_field('link');
@@ -13,7 +13,7 @@
     <div class="post-content">
       <h2 class="post-title">
         <a href="<?php echo $link; ?>" target="_blank">
-          <?php // echo $title; ?>
+          <?php echo $title; ?>
         </a>
       </h2>
       <?php // SHOW YOAST PRIMARY CATEGORY, OR FIRST CATEGORY
