@@ -40,15 +40,16 @@
 
 	// Narrow Desktop Breakpoints
 
-		$tablet: new-breakpoint(min-width 981px);
+		$tablet: new-breakpoint(min-width 768px max-width 1024px);
+		$max-tablet: new-breakpoint(max-width 1024px);
 		$sm-tablet: new-breakpoint(min-width 768px);
+		$md-tablet: new-breakpoint(min-width 981px);
+		
+		$phablet: new-breakpoint(min-width 641px max-width 980px);
+		$max-phablet: new-breakpoint(max-width 980px);
 
-		$xs-mobile: new-breakpoint(max-width 480px);
-		$xs-sm-mobile: new-breakpoint(max-width 650px);
-		$sm-mobile: new-breakpoint(max-width 767px);
-		$md-mobile: new-breakpoint(max-width 992px);
-		$mobile-short: new-breakpoint(min-width 580px max-height 550px);
-		$mobile: new-breakpoint(max-width 1024px);
-		$lg-mobile: new-breakpoint(max-width 1200px);
+		$lg-mobile: new-breakpoint(min-width 641px);
+		$md-mobile: new-breakpoint(max-width 600px);
+		$mobile: new-breakpoint(max-width 480px);
 		
 		

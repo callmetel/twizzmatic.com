@@ -8,6 +8,73 @@ body {
 	}
 }
 
+.row {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid > br {
+  display: none!important;
+}
+
+@include media($sm-tablet) {
+	.grid.grid-2 {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .grid.grid-3 {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .grid.grid-4 {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@include media($md-tablet) {
+  .grid.grid-4 {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .grid.grid-5 {
+    grid-template-columns: repeat(5,1fr);
+  }
+}
+
+@include media($max-phablet) {
+  .grid.grid-5 {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .grid.grid-5 > :nth-child(5n) {
+    grid-area: auto/1/auto/3;
+  }
+}
+
+@include media($phablet) {
+  .grid.grid-4 {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+.gap-10 {
+  grid-gap: 10px;
+}
+
+.gap-20 {
+  grid-gap: 20px;
+}
+
+.gap-30 {
+  grid-gap: 30px;
+}
+
+.gap-40 {
+  grid-gap: 40px;
+}
+
 // Fullscreen
 .fs {	
 	@include size(100vw,100vh);
