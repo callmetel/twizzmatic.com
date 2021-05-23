@@ -813,7 +813,7 @@ body.nav-open #main-header .nav-wrapper {
       #main-footer .prefooter .row .col .yikes-mailchimp-container form input::placeholder, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea::placeholder {
         color: #bbb2a6;
         font-weight: 400; }
-      #main-footer .prefooter .row .col .yikes-mailchimp-container form input.yikes-easy-mc-submit-button, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea.yikes-easy-mc-submit-button {
+      #main-footer .prefooter .row .col .yikes-mailchimp-container form input.signup-submit, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea.signup-submit {
         width: auto !important;
         margin: 0 !important; }
 
