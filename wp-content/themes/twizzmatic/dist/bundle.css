@@ -716,11 +716,12 @@ body:not(.page-shop) #woofc-count {
       -ms-flex-align: center;
           align-items: center; }
       #main-header .nav-wrapper nav .menu-main-menu-container {
-        margin: auto;
-        text-align: left; }
+        margin: 35px auto auto 0;
+        text-align: left;
+        width: 80vw; }
         @media screen and (min-width: 768px) {
           #main-header .nav-wrapper nav .menu-main-menu-container {
-            width: 80vw; } }
+            margin: auto; } }
         #main-header .nav-wrapper nav .menu-main-menu-container #header-menu {
           list-style: none;
           padding: 0 !important; }
@@ -728,7 +729,8 @@ body:not(.page-shop) #woofc-count {
             font-family: "Morganite", sans-serif;
             text-transform: uppercase;
             font-size: 100px;
-            line-height: .8; }
+            line-height: .8;
+            letter-spacing: 0.02em; }
             @media screen and (min-width: 768px) {
               #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item {
                 font-size: 150px; } }

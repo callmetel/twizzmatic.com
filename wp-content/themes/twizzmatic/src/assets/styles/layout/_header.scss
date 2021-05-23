@@ -78,11 +78,12 @@
 			align-items: center;
 
 			.menu-main-menu-container {
-				margin: auto;
+				margin: 35px auto auto 0;
 				text-align: left;
+				width: 80vw;
 
 				@include media($sm-tablet) {
-					width: 80vw;
+					margin: auto;
 				}
 
 
@@ -95,6 +96,7 @@
 						text-transform: uppercase;
 						font-size: 100px;
 						line-height: .8;
+						letter-spacing: 0.02em;
 
 						@include media($sm-tablet) {
 							font-size: 150px;

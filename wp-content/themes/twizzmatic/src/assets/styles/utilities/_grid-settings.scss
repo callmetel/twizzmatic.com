@@ -49,8 +49,8 @@
 		$phablet: new-breakpoint(min-width 641px max-width 980px);
 		$max-phablet: new-breakpoint(max-width 980px);
 
+		$max-mobile: new-breakpoint(min-width 767px);
 		$lg-mobile: new-breakpoint(min-width 641px);
 		$md-mobile: new-breakpoint(max-width 600px);
-		$mobile: new-breakpoint(max-width 480px);
-		
+		$mobile: new-breakpoint(max-width 480px);		
 		
