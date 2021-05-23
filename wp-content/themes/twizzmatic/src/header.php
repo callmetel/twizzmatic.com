@@ -38,6 +38,7 @@
           <nav class="nav" role="navigation">
             <?php 
               wp_nav_menu( array(
+                  'menu' => 'Main Menu',
                   'menu_id' => 'header-menu',
               ) ); 
             ?>
