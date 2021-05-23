@@ -24,7 +24,7 @@
         </a>
       </p>
       <div class="post-excerpt">
-        <?php echo $main_category; ?>
+        <?php print_r($main_category); ?>
       </div>
     </div>
   </article>
