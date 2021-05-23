@@ -13,7 +13,7 @@
     <div class="post-content">
       <h2 class="post-title">
         <a href="<?php echo $link; ?>" target="_blank">
-          <?php echo $title; ?>
+          <?php // echo $title; ?>
         </a>
       </h2>
       <?php // SHOW YOAST PRIMARY CATEGORY, OR FIRST CATEGORY
