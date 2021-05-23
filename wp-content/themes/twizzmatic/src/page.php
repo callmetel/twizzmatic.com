@@ -11,7 +11,7 @@
 
       // Bio Page
       elseif(is_page(37)):
-        get_template_part( 'partials/contact/content');
+        get_template_part( 'partials/bio/content');
       else:
     ?>
       <section>
