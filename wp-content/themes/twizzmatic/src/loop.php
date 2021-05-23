@@ -4,7 +4,7 @@
   // Get ACF Fields
   
   $title = the_title();\
-  $content = get_field('content');
+  $post_content = get_field('content');
   $image = get_field('main_image');
   $link = get_field('link');
 ?>
@@ -57,6 +57,9 @@
           }  
         }
       ?>
+      <div class="post-excerpt">
+        <?php echo $post_content; ?>
+      </div>
     </div>
   </article>
 <?php endwhile; ?>
