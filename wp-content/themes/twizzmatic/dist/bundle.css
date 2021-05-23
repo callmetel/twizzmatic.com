@@ -545,7 +545,8 @@ h1, h2, h3, h4,
   font-family: "Morganite", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0.04em;
+  line-height: .8; }
 
 .title--large {
   font-family: "Morganite", sans-serif;
