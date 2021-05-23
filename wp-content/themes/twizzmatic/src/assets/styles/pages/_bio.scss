@@ -4,7 +4,7 @@
 
 	#bio-content {
 		.row {
-			@include media($lg-mobile) {
+			@include media($md-tablet) {
 				display: grid;
 				grid-template-columns: 26% 70%;
 				column-gap: 4%;
@@ -15,7 +15,7 @@
 				&.col-1 {
 					display: none;
 
-					@include media($lg-mobile) {
+					@include media($md-tablet) {
 						display: block;
 					}
 
@@ -31,29 +31,17 @@
 					}
 
 					.bio-quote {
-						margin-top: 50px;
-
-						@include media($lg-mobile) {
-							margin-top: 100px;
-						}
+						margin-top: 100px;
 					}
 				}
 
 				&.col-2 {
 					.bio-title {
+						font-size: 150px;
 
 						@include media($lg-mobile) {
-					    font-size: 200px;
-					  }
-
-					  @include media($md-tablet) {
 					    font-size: 250px;
 					  }
-
-						
-						@include media($md-tablet) {
-							font-size: 300px; 
-						}
 
 						@include media($md-tablet) {
 							font-size: 300px; 

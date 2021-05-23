@@ -1020,7 +1020,7 @@ button:not(.is-search-submit) {
 
 .page-bio {
   background: #ffffff !important; }
-  @media screen and (min-width: 641px) {
+  @media screen and (min-width: 981px) {
     .page-bio #bio-content .row {
       display: -ms-grid;
       display: grid;
@@ -1030,7 +1030,7 @@ button:not(.is-search-submit) {
            column-gap: 4%; } }
   .page-bio #bio-content .row .col.col-1 {
     display: none; }
-    @media screen and (min-width: 641px) {
+    @media screen and (min-width: 981px) {
       .page-bio #bio-content .row .col.col-1 {
         display: block; } }
     .page-bio #bio-content .row .col.col-1 .bio-image {
@@ -1041,25 +1041,18 @@ button:not(.is-search-submit) {
         display: block;
         width: 100%; }
     .page-bio #bio-content .row .col.col-1 .bio-quote {
-      margin-top: 50px; }
-      @media screen and (min-width: 641px) {
-        .page-bio #bio-content .row .col.col-1 .bio-quote {
-          margin-top: 100px; } }
-  @media screen and (min-width: 641px) {
-    .page-bio #bio-content .row .col.col-2 .bio-title {
-      font-size: 200px; } }
-  @media screen and (min-width: 981px) {
-    .page-bio #bio-content .row .col.col-2 .bio-title {
-      font-size: 250px; } }
-  @media screen and (min-width: 981px) {
-    .page-bio #bio-content .row .col.col-2 .bio-title {
-      font-size: 300px; } }
-  @media screen and (min-width: 981px) {
-    .page-bio #bio-content .row .col.col-2 .bio-title {
-      font-size: 300px; } }
-  @media screen and (min-width: 1100px) {
-    .page-bio #bio-content .row .col.col-2 .bio-title {
-      font-size: 400px; } }
+      margin-top: 100px; }
+  .page-bio #bio-content .row .col.col-2 .bio-title {
+    font-size: 150px; }
+    @media screen and (min-width: 641px) {
+      .page-bio #bio-content .row .col.col-2 .bio-title {
+        font-size: 250px; } }
+    @media screen and (min-width: 981px) {
+      .page-bio #bio-content .row .col.col-2 .bio-title {
+        font-size: 300px; } }
+    @media screen and (min-width: 1100px) {
+      .page-bio #bio-content .row .col.col-2 .bio-title {
+        font-size: 400px; } }
   .page-bio #bio-content .row .col.col-2 .full-bio {
     padding-top: 50px; }
     @media screen and (min-width: 641px) {
