@@ -121,18 +121,16 @@
 				}
 			}
 		}
-	}
 
-	form.is-search-form {
+		form.is-search-form {
 
-		&.is-form-style-3 {
-			> label {
-				width: calc(100% - 70px)!important;
+			&.is-form-style-3 {
+				label {
+					width: calc(100% - 70px)!important;
+				}
 			}
-		}
 
-		input {
-			&.is-search-input {
+			input.is-search-input {
 				background: #161f25!important;
 				border-color:#161f25!important;
 				color: $white;
@@ -147,10 +145,8 @@
 					color: $gray;
 				}
 			}
-		}
 
-		button {
-			&.is-search-submit {
+			button.is-search-submit {
 				background: #161f25!important;
 				border-color:#161f25!important;
 				border-radius: 0!important;

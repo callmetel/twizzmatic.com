@@ -844,46 +844,43 @@ body.nav-open #main-header .nav-wrapper {
         padding-right: 0; }
       #main-footer .footer #footer-menu .menu-item a {
         color: #bbb2a6; }
-
-#main-footer form.is-search-form.is-form-style-3 > label {
-  width: calc(100% - 70px) !important; }
-
-#main-footer form.is-search-form input.is-search-input {
-  background: #161f25 !important;
-  border-color: #161f25 !important;
-  color: #ffffff;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  height: 70px; }
-  #main-footer form.is-search-form input.is-search-input::-moz-placeholder {
-    color: #bbb2a6; }
-  #main-footer form.is-search-form input.is-search-input:-ms-input-placeholder {
-    color: #bbb2a6; }
-  #main-footer form.is-search-form input.is-search-input::placeholder {
-    color: #bbb2a6; }
-
-#main-footer form.is-search-form button.is-search-submit {
-  background: #161f25 !important;
-  border-color: #161f25 !important;
-  border-radius: 0 !important;
-  width: 70px;
-  height: 70px; }
-  #main-footer form.is-search-form button.is-search-submit .is-search-icon {
-    padding: 0 !important;
+  #main-footer .footer form.is-search-form.is-form-style-3 label {
+    width: calc(100% - 70px) !important; }
+  #main-footer .footer form.is-search-form input.is-search-input {
     background: #161f25 !important;
     border-color: #161f25 !important;
-    color: #bbb2a6;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    color: #ffffff;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    height: 70px; }
+    #main-footer .footer form.is-search-form input.is-search-input::-moz-placeholder {
+      color: #bbb2a6; }
+    #main-footer .footer form.is-search-form input.is-search-input:-ms-input-placeholder {
+      color: #bbb2a6; }
+    #main-footer .footer form.is-search-form input.is-search-input::placeholder {
+      color: #bbb2a6; }
+  #main-footer .footer form.is-search-form button.is-search-submit {
+    background: #161f25 !important;
+    border-color: #161f25 !important;
+    border-radius: 0 !important;
     width: 70px;
     height: 70px; }
+    #main-footer .footer form.is-search-form button.is-search-submit .is-search-icon {
+      padding: 0 !important;
+      background: #161f25 !important;
+      border-color: #161f25 !important;
+      color: #bbb2a6;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      width: 70px;
+      height: 70px; }
 
 input[type="submit"]:not(.is-search-submit),
 button[type="submit"]:not(.is-search-submit),
