@@ -795,9 +795,10 @@ body.nav-open #main-header .nav-wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    margin-top: 50px; }
     #main-footer .prefooter .row .col .social-icons .icon {
-      margin-right: 10px; }
+      margin-right: 20px; }
       #main-footer .prefooter .row .col .social-icons .icon:first-of-type {
         margin-left: 0; }
       #main-footer .prefooter .row .col .social-icons .icon:last-of-type {
