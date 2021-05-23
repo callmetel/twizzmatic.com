@@ -845,9 +845,12 @@ body.nav-open #main-header .nav-wrapper {
       #main-footer .footer #footer-menu .menu-item a {
         color: #bbb2a6; }
 
-input[type="submit"],
-button[type="submit"],
-button {
+#main-footer form.is-search-form > label {
+  background: #161f25 !important; }
+
+input[type="submit"]:not(.is-search-submit),
+button[type="submit"]:not(.is-search-submit),
+button:not(.is-search-submit) {
   background: #ffa62b;
   color: #1b262c;
   font-family: "Space Grotesk", sans-serif;

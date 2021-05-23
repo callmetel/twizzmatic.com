@@ -3,20 +3,22 @@
 input[type="submit"],
 button[type="submit"],
 button {
-	background: $yellow;
-	color: $darkgreen;
-	font-family: $bfont;
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: 0.06em;
-	text-align: center;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: uppercase;
-	padding: 20px;
-	min-width: 200px;
-	max-width: 100%;
-	appearance: none!important;
-	border: 0!important;
+	&:not(.is-search-submit) {
+		background: $yellow;
+		color: $darkgreen;
+		font-family: $bfont;
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 0.06em;
+		text-align: center;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		padding: 20px;
+		min-width: 200px;
+		max-width: 100%;
+		appearance: none!important;
+		border: 0!important;
+	}
 }
