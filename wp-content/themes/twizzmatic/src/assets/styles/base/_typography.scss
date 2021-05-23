@@ -59,3 +59,33 @@ h5 {
 h6 {
 
 }
+
+.title--large {
+  font-family: $hfont;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: .8;
+  letter-spacing: 0.04em;
+
+  @include media($lg-mobile) {
+    font-size: 200px;
+  }
+
+  @include media($md-tablet) {
+    font-size: 250px;
+  }
+
+  @include media($md-desktop) {
+    font-size: 300px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 20px;
+    background: $yellow;
+    margin-top: 50px;
+  }
+}
