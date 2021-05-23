@@ -555,6 +555,26 @@ h1, h2, h3, h4,
   letter-spacing: 0.04em;
   line-height: .8; }
 
+.page-title {
+  font-family: "Morganite", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: .8;
+  letter-spacing: 0.04em;
+  display: table;
+  position: relative; }
+  @media screen and (min-width: 641px) {
+    .page-title {
+      font-size: 132px; } }
+  .page-title:after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 8px;
+    background: #ffa62b;
+    margin-top: 20px; }
+
 .title--large {
   font-family: "Morganite", sans-serif;
   font-weight: bold;

@@ -71,6 +71,30 @@ h6 {
 
 }
 
+.page-title {
+  font-family: $hfont;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: .8;
+  letter-spacing: 0.04em;
+  display: table;
+  position: relative;
+
+  @include media($lg-mobile) {
+    font-size: 132px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 8px;
+    background: $yellow;
+    margin-top: 20px;
+  }
+}
+
 .title--large {
   font-family: $hfont;
   font-weight: bold;
