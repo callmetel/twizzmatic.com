@@ -105,7 +105,6 @@
 			background: $darkergreen;
 
 			.row {
-				background: $white;
 				@include media($max-mobile) {
 					display: flex;
     			flex-direction: column-reverse;
