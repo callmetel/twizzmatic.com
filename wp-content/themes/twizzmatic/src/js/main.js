@@ -18,7 +18,7 @@
     	$(window).resize(function(){
     		var $headerHeight = $('#main-header').outerHeight();
 
-    		$('main,#main-header.nav-wrapper').css('padding-top', $headerHeight+10);
+    		$('main,#main-header .nav-wrapper').css('padding-top', $headerHeight+10);
     	}).resize();
 
   });
