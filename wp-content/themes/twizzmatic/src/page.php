@@ -4,7 +4,7 @@
     <?php
       if(is_front_page()):
         get_template_part( 'partials/home/banner', 'slider' );
-      elseif(is_page(34)): // Contact Page
+      else if(is_page(34)): // Contact Page
         get_template_part( 'partials/contact/content');
       else:
     ?>
