@@ -62,8 +62,12 @@
 						p {
 							font-weight: $light;
 							letter-spacing: 0.04em;
-							font-size: 18px;
+							font-size: 15px;
 							line-height: 2;
+
+							@include media($lg-mobile) {
+						    font-size: 18px;
+						  }
 
 							&:not(:last-of-type) {
 								padding-bottom: 40px;
