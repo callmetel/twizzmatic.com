@@ -991,14 +991,22 @@ button:not(.is-search-submit) {
       #contact-info .contact-email .email-title {
         font-size: 40px; } }
   #contact-info .contact-email .email-address {
-    display: block;
+    display: table;
     font-size: 30px;
-    color: #ffa62b; }
+    color: #ffa62b;
+    position: relative; }
     @media screen and (min-width: 768px) {
       #contact-info .contact-email .email-address {
         font-size: 50px; } }
     @media screen and (min-width: 1025px) {
       #contact-info .contact-email .email-address {
         font-size: 70px; } }
+    #contact-info .contact-email .email-address:after {
+      content: '';
+      display: block;
+      width: 70%;
+      height: 2px;
+      background: #ffffff;
+      margin-top: 100px; }
 
 /*# sourceMappingURL=bundle.css.map*/
