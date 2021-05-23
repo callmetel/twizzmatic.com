@@ -791,6 +791,17 @@ body.nav-open #main-header .nav-wrapper {
     @media screen and (min-width: 1100px) {
       #main-footer .prefooter .row .col .prefooter-title {
         font-size: 240px; } }
+  #main-footer .prefooter .row .col .social-icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    #main-footer .prefooter .row .col .social-icons .icon {
+      margin-right: 10px; }
+      #main-footer .prefooter .row .col .social-icons .icon:first-of-type {
+        margin-left: 0; }
+      #main-footer .prefooter .row .col .social-icons .icon:last-of-type {
+        margin-right: auto; }
   #main-footer .prefooter .row .col .yikes-mailchimp-container {
     width: 100%; }
     #main-footer .prefooter .row .col .yikes-mailchimp-container .edit-link {
