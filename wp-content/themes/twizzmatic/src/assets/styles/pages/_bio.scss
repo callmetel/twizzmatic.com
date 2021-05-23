@@ -29,6 +29,14 @@
 							width: 100%;
 						}
 					}
+
+					.bio-quote {
+						padding-top: 50px;
+
+						@include media($lg-mobile) {
+							padding-top: 100px;
+						}
+					}
 				}
 
 				&.col-2 {

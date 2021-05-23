@@ -590,7 +590,7 @@ h1, h2, h3, h4,
   text-transform: uppercase;
   font-size: 100px;
   color: #1b262c;
-  line-height: .8;
+  line-height: 1.1;
   letter-spacing: 0.04em; }
   .pull-quote:before {
     content: '';
@@ -1040,6 +1040,11 @@ button:not(.is-search-submit) {
       .page-bio #bio-content .row .col.col-1 .bio-image img {
         display: block;
         width: 100%; }
+    .page-bio #bio-content .row .col.col-1 .bio-quote {
+      padding-top: 50px; }
+      @media screen and (min-width: 641px) {
+        .page-bio #bio-content .row .col.col-1 .bio-quote {
+          padding-top: 100px; } }
   @media screen and (min-width: 641px) {
     .page-bio #bio-content .row .col.col-2 .bio-title {
       font-size: 200px; } }
