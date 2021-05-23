@@ -96,4 +96,29 @@
 			}
 		}
 	}
+
+	.footer {
+		margin-top: 100px;
+
+		#footer-menu {
+			list-style: none;
+			padding: 0;
+
+			.menu-item {
+				display: inline;
+				padding-right: 20px;
+				font-size: 14px;
+				letter-spacing: .14em;
+				text-transform: uppercase;
+
+				&:last-of-type {
+					padding-right: 0;
+				}
+
+				a {
+					color: $gray;
+				}
+			}
+		}
+	}
 }

@@ -828,6 +828,22 @@ body.nav-open #main-header .nav-wrapper {
       width: auto !important;
       margin: 0 0 0 auto !important; }
 
+#main-footer .footer {
+  margin-top: 100px; }
+  #main-footer .footer #footer-menu {
+    list-style: none;
+    padding: 0; }
+    #main-footer .footer #footer-menu .menu-item {
+      display: inline;
+      padding-right: 20px;
+      font-size: 14px;
+      letter-spacing: .14em;
+      text-transform: uppercase; }
+      #main-footer .footer #footer-menu .menu-item:last-of-type {
+        padding-right: 0; }
+      #main-footer .footer #footer-menu .menu-item a {
+        color: #bbb2a6; }
+
 input[type="submit"],
 button[type="submit"],
 button {
