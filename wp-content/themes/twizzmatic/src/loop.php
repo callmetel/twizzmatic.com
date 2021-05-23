@@ -52,15 +52,11 @@
             echo '<a href="'.$category_link.'">'.htmlspecialchars($category_display).'</a>';
             echo '</p>';
               } else {
-            echo '<span class="post-category">'.htmlspecialchars($category_display).'</span>';
+            echo '<p class="post-category">'.htmlspecialchars($category_display).'</p>';
               }
-          }
-          
+          }  
         }
-        ?>
-      <div class="post-excerpt">
-        <?php echo $content; ?>
-      </div>
+      ?>
     </div>
   </article>
 <?php endwhile; ?>
