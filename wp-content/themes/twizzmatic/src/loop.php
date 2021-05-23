@@ -3,7 +3,7 @@
 
   // Get ACF Fields
   
-  $title = the_title();\
+  $title = the_title();
   $post_content = get_field('content');
   $image = get_field('main_image');
   $link = get_field('link');
