@@ -81,6 +81,7 @@ h6 {
   letter-spacing: 0.04em;
   display: table;
   position: relative;
+  margin-bottom: 50px;
 
   @include media($lg-mobile) {
     font-size: 132px;
@@ -92,7 +93,7 @@ h6 {
     width: 30%;
     height: 8px;
     background: $yellow;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 }
 
@@ -122,7 +123,7 @@ h6 {
     width: 30%;
     height: 10px;
     background: $yellow;
-    margin: 25px 0 50px;
+    margin-top: 20px;
 
     @include media($lg-mobile) {
       height: 20px;

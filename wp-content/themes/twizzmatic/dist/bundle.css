@@ -564,7 +564,8 @@ h1, h2, h3, h4,
   line-height: .8;
   letter-spacing: 0.04em;
   display: table;
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px; }
   @media screen and (min-width: 641px) {
     .page-title {
       font-size: 132px; } }
@@ -574,7 +575,7 @@ h1, h2, h3, h4,
     width: 30%;
     height: 8px;
     background: #ffa62b;
-    margin-top: 20px; }
+    margin-top: 25px; }
 
 .title--large {
   font-family: "Morganite", sans-serif;
@@ -598,7 +599,7 @@ h1, h2, h3, h4,
     width: 30%;
     height: 10px;
     background: #ffa62b;
-    margin: 25px 0 50px; }
+    margin-top: 20px; }
     @media screen and (min-width: 641px) {
       .title--large:after {
         height: 20px;
