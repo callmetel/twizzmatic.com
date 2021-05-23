@@ -799,7 +799,9 @@ body.nav-open #main-header .nav-wrapper {
       text-transform: uppercase;
       border: 0;
       border-bottom: 5px solid #ffffff;
-      letter-spacing: 0.08em; }
+      letter-spacing: 0.08em;
+      padding: 20px;
+      margin-bottom: 50px; }
       #main-footer .prefooter .row .col .yikes-mailchimp-container form input::-moz-placeholder, #main-footer .prefooter .row .col .yikes-mailchimp-container form textarea::-moz-placeholder {
         color: #bbb2a6;
         font-weight: 400; }
