@@ -1041,10 +1041,10 @@ button:not(.is-search-submit) {
         display: block;
         width: 100%; }
     .page-bio #bio-content .row .col.col-1 .bio-quote {
-      padding-top: 50px; }
+      margin-top: 50px; }
       @media screen and (min-width: 641px) {
         .page-bio #bio-content .row .col.col-1 .bio-quote {
-          padding-top: 100px; } }
+          margin-top: 100px; } }
   @media screen and (min-width: 641px) {
     .page-bio #bio-content .row .col.col-2 .bio-title {
       font-size: 200px; } }
