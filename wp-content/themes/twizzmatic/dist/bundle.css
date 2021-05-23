@@ -845,8 +845,15 @@ body.nav-open #main-header .nav-wrapper {
       #main-footer .footer #footer-menu .menu-item a {
         color: #bbb2a6; }
 
-#main-footer form.is-search-form > label {
-  background: #161f25 !important; }
+#main-footer form.is-search-form input.is-search-input {
+  background: #161f25 !important;
+  color: #ffffff; }
+  #main-footer form.is-search-form input.is-search-input::-moz-placeholder {
+    color: #bbb2a6; }
+  #main-footer form.is-search-form input.is-search-input:-ms-input-placeholder {
+    color: #bbb2a6; }
+  #main-footer form.is-search-form input.is-search-input::placeholder {
+    color: #bbb2a6; }
 
 input[type="submit"]:not(.is-search-submit),
 button[type="submit"]:not(.is-search-submit),

@@ -124,8 +124,15 @@
 	}
 
 	form.is-search-form {
-		> label {
-			background: #161f25!important;
+		input {
+			&.is-search-input {
+				background: #161f25!important;
+				color: $white;
+
+				&::placeholder {
+					color: $gray;
+				}
+			}
 		}
 	}
 }
