@@ -12,9 +12,7 @@
     <a href="<?php echo $link; ?>" target="_blank" class="post-image" style="background-image:url('<?php echo $image; ?>')"></a>
     <div class="post-content">
       <h2 class="post-title">
-        <a href="<?php echo $link; ?>" target="_blank">
-          <?php echo $title; ?>
-        </a>
+        <a href="<?php echo $link; ?>" target="_blank"><?php echo $title; ?></a>
       </h2>
       <?php // SHOW YOAST PRIMARY CATEGORY, OR FIRST CATEGORY
         $category = get_the_category();
