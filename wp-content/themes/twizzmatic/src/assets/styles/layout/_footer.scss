@@ -127,7 +127,13 @@
 		input {
 			&.is-search-input {
 				background: #161f25!important;
+				border-color:#161f25!important;
 				color: $white;
+				font-family: $bfont;
+				font-size: 16px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				padding: 20px;
 
 				&::placeholder {
 					color: $gray;

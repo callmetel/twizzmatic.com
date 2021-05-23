@@ -847,7 +847,13 @@ body.nav-open #main-header .nav-wrapper {
 
 #main-footer form.is-search-form input.is-search-input {
   background: #161f25 !important;
-  color: #ffffff; }
+  border-color: #161f25 !important;
+  color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 20px; }
   #main-footer form.is-search-form input.is-search-input::-moz-placeholder {
     color: #bbb2a6; }
   #main-footer form.is-search-form input.is-search-input:-ms-input-placeholder {
