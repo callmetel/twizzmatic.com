@@ -48,6 +48,19 @@
 
 				.yikes-mailchimp-container {
 					width: 100%;
+
+					form {
+						input {
+							background: $trans;
+							color: $white;
+							text-transform: uppercase;
+							border: 0;
+
+							&::placeholder {
+								color: $gray;
+							}
+						}
+					}
 				}
 			}
 		}

@@ -793,5 +793,16 @@ body.nav-open #main-header .nav-wrapper {
         font-size: 240px; } }
   #main-footer .prefooter .row .col .yikes-mailchimp-container {
     width: 100%; }
+    #main-footer .prefooter .row .col .yikes-mailchimp-container form input {
+      background: transparent;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 0; }
+      #main-footer .prefooter .row .col .yikes-mailchimp-container form input::-moz-placeholder {
+        color: #bbb2a6; }
+      #main-footer .prefooter .row .col .yikes-mailchimp-container form input:-ms-input-placeholder {
+        color: #bbb2a6; }
+      #main-footer .prefooter .row .col .yikes-mailchimp-container form input::placeholder {
+        color: #bbb2a6; }
 
 /*# sourceMappingURL=bundle.css.map*/
