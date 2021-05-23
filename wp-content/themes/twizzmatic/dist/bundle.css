@@ -598,7 +598,7 @@ h1, h2, h3, h4,
     width: 30%;
     height: 10px;
     background: #ffa62b;
-    margin-top: 20px; }
+    margin: 25px 0 50px; }
     @media screen and (min-width: 641px) {
       .title--large:after {
         height: 20px;
