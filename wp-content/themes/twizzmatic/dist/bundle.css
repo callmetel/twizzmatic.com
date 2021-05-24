@@ -1092,6 +1092,9 @@ button:not(.is-search-submit) {
       .page-bio #bio-content .row .col.col-2 .full-bio p:not(:last-of-type) {
         padding-bottom: 40px; }
 
+.posts-filter form.search {
+  display: none !important; }
+
 #contact-info {
   margin-bottom: 20px; }
   @media screen and (min-width: 768px) {
