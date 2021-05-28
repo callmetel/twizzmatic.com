@@ -115,6 +115,21 @@
 			  }
 			}
 
+			.post-category {
+				display: block;
+				line-height: 1;
+				padding: 0;
+				margin-bottom: 50px;
+				font-size: 16px;
+
+				a {
+					color: $yellow;
+					font-weight: bold;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+				}
+			}
+
 			.post-excerpt {
 				color: $white;
 				text-transform: uppercase;
