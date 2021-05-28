@@ -66,8 +66,8 @@ if (function_exists('register_sidebar')) {
 	    'noposts' => __('No older posts found', 'twentyfifteen'),
 	));	
 
-	wp_register_script( 'load-more-js', get_template_directory_uri() . '/assets/js/loadmore.js');
-	wp_enqueue_script( 'load-more-js' );
+	// wp_register_script( 'load-more-js', get_template_directory_uri() . '/assets/js/loadmore.js');
+	// wp_enqueue_script( 'load-more-js' );
 
 	function more_post_ajax(){
 
