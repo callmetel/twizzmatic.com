@@ -1143,9 +1143,16 @@ button:not(.is-search-submit) {
   .posts-grid article {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0; }
+    grid-gap: 0;
+    grid-auto-rows: 1fr; }
+    @media screen and (min-width: 981px) {
+      .posts-grid article {
+        -ms-grid-columns: (1fr)[2];
+            grid-template-columns: repeat(2, 1fr); } }
+    .posts-grid article .post-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
     .posts-grid article .post-content {
       padding: 75px 16%;
       background: #006a71; }

@@ -68,8 +68,18 @@
 
 	article {
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
 		grid-gap: 0;
+		grid-auto-rows: 1fr;
+
+		@include media($md-tablet) {
+			grid-template-columns: repeat(2,1fr);
+		}
+
+		.post-image {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 
 		.post-content {
 			padding: 75px 16%;
