@@ -49,7 +49,7 @@
             success: function(data){
                 var $data = $(data);
                 if($data.length){
-                    $(".posts-grid").append($data);
+                    $("#ajax_posts").append($data);
                     $(".load-more-btn").attr("disabled",false);
                 } else{
                     $(".load-more-btn").attr("disabled",true);
@@ -66,7 +66,7 @@
       $(".load-more-btn").on("click",function(){ // When btn is pressed.
         $(".load-more-btn").attr("disabled",true); // Disable the button, temp.
         load_posts();
-        $(this).insertAfter('.posts-grid'); // Move the 'Load More' button to the end of the the newly added posts.
+        $(this).insertAfter('#ajax_posts'); // Move the 'Load More' button to the end of the the newly added posts.
       });
 
   });

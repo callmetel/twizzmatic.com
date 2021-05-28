@@ -1,4 +1,4 @@
-<div class="posts-grid">
+<div id="ajax_posts" class="posts-grid">
   <?php
     $postsPerPage = 3;
     $args = array(
