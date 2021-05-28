@@ -1169,7 +1169,8 @@ button:not(.is-search-submit) {
         color: #ffffff;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        font-weight: 300; }
+        font-weight: 300;
+        line-height: 2; }
         .posts-grid article .post-content .post-excerpt p {
           color: #ffffff;
           text-transform: uppercase;
