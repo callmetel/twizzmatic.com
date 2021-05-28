@@ -21,5 +21,14 @@
     		$('main,#main-header .nav-wrapper').css('padding-top', $headerHeight+10);
     	}).resize();
 
+    /*****************************
+    ** Filter News Click Function
+    ******************************/
+
+      $('.posts-filter .filter-title').click(function(e){
+        e.preventDefault();
+        $('.filter-content').slideToggle(500);
+      });
+
   });
 }(jQuery));

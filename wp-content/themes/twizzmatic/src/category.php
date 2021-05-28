@@ -4,7 +4,7 @@
     <section>
       <div class="row">
         <div class="col">
-          <h1 class="page-title"><?php esc_html_e('Category: ', 'wp-blank'); single_cat_title(); ?></h1>
+          <h1 class="page-title"><?php single_cat_title(); ?></h1>
           <?php 
             get_template_part( 'partials/news/filter');
           ?>

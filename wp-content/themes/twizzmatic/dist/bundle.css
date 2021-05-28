@@ -1097,7 +1097,7 @@ button:not(.is-search-submit) {
   text-align: right;
   position: relative;
   margin-bottom: 25px; }
-  .posts-filter .sidebar h4 {
+  .posts-filter .filter-title {
     font-family: "Space Grotesk", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
@@ -1108,8 +1108,9 @@ button:not(.is-search-submit) {
     -ms-flex-align: center;
         align-items: center;
     margin-right: 0;
-    text-align: right; }
-    .posts-filter .sidebar h4:before {
+    text-align: right;
+    cursor: pointer; }
+    .posts-filter .filter-title:before {
       content: '+';
       font-family: "Space Grotesk", sans-serif;
       color: #ffffff;
@@ -1117,8 +1118,22 @@ button:not(.is-search-submit) {
       display: block;
       margin-left: auto;
       margin-right: 10px; }
-  .posts-filter form.search {
-    display: none !important; }
+  .posts-filter .filter-content {
+    display: none; }
+    .posts-filter .filter-content .filter-dropdown h4 {
+      display: none !important; }
+    .posts-filter .filter-content .filter-dropdown form.search {
+      display: none !important; }
+    .posts-filter .filter-content .filter-dropdown select#cat {
+      padding: 10px 30px;
+      font-size: 18px;
+      font-weight: 300;
+      border-radius: 30px;
+      border: 2px solid #fff;
+      margin-top: 15px;
+      transition: all .3s ease-in-out; }
+      .posts-filter .filter-content .filter-dropdown select#cat:focus, .posts-filter .filter-content .filter-dropdown select#cat :active {
+        border-color: #ffa62b; }
 
 #contact-info {
   margin-bottom: 20px; }
