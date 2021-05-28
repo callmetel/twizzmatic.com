@@ -91,9 +91,44 @@
   !*** ./src/js/main.js ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/eslint-loader/index.js):\nError: No ESLint configuration found.\n    at Config.getLocalConfigHierarchy (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:255:39)\n    at Config.getConfigHierarchy (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:179:43)\n    at Config.getConfigVector (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:286:21)\n    at Config.getConfig (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:329:29)\n    at processText (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/cli-engine.js:163:33)\n    at CLIEngine.executeOnText (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/cli-engine.js:620:17)\n    at lint (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint-loader/index.js:278:17)\n    at Object.module.exports (/Users/duncac02/Sites/Personal/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint-loader/index.js:273:21)");
+"use strict";
+
+
+(function main($) {
+  $(function () {
+    // Include your main JS generic code here
+
+    /*********************
+    ** Nav Menu Functions
+    **********************/
+
+    $('.nav-menu-trigger').click(function (e) {
+      e.preventDefault();
+      $('body').toggleClass('nav-open locked');
+    });
+
+    /*********************
+    ** Main Body Functions
+    **********************/
+
+    $(window).resize(function () {
+      var $headerHeight = $('#main-header').outerHeight();
+
+      $('main,#main-header .nav-wrapper').css('padding-top', $headerHeight + 10);
+    }).resize();
+
+    /*****************************
+    ** Filter News Click Function
+    ******************************/
+
+    $('.posts-filter .filter-title').click(function (e) {
+      e.preventDefault();
+      $('.filter-content').slideToggle(500);
+    });
+  });
+})(jQuery);
 
 /***/ })
 
