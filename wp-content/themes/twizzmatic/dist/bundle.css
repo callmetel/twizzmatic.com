@@ -1146,6 +1146,35 @@ button:not(.is-search-submit) {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 0; }
+    .posts-grid article .post-content {
+      padding: 75px 16%;
+      background: #006a71; }
+      .posts-grid article .post-content .post-title {
+        font-family: "Morganite", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 100px;
+        line-height: .8;
+        letter-spacing: 0.04em;
+        display: table;
+        position: relative;
+        margin-bottom: 50px; }
+        @media screen and (min-width: 641px) {
+          .posts-grid article .post-content .post-title {
+            font-size: 132px; } }
+        @media screen and (min-width: 981px) {
+          .posts-grid article .post-content .post-title {
+            font-size: 160px; } }
+      .posts-grid article .post-content .post-excerpt {
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 300; }
+        .posts-grid article .post-content .post-excerpt p {
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-weight: 300; }
 
 #contact-info {
   margin-bottom: 20px; }

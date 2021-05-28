@@ -70,5 +70,44 @@
 		display: grid;
 		grid-template-columns: repeat(2,1fr);
 		grid-gap: 0;
+
+		.post-content {
+			padding: 75px 16%;
+			background: $green;
+
+			.post-title {
+				font-family: $hfont;
+			  font-weight: bold;
+			  text-transform: uppercase;
+			  font-size: 100px;
+			  line-height: .8;
+			  letter-spacing: 0.04em;
+			  display: table;
+			  position: relative;
+			  margin-bottom: 50px;
+
+			  @include media($lg-mobile) {
+			    font-size: 132px;
+			  }
+
+			  @include media($md-tablet) {
+			  	font-size: 160px;
+			  }
+			}
+
+			.post-excerpt {
+				color: $white;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-weight: $light;
+
+				p {
+					color: $white;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+					font-weight: $light;
+				}
+			}
+		}
 	}
 }
