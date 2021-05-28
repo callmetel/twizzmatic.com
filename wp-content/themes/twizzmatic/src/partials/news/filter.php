@@ -4,8 +4,9 @@
 	<div class="filter-content">
 		<?php
 			// Create filter buttons to trigger on desktop & hide select dropdown
-			
-			echo '<div class="filter-dropdown">'.get_sidebar().'</div>'; 
-		?>	
+		?>
+		<div class="filter-dropdown">
+			<?php get_sidebar(); ?>
+		</div>
 	</div>
 </div>
