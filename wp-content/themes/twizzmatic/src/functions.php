@@ -61,7 +61,7 @@ if (function_exists('register_sidebar')) {
 
 
 	// Add Load More to News/Blog Page
-	wp_localize_script( 'load-more-js', 'ajax_posts', array(
+	wp_localize_script( 'main', 'ajax_posts', array(
 	    'ajaxurl' => admin_url( 'admin-ajax.php' ),
 	    'noposts' => __('No older posts found', 'twentyfifteen'),
 	));	
