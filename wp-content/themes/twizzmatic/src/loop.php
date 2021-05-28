@@ -1,6 +1,14 @@
 <div class="posts-grid">
-  <?php 
-    if (have_posts()): while (have_posts()) : the_post();
+  <?php
+    $postsPerPage = 3;
+    $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => $postsPerPage,
+    );
+
+    $loop = new WP_Query($args);
+
+    while ($loop->have_posts()) : $loop->the_post();
 
     // Get ACF Fields
     
@@ -62,5 +70,9 @@
       </div>
     </article>
   <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
   <?php endif; ?>
+  <div id="load-more">
+    <button class="load-more-btn">Load More</button>
+  </div>
 </div>

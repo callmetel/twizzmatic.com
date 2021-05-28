@@ -9,6 +9,7 @@
             get_template_part( 'partials/news/filter');
             get_template_part('loop');
             get_template_part('pagination'); 
+            // Implement Load More Pagination Feature
           ?>
         </div>
       </div>
