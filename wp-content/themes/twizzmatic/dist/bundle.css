@@ -1153,6 +1153,9 @@ button:not(.is-search-submit) {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
+      @media screen and (max-width: 980px) {
+        .posts-grid article .post-image {
+          height: 300px; } }
     .posts-grid article .post-content {
       padding: 75px 16%;
       background: #006a71; }
