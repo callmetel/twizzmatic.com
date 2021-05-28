@@ -50,6 +50,11 @@
 				border: 2px solid #fff;
 				margin-top: 15px;
 				transition: all .3s ease-in-out;
+				width: 100%;
+
+				@include media($md-tablet) {
+					width: auto;
+				}
 
 				&:focus,:active {
 					border-color: $yellow;

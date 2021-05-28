@@ -1131,7 +1131,11 @@ button:not(.is-search-submit) {
       border-radius: 30px;
       border: 2px solid #fff;
       margin-top: 15px;
-      transition: all .3s ease-in-out; }
+      transition: all .3s ease-in-out;
+      width: 100%; }
+      @media screen and (min-width: 981px) {
+        .posts-filter .filter-content .filter-dropdown select#cat {
+          width: auto; } }
       .posts-filter .filter-content .filter-dropdown select#cat:focus, .posts-filter .filter-content .filter-dropdown select#cat :active {
         border-color: #ffa62b; }
 
