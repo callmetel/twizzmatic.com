@@ -1,4 +1,6 @@
 
+// Posts Filter
+
 .posts-filter {
 	display: block;
 	text-align: right;
@@ -54,5 +56,19 @@
 				}
 			}
 		}
+	}
+}
+
+// Posts Grid
+
+.posts-grid {
+	display: grid;
+	grid-row-gap: 35px;
+	grid-auto-rows: 1fr;
+
+	article {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 0;
 	}
 }
