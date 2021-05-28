@@ -1147,7 +1147,8 @@ button:not(.is-search-submit) {
   .posts-grid article {
     display: -ms-grid;
     display: grid;
-    grid-gap: 0; }
+    grid-gap: 0;
+    cursor: pointer; }
     @media screen and (min-width: 981px) {
       .posts-grid article {
         -ms-grid-columns: (1fr)[2];

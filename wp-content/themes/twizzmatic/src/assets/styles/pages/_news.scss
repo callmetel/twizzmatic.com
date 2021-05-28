@@ -74,6 +74,7 @@
 	article {
 		display: grid;
 		grid-gap: 0;
+		cursor: pointer;
 
 		@include media($md-tablet) {
 			grid-template-columns: repeat(2,1fr);
