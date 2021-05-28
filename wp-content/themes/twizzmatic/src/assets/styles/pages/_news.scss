@@ -1,5 +1,28 @@
 
 .posts-filter {
+	display: block;
+	text-align: right;
+	position: relative;
+	margin-bottom: 25px;
+
+	.sidebar {
+		h4 {
+			font-family: $bfont;
+			color: $white;
+			text-transform: uppercase;
+			font-size: 18px;
+			letter-spacing: 0.04em;
+
+			&:before {
+				content: '+';
+				font-family: $bfont;
+				color: $white;
+				font-size: 28px;
+				display: inline;
+			}
+		}
+	}
+
 	form.search {
 		display: none!important;
 	}
