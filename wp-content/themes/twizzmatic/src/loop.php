@@ -71,7 +71,6 @@
     </article>
   <?php endwhile; ?>
   <?php wp_reset_postdata(); ?>
-  <?php endif; ?>
   <div id="load-more">
     <button class="load-more-btn">Load More</button>
   </div>
