@@ -69,10 +69,10 @@
 	article {
 		display: grid;
 		grid-gap: 0;
-		grid-auto-rows: 1fr;
 
 		@include media($md-tablet) {
 			grid-template-columns: repeat(2,1fr);
+			grid-auto-rows: 1fr;
 		}
 
 		.post-image {
