@@ -1191,10 +1191,7 @@ button:not(.is-search-submit) {
           color: #ffa62b;
           font-weight: bold;
           text-transform: uppercase;
-          letter-spacing: 0.1em;
-          transition: color .2s ease-in-out; }
-          .posts-grid article .post-content .post-category a:hover {
-            color: #ffffff; }
+          letter-spacing: 0.1em; }
       .posts-grid article .post-content .post-excerpt {
         color: #ffffff;
         text-transform: uppercase;
