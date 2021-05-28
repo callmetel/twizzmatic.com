@@ -5,7 +5,9 @@
     	<div class="row">
         <div class="col">
 		      <h1 class="page-title"><?php single_post_title(); ?></h1>
-		      <div class="posts-filter"><?php get_sidebar(); ?></div>
+	      	<?php 
+	      		get_template_part( 'partials/news/filter');
+	      	?>
 		      <div class="posts-grid">
 		      	<?php get_template_part('loop'); ?>	
 		      </div>

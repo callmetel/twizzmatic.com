@@ -1102,13 +1102,21 @@ button:not(.is-search-submit) {
     color: #ffffff;
     text-transform: uppercase;
     font-size: 18px;
-    letter-spacing: 0.04em; }
+    letter-spacing: 0.04em;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-right: 0;
+    text-align: right; }
     .posts-filter .sidebar h4:before {
       content: '+';
       font-family: "Space Grotesk", sans-serif;
       color: #ffffff;
       font-size: 28px;
-      display: inline; }
+      display: block;
+      margin-left: auto;
+      margin-right: 10px; }
   .posts-filter form.search {
     display: none !important; }
 
