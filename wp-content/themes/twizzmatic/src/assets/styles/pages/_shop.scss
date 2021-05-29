@@ -10,6 +10,13 @@ body.page-shop {
 			grid-template-columns: repeat(3,1fr);
 			grid-gap: 0px;
 		}
+
+		li.product {
+
+			&:before {
+				display: none;
+			}
+		}
 	}
 
 }
