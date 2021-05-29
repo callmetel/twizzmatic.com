@@ -1222,9 +1222,9 @@ body.page-shop {
     body.page-shop ul.products li.product {
       padding: 35px;
       margin: 0; }
-      body.page-shop ul.products li.product:nth-of-type(even) {
-        background: #1b262c; }
       body.page-shop ul.products li.product:nth-of-type(odd) {
+        background: #1b262c; }
+      body.page-shop ul.products li.product:nth-of-type(even) {
         background: #141d23; }
 
 #contact-info {

@@ -71,4 +71,8 @@ if (function_exists('register_sidebar')) {
 	function woocommerce_custom_product_add_to_cart_text() {
 	    return __( 'Buy Now', 'woocommerce' );
 	}
+
+	// Disable Single Product Pages
+	remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
 ?>
