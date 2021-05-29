@@ -9,8 +9,11 @@ body.page-shop {
 		grid-auto-rows: 1fr;
 
 		@include media($lg-mobile) {
+			grid-template-columns: repeat(2,1fr);
+		}
+
+		@include media($md-tablet) {
 			grid-template-columns: repeat(3,1fr);
-			grid-gap: 0px;
 		}
 
 		&:before {
@@ -75,6 +78,8 @@ body.page-shop {
 				letter-spacing: 0.12em;
 				font-size: 16px;
 				padding-top: 25px;
+				line-height: 1.25;
+				text-align: center;
 			}
 		}
 	}

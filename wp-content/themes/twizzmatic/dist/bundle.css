@@ -1221,9 +1221,12 @@ body.page-shop {
     grid-auto-rows: 1fr; }
     @media screen and (min-width: 641px) {
       body.page-shop ul.products {
+        -ms-grid-columns: (1fr)[2];
+            grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (min-width: 981px) {
+      body.page-shop ul.products {
         -ms-grid-columns: (1fr)[3];
-            grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0px; } }
+            grid-template-columns: repeat(3, 1fr); } }
     body.page-shop ul.products:before {
       display: none; }
     body.page-shop ul.products:after {
@@ -1278,7 +1281,9 @@ body.page-shop {
         text-transform: uppercase;
         letter-spacing: 0.12em;
         font-size: 16px;
-        padding-top: 25px; }
+        padding-top: 25px;
+        line-height: 1.25;
+        text-align: center; }
 
 #contact-info {
   margin-bottom: 20px; }
