@@ -5,6 +5,8 @@ body.page-shop {
 
 	ul.products {
 		display: grid;
+		grid-gap: 0px;
+		grid-auto-rows: 1fr;
 
 		@include media($lg-mobile) {
 			grid-template-columns: repeat(3,1fr);
@@ -20,8 +22,13 @@ body.page-shop {
 		}
 
 		li.product {
-			padding: 35px;
+			padding: 75px 35px 35px;
 			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			position: relative;
 
 			&:nth-of-type(odd) {
 				background: $darkgreen;
@@ -29,6 +36,17 @@ body.page-shop {
 
 			&:nth-of-type(even) {
 				background: $darkgreen2;
+			}
+
+			.add_to_cart_button {
+				@include position(absolute, top 0 left 0);
+				text-transform: uppercase;
+			}
+
+			.woocommerce-loop-product__title {
+				font-family: $bfont;
+				font-weight: $light;
+				text-transform: uppercase;
 			}
 		}
 	}
