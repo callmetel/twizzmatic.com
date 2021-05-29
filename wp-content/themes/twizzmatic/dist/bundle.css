@@ -1254,7 +1254,10 @@ body.page-shop {
         color: #ffffff;
         border: 1px solid #ffffff;
         font-weight: 500;
-        font-size: 14px; }
+        font-size: 14px;
+        line-height: 1;
+        border-radius: 0;
+        padding: 5px 8px; }
       body.page-shop ul.products li.product .woocommerce-loop-product__title {
         font-family: "Space Grotesk", sans-serif;
         font-weight: 300;
