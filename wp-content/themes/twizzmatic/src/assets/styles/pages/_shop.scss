@@ -3,6 +3,14 @@ body.page-shop {
 	background: rgb(16,22,27);
 	background: linear-gradient(0deg, rgba(16,22,27,1) 0%, rgba(22,31,37,1) 35%, rgba(255,166,43,1) 65%, rgba(255,166,43,1) 100%);
 
+	.woocommerce-result-count {
+		display: none;
+	}
+
+	.woocommerce-ordering {
+		display: none;
+	}
+
 	ul.products {
 		display: grid;
 		grid-template-columns: repeat(1,1fr);
