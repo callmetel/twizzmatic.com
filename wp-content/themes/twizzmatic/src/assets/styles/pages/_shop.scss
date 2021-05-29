@@ -38,6 +38,11 @@ body.page-shop {
 				background: $darkgreen2;
 			}
 
+			img.size-woocommerce_thumbnail {
+		    display: block;
+		    margin: auto 0;
+			}
+
 			.price {
 				@include position(absolute, top 25px right 35px);
 				font-family: $bfont;
@@ -69,7 +74,7 @@ body.page-shop {
 				text-transform: uppercase;
 				letter-spacing: 0.12em;
 				font-size: 16px;
-				padding-top: 10px;
+				padding-top: 20px;
 			}
 		}
 	}

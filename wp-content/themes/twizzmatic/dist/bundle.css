@@ -1244,6 +1244,9 @@ body.page-shop {
         background: #1b262c; }
       body.page-shop ul.products li.product:nth-of-type(even) {
         background: #141d23; }
+      body.page-shop ul.products li.product img.size-woocommerce_thumbnail {
+        display: block;
+        margin: auto 0; }
       body.page-shop ul.products li.product .price {
         top: 25px;
         right: 35px;
@@ -1275,7 +1278,7 @@ body.page-shop {
         text-transform: uppercase;
         letter-spacing: 0.12em;
         font-size: 16px;
-        padding-top: 10px; }
+        padding-top: 20px; }
 
 #contact-info {
   margin-bottom: 20px; }
