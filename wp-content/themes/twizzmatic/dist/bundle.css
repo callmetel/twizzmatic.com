@@ -1207,6 +1207,14 @@ button:not(.is-search-submit) {
 body.page-shop {
   background: #10161b;
   background: linear-gradient(0deg, #10161b 0%, #161f25 35%, #ffa62b 65%, #ffa62b 100%); }
+  body.page-shop ul.products {
+    display: -ms-grid;
+    display: grid; }
+    @media screen and (min-width: 641px) {
+      body.page-shop ul.products {
+        -ms-grid-columns: (1fr)[3];
+            grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0px; } }
 
 #contact-info {
   margin-bottom: 20px; }

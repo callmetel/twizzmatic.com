@@ -2,4 +2,14 @@
 body.page-shop {
 	background: rgb(16,22,27);
 	background: linear-gradient(0deg, rgba(16,22,27,1) 0%, rgba(22,31,37,1) 35%, rgba(255,166,43,1) 65%, rgba(255,166,43,1) 100%);
+
+	ul.products {
+		display: grid;
+
+		@include media($lg-mobile) {
+			grid-template-columns: repeat(3,1fr);
+			grid-gap: 0px;
+		}
+	}
+
 }
