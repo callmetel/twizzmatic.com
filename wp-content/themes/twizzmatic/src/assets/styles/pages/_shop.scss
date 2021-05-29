@@ -39,8 +39,14 @@ body.page-shop {
 			}
 
 			.add_to_cart_button {
-				@include position(absolute, top 0 left 0);
+				@include position(absolute, top 20px left 35px);
 				text-transform: uppercase;
+				margin-top: 0;
+				background: transparent;
+				color: $white;
+				border: 1px solid $white;
+				font-weight: 500;
+				font-size: 14px;
 			}
 
 			.woocommerce-loop-product__title {

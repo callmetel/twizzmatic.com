@@ -22,6 +22,15 @@
 
 @font-face {
     font-family: 'Space Grotesk';
+    src: url('#{$path-font}/SpaceGrotesk-Medium.woff2') format('woff2'),
+        url('#{$path-font}/SpaceGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
     src: url('#{$path-font}/SpaceGrotesk-Bold.woff2') format('woff2'),
         url('#{$path-font}/SpaceGrotesk-Bold.woff') format('woff');
     font-weight: bold;

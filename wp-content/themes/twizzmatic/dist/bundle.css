@@ -521,21 +521,28 @@ template {
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url(static/media/SpaceGrotesk-Light.001a0dee.woff2) format("woff2"), url(static/media/SpaceGrotesk-Light.6b5451a0.woff) format("woff");
+  src: url(static/media/SpaceGrotesk-Light.9568f6db.woff2) format("woff2"), url(static/media/SpaceGrotesk-Light.d677f397.woff) format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url(static/media/SpaceGrotesk-Regular.cd54a361.woff2) format("woff2"), url(static/media/SpaceGrotesk-Regular.eca3adc5.woff) format("woff");
+  src: url(static/media/SpaceGrotesk-Regular.a244ac23.woff2) format("woff2"), url(static/media/SpaceGrotesk-Regular.a62c2cb7.woff) format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url(static/media/SpaceGrotesk-Bold.f226a1c6.woff2) format("woff2"), url(static/media/SpaceGrotesk-Bold.11968971.woff) format("woff");
+  src: url(static/media/SpaceGrotesk-Medium.2dfadc59.woff2) format("woff2"), url(static/media/SpaceGrotesk-Medium.9bde0158.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(static/media/SpaceGrotesk-Bold.43806738.woff2) format("woff2"), url(static/media/SpaceGrotesk-Bold.73004a32.woff) format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
@@ -1238,10 +1245,16 @@ body.page-shop {
       body.page-shop ul.products li.product:nth-of-type(even) {
         background: #141d23; }
       body.page-shop ul.products li.product .add_to_cart_button {
-        top: 0;
-        left: 0;
+        top: 20px;
+        left: 35px;
         position: absolute;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-top: 0;
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        font-weight: 500;
+        font-size: 14px; }
       body.page-shop ul.products li.product .woocommerce-loop-product__title {
         font-family: "Space Grotesk", sans-serif;
         font-weight: 300;
