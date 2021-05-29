@@ -1215,7 +1215,9 @@ body.page-shop {
         -ms-grid-columns: (1fr)[3];
             grid-template-columns: repeat(3, 1fr);
         grid-gap: 0px; } }
-    body.page-shop ul.products li.product:before {
+    body.page-shop ul.products:before {
+      display: none; }
+    body.page-shop ul.products:after {
       display: none; }
 
 #contact-info {

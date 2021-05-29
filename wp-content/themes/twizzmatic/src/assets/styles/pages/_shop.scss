@@ -11,11 +11,16 @@ body.page-shop {
 			grid-gap: 0px;
 		}
 
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			display: none;
+		}
+
 		li.product {
 
-			&:before {
-				display: none;
-			}
 		}
 	}
 
