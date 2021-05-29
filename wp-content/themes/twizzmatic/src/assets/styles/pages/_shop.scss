@@ -38,6 +38,16 @@ body.page-shop {
 				background: $darkgreen2;
 			}
 
+			.price {
+				@include position(absolute, top 25px right 35px);
+				font-family: $bfont;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 1;
+				display: block;
+				color: $white;
+			}
+
 			.add_to_cart_button {
 				@include position(absolute, top 20px left 35px);
 				text-transform: uppercase;

@@ -1244,6 +1244,16 @@ body.page-shop {
         background: #1b262c; }
       body.page-shop ul.products li.product:nth-of-type(even) {
         background: #141d23; }
+      body.page-shop ul.products li.product .price {
+        top: 25px;
+        right: 35px;
+        position: absolute;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1;
+        display: block;
+        color: #ffffff; }
       body.page-shop ul.products li.product .add_to_cart_button {
         top: 20px;
         left: 35px;
