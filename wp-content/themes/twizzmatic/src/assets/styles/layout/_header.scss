@@ -137,6 +137,18 @@ body.light-background {
 	}
 }
 
+body.yellow-background {
+	#main-header {
+		.header-container {
+			.nav-menu-trigger {
+				.bar {
+					color: $white;
+				}
+			}	
+		}
+	}
+}
+
 body.nav-open {
 	#main-header {
 		.nav-menu-trigger {

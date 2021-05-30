@@ -860,6 +860,9 @@ body.light-background #main-header .header-container .nav-menu-trigger .bar {
 body.light-background #main-header .header-container .sound-trigger {
   color: #1b262c; }
 
+body.yellow-background #main-header .header-container .nav-menu-trigger .bar {
+  color: #ffffff; }
+
 body.nav-open #main-header .nav-menu-trigger .bar {
   color: #ffffff !important; }
   body.nav-open #main-header .nav-menu-trigger .bar .open {
