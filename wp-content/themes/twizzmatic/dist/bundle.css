@@ -1077,7 +1077,7 @@ button:not(.is-search-submit) {
           font-size: 230px; } }
       @media screen and (min-width: 1366px) {
         #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-title {
-          font-size: 260px; } }
+          font-size: 16vw; } }
     #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-image {
       display: block;
       width: 40vw;
