@@ -7,15 +7,38 @@
 
 			.featured-slide {
 				position: relative;
+				min-height: 60vw;
+				overflow: hidden;
+				display: none;
+
+				&.active {
+					display: block;
+				}
+
 
 				.slider-title {
 					z-index: 100;
+					font-family: $hfont;
+				  font-weight: bold;
+				  text-transform: uppercase;
+				  font-size: 120px;
+				  line-height: .8;
+				  letter-spacing: 0.04em;
+				  color: $yellow;
+
+				  @include media($lg-mobile) {
+				    font-size: 200px;
+				  }
+
+				  @include media($md-tablet) {
+				    font-size: 230px;
+				  }
 				}
 
 				.slider-image {
 					display: block;
 					@include size(40vw, 60vw);
-					@include position(absolute, top 0 right 0);
+					@include position(absolute, top -80px right 0);
 					background-size: cover;
 					background-position: top center;
 				}
