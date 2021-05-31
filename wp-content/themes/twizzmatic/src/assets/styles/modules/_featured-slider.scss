@@ -26,6 +26,7 @@
 				  line-height: .8;
 				  letter-spacing: 0.04em;
 				  color: $yellow;
+				  max-width: 60%;
 
 				  @include media($lg-mobile) {
 				    font-size: 200px;

@@ -1067,7 +1067,8 @@ button:not(.is-search-submit) {
       font-size: 120px;
       line-height: .8;
       letter-spacing: 0.04em;
-      color: #ffa62b; }
+      color: #ffa62b;
+      max-width: 60%; }
       @media screen and (min-width: 641px) {
         #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-title {
           font-size: 200px; } }
