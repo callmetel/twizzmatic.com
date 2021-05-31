@@ -1,5 +1,6 @@
 
 #featured-slider-wrapper {
+	overflow: hidden;
 
 	#featured-slider {
 
@@ -8,7 +9,6 @@
 			.featured-slide {
 				position: relative;
 				min-height: 60vw;
-				overflow: hidden;
 				display: none;
 
 				&.active {
@@ -17,6 +17,7 @@
 
 
 				.slider-title {
+					position: relative;
 					z-index: 100;
 					font-family: $hfont;
 				  font-weight: bold;
@@ -44,6 +45,7 @@
 				}
 
 				.slider-link {
+					position: relative;
 					z-index: 100;
 				}
 
