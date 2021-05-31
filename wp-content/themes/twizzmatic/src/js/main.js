@@ -30,5 +30,20 @@
         $('.filter-content').slideToggle(500);
       });
 
+    /*****************************
+    ** Featured Slider Functions
+    ******************************/
+
+      function changeSlide(slide) {
+        $('.featured-slide,.slider-indicator').removeClass('active');
+        $('.featured-slide[data-slide="'+slide+'"],.slider-indicator[data-slide="'+slide+'"]').addClass('active');
+      }
+
+      $('.featured-slider .slider-indicator').click(function(e){
+        e.preventDefault();
+        var slide = $(this).attr('data-slide');
+        changeSlide(slide);
+      });
+
   });
 }(jQuery));
