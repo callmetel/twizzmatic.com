@@ -32,7 +32,7 @@
                         <div class="slide featured-slide <?php echo $active_class; ?>" data-slide="<?php echo $slide_counter; ?>">
                             <h2 class="slider-title"><?php echo $title; ?></h2>
                             <div class="slider-image" style="background-image:url('<?php echo $image; ?>')"></div>
-                            <a href="<?php echo $link_url; ?>" class="slider-link"><?php echo $link_title; ?></a>
+                            <a href="<?php echo $link_url; ?>" class="slider-link"><?php echo $link_title; ?><span class="arrow"></span></a>
                             <div class="slider-indicators">
                                 <?php 
                                     $slide_counter2 = 0;
