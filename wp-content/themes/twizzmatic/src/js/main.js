@@ -39,7 +39,7 @@
         $('.featured-slide[data-slide="'+slide+'"],.slider-indicator[data-slide="'+slide+'"]').addClass('active');
       }
 
-      $('.featured-slider .slider-indicator').click(function(e){
+      $('#featured-slider .slider-indicator').click(function(e){
         e.preventDefault();
         var slide = $(this).attr('data-slide');
         changeSlide(slide);
