@@ -1050,6 +1050,22 @@ button:not(.is-search-submit) {
           appearance: none !important;
   border: 0 !important; }
 
+#featured-slider-wrapper #featured-slider .slider-inner .featured-slide {
+  position: relative; }
+  #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-title {
+    z-index: 100; }
+  #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-image {
+    display: block;
+    width: 40vw;
+    height: 60vw;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-size: cover;
+    background-position: top center; }
+  #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-link {
+    z-index: 100; }
+
 .page-bio {
   background: #ffffff !important; }
   @media screen and (min-width: 981px) {
