@@ -1093,7 +1093,8 @@ button:not(.is-search-submit) {
       padding: 18px 75px 18px 18px;
       background: #ffffff;
       color: #1b262c;
-      margin-top: 50px; }
+      margin-top: 50px;
+      display: inline-block; }
       @media screen and (min-width: 641px) {
         #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-link {
           margin-top: 100px; } }
@@ -1104,6 +1105,20 @@ button:not(.is-search-submit) {
         top: 0;
         right: 0;
         position: absolute; }
+        #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-link .arrow:before {
+          content: '';
+          display: block;
+          background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 53.05 94.96272'%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath d='M5.65%2C94.96272a5.67148%2C5.67148%2C0%2C0%2C1-4-1.6%2C5.553%2C5.553%2C0%2C0%2C1%2C0-7.9l37.9-38-37.9-37.9a5.553%2C5.553%2C0%2C0%2C1%2C0-7.9%2C5.64524%2C5.64524%2C0%2C0%2C1%2C7.9-.1l41.9%2C41.9a5.50744%2C5.50744%2C0%2C0%2C1%2C1.6%2C4%2C5.94612%2C5.94612%2C0%2C0%2C1-1.6%2C4l-41.9%2C41.9A5.44387%2C5.44387%2C0%2C0%2C1%2C5.65%2C94.96272Z' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 15px;
+          height: 26px;
+          top: 50%;
+          right: 10px;
+          position: absolute;
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
 .page-bio {
   background: #ffffff !important; }
