@@ -3,7 +3,7 @@
   <main>
     <?php
       if(is_front_page()):
-        get_template_part( 'partials/home/banner', 'slider' );
+        get_template_part( 'partials/global/featured', 'slider' );
 
       // Contact Page
       elseif(is_page(34)):
