@@ -1137,7 +1137,9 @@ button:not(.is-search-submit) {
         background: #ffffff;
         display: block;
         opacity: .1;
-        margin-right: 10px; }
+        margin-right: 10px;
+        transition: all .25s ease-in-out;
+        cursor: pointer; }
         #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-indicators .slider-indicator.active {
           opacity: 1; }
 

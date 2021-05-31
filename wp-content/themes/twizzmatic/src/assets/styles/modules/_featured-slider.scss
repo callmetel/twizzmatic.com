@@ -98,6 +98,8 @@
 						display: block;
 						opacity: .1;
 						margin-right: 10px;
+						transition: all .25s ease-in-out;
+						cursor: pointer;
 
 						&.active {
 							opacity: 1;
