@@ -90,6 +90,7 @@
 					display: flex;
 					align-items: center;
 					margin-top: 50px;
+					cursor: pointer;
 
 					.slider-indicator {
 						@include size(12px,12px);
