@@ -1094,7 +1094,12 @@ button:not(.is-search-submit) {
       background: #ffffff;
       color: #1b262c;
       margin-top: 50px;
-      display: inline-block; }
+      display: inline-block;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1;
+      font-size: 18px;
+      letter-spacing: 0.06em; }
       @media screen and (min-width: 641px) {
         #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-link {
           margin-top: 100px; } }
@@ -1115,7 +1120,7 @@ button:not(.is-search-submit) {
           width: 15px;
           height: 26px;
           top: 50%;
-          right: 10px;
+          right: 16px;
           position: absolute;
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }

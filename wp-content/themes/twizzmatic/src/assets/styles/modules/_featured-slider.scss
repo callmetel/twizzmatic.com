@@ -57,6 +57,11 @@
 					color: $darkgreen;
 					margin-top: 50px;
 					display: inline-block;
+					font-weight: bold;
+					text-transform: uppercase;
+					line-height: 1;
+					font-size: 18px;
+					letter-spacing: 0.06em;
 
 					@include media($lg-mobile) {
 				    margin-top: 100px;
@@ -75,7 +80,7 @@
 							background-position: center;
 							background-repeat: no-repeat;
 							@include size(15px, 26px);
-							@include position(absolute, top 50% right 10px);
+							@include position(absolute, top 50% right 16px);
 							transform: translateY(-50%);
 						}
 					}
