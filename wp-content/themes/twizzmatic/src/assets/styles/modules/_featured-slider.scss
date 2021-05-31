@@ -87,8 +87,9 @@
 				}
 
 				.slider-indicators {
-					display: inline-flex;
+					display: flex;
 					align-items: center;
+					margin-top: 50px;
 
 					.slider-indicator {
 						@include size(12px,12px);
