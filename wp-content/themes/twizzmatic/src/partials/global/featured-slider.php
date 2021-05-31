@@ -23,6 +23,9 @@
 
                         if($slide_counter == 1) {
                             $active_class = 'active';
+                        }
+                        else {
+                            $active_class = null;
                         };
                         
                         ?>
@@ -40,6 +43,9 @@
                                 $slide_counter++;
                                 if($slide_counter == 1) {
                                     $active_class = 'active';
+                                }
+                                else {
+                                    $active_class = null;
                                 };
                                 echo '<a class="slider-indicator '.$active_class.'" data-slide="'.$slide_counter.'"></a>';
                             endforeach;
