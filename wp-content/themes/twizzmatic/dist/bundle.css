@@ -1075,6 +1075,9 @@ button:not(.is-search-submit) {
       @media screen and (min-width: 981px) {
         #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-title {
           font-size: 230px; } }
+      @media screen and (min-width: 1366px) {
+        #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-title {
+          font-size: 260px; } }
     #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-image {
       display: block;
       width: 40vw;

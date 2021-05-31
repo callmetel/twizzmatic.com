@@ -35,6 +35,10 @@
 				  @include media($md-tablet) {
 				    font-size: 230px;
 				  }
+
+				  @include media($md-desktop) {
+				    font-size: 260px;
+				  }
 				}
 
 				.slider-image {
