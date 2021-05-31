@@ -35,16 +35,16 @@
                             <a href="<?php echo $link_url; ?>" class="slider-link"><?php echo $link_title; ?></a>
                             <div class="slider-indicators">
                                 <?php 
-                                    $slide_counter = 0;
+                                    $slide_counter2 = 0;
                                     foreach($slides as $slide):
-                                        $slide_counter++;
-                                        if($slide_counter == 1) {
+                                        $slide_counter2++;
+                                        if($slide_counter2 == 1) {
                                             $active_class = 'active';
                                         }
                                         else {
                                             $active_class = null;
                                         };
-                                        echo '<a class="slider-indicator '.$active_class.'" data-slide="'.$slide_counter.'"></a>';
+                                        echo '<a class="slider-indicator '.$active_class.'" data-slide="'.$slide_counter2.'"></a>';
                                     endforeach;
                                 ?>
                             </div>
