@@ -11,7 +11,7 @@
             $image = get_sub_field('featured_image');
             $title = get_sub_field('featured_title');
             $link  = get_sub_field('featured_link');
-            $link_url = $link['url'],
+            $link_url = $link['url'];
             $link_title = $link['title'];
 
             if($link_title == null || $link_title == '') {
