@@ -33,23 +33,23 @@
                             <h2 class="slider-title"><?php echo $title; ?></h2>
                             <div class="slider-image" style="background-image:url('<?php echo $image; ?>')"></div>
                             <a href="<?php echo $link_url; ?>" class="slider-link"><?php echo $link_title; ?></a>
+                            <div class="slider-indicators">
+                                <?php 
+                                    $slide_counter = 0;
+                                    foreach($slides as $slide):
+                                        $slide_counter++;
+                                        if($slide_counter == 1) {
+                                            $active_class = 'active';
+                                        }
+                                        else {
+                                            $active_class = null;
+                                        };
+                                        echo '<a class="slider-indicator '.$active_class.'" data-slide="'.$slide_counter.'"></a>';
+                                    endforeach;
+                                ?>
+                            </div>
                         </div>
                     <?php endwhile; ?>
-                    </div>
-                    <div class="slider-indicators">
-                        <?php 
-                            $slide_counter = 0;
-                            foreach($slides as $slide):
-                                $slide_counter++;
-                                if($slide_counter == 1) {
-                                    $active_class = 'active';
-                                }
-                                else {
-                                    $active_class = null;
-                                };
-                                echo '<a class="slider-indicator '.$active_class.'" data-slide="'.$slide_counter.'"></a>';
-                            endforeach;
-                        ?>
                     </div>
                     <div class="slider-controls">
                         <a class="slider-control prev"></a>
