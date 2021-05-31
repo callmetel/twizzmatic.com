@@ -52,6 +52,20 @@
 				.slider-link {
 					position: relative;
 					z-index: 100;
+					padding: 18px 75px 18px 18px;
+					background: $white;
+					color: $darkgreen;
+					margin-top: 50px;
+
+					@include media($lg-mobile) {
+				    margin-top: 100px;
+				  }
+
+					.arrow {
+						background: $blue;
+						@include size(50px,100%);
+						@include position(absolute, top 0 right 0);
+					}
 				}
 
 			}
