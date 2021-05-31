@@ -20,9 +20,13 @@
                         if($link_title == null || $link_title == '') {
                             $link_title = 'Learn More';
                         };
+
+                        if($slide_counter == 1) {
+                            $active_class = 'active';
+                        };
                         
                         ?>
-                        <div class="featured-slide" data-slide="<?php echo $slide_counter; ?>">
+                        <div class="featured-slide <?php echo $active_class; ?>" data-slide="<?php echo $slide_counter; ?>">
                             <h2 class="slider-title"><?php echo $title; ?></h2>
                             <div class="slider-image" style="background-image:url('<?php echo $image; ?>')"></div>
                             <a href="<?php echo $link_url; ?>" class="slider-link"><?php echo $link_title; ?></a>
@@ -34,7 +38,10 @@
                             $slide_counter = 0;
                             foreach($slides as $slide):
                                 $slide_counter++;
-                                echo '<a class="slider-indicator" data-slide="'.$slide_counter.'"></a>';
+                                if($slide_counter == 1) {
+                                    $active_class = 'active';
+                                };
+                                echo '<a class="slider-indicator '.$active_class.'" data-slide="'.$slide_counter.'"></a>';
                             endforeach;
                         ?>
                     </div>
