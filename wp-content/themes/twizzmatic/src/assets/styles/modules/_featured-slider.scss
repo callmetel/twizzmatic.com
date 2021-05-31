@@ -86,6 +86,24 @@
 					}
 				}
 
+				.slider-indicators {
+					display: inline-flex;
+					align-items: center;
+
+					.slider-indicator {
+						@include size(12px,12px);
+						border-radius: 100%;
+						background: $white;
+						display: block;
+						opacity: .1;
+						margin-right: 10px;
+
+						&.active {
+							opacity: 1;
+						}
+					}
+				}
+
 			}
 
 		}
