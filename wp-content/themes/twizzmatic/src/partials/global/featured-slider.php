@@ -8,9 +8,9 @@
         <div class="slider-inner">
         <?php while( have_rows('featured_content') ): the_row(); 
             $slide_counter++;
-            $image = get_sub_field('featured_image');
-            $title = get_sub_field('featured_title');
-            $link  = get_sub_field('featured_link');
+            $image = get_sub_field('image');
+            $title = get_sub_field('title');
+            $link  = get_sub_field('link');
             $link_url = $link['url'];
             $link_title = $link['title'];
 
