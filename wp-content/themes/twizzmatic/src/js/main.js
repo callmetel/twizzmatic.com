@@ -58,6 +58,7 @@
           slide = nextSlide;
         }
         changeSlide(slide);
+        
       }
 
       setInterval(autoSlide,5000);
