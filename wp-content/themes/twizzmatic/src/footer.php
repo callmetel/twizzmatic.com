@@ -5,8 +5,7 @@
               <h4 class="prefooter-title">Stay In <span>Touch</span></h4>
               <div class="social-icons">
                 <?php
-                $social_links = get_field("social_links");
-                var_dump($social_links);
+                $social_links = get_field("social_links", "option");
 
                 foreach ($social_links as $link) {
                   echo $link;
