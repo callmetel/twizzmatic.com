@@ -92,7 +92,7 @@ if (function_exists('acf_add_options_page')) {
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false,
-		'position' => "-1"
+		'position' => 0
 	));
 
 	acf_add_options_sub_page(array(
