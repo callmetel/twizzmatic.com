@@ -4,18 +4,15 @@
             <div class="col">
               <h4 class="prefooter-title">Stay In <span>Touch</span></h4>
               <div class="social-icons">
-                <a href="https://instagram.com" target="_blank" class="icon">
-                  <img src="<?php echo get_template_directory_uri() . '/assets/images/icon-instagram.svg'; ?>" width="30" alt="TwizzMatic Instagram">
-                </a>
-                <a href="https://facebook.com" target="_blank" class="icon">
-                  <img src="<?php echo get_template_directory_uri() . '/assets/images/icon-facebook.svg'; ?>" width="30" alt="TwizzMatic Facebook">
-                </a>
-                <a href="https://twitter.com" target="_blank" class="icon">
-                  <img src="<?php echo get_template_directory_uri() . '/assets/images/icon-twitter.svg'; ?>" width="30" alt="TwizzMatic Twitter">
-                </a>
-                <a href="https://youtube.com" target="_blank" class="icon">
-                  <img src="<?php echo get_template_directory_uri() . '/assets/images/icon-youtube.svg'; ?>" width="30" alt="TwizzMatic Youtube">
-                </a>
+                <?php
+                $social_links = get_field("social_links");
+
+                foreach ($social_links as $link) {
+                  $img = strpos("instagram", $link) ? array("src" => "icon-instagram.svg", "alt" => "TwizzMatic Instagram") : (strpos("facebook", $link) ? array("src" => "icon-facebook.svg", "alt" => "TwizzMatic Facebook") : (strpos("twitter", $link) ? array("src" => "icon-twitter.svg", "alt" => "TwizzMatic Twitter") : (strpos("youtube", $link) ? array("src" => "icon-youtube.svg", "alt" => "TwizzMatic Youtube") : "")));
+
+                  echo '<a href="' . $link . '" target="_blank" class="icon"><img src="' . get_template_directory_uri() . '/assets/images/' . $img["src"] . '" width="30" alt="' . $img["alt"] . '"></a>';
+                }
+                ?>
               </div>
             </div>
             <div class="col">
@@ -34,7 +31,8 @@
           </div>
         </div>
       </footer>
-    </div>
-    <?php wp_footer(); ?>
-  </body>
-</html>
+      </div>
+      <?php wp_footer(); ?>
+      </body>
+
+      </html>
