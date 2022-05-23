@@ -1,7 +1,12 @@
- 
 body.page-shop {
-	background: rgb(16,22,27);
-	background: linear-gradient(0deg, rgba(16,22,27,1) 0%, rgba(22,31,37,1) 35%, rgba(255,166,43,1) 65%, rgba(255,166,43,1) 100%);
+	background: rgb(16, 22, 27);
+	background: linear-gradient(
+		0deg,
+		rgba(16, 22, 27, 1) 0%,
+		rgba(22, 31, 37, 1) 35%,
+		rgba(255, 166, 43, 1) 65%,
+		rgba(255, 166, 43, 1) 100%
+	);
 
 	.woocommerce-result-count {
 		display: none;
@@ -13,16 +18,16 @@ body.page-shop {
 
 	ul.products {
 		display: grid;
-		grid-template-columns: repeat(1,1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 0px;
 		grid-auto-rows: 1fr;
 
 		@include media($lg-mobile) {
-			grid-template-columns: repeat(2,1fr);
+			grid-template-columns: repeat(2, 1fr);
 		}
 
 		@include media($md-tablet) {
-			grid-template-columns: repeat(3,1fr);
+			grid-template-columns: repeat(3, 1fr);
 		}
 
 		&:before {
@@ -34,9 +39,9 @@ body.page-shop {
 		}
 
 		li.product {
-			width: 100%!important;
+			width: 100% !important;
 			padding: 75px 35px 35px;
-			margin: 0!important;
+			margin: 0 !important;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -52,8 +57,8 @@ body.page-shop {
 			}
 
 			img.size-woocommerce_thumbnail {
-		    display: block;
-		    margin: auto 0;
+				display: block;
+				margin: auto 0;
 			}
 
 			.price {
@@ -91,7 +96,10 @@ body.page-shop {
 				line-height: 1.25;
 				text-align: center;
 			}
+
+			.wc-quick-view-button {
+				display: none;
+			}
 		}
 	}
-
 }

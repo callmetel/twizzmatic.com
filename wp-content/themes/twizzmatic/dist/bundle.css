@@ -2862,6 +2862,8 @@ body.page-shop {
         padding-top: 25px;
         line-height: 1.25;
         text-align: center; }
+      body.page-shop ul.products li.product .wc-quick-view-button {
+        display: none; }
 
 #contact-info {
   margin-bottom: 20px; }
