@@ -106,12 +106,8 @@ body.page-shop {
 
 .page-cart,
 .page-checkout {
-	#add_payment_method table.cart td,
-	#add_payment_method table.cart th,
-	.woocommerce-cart table.cart td,
-	.woocommerce-cart table.cart th,
-	.woocommerce-checkout table.cart td,
-	.woocommerce-checkout table.cart th {
+	.woocommerce table.shop_table th,
+	.woocommerce table.shop_table td {
 		color: #ffffff;
 	}
 }

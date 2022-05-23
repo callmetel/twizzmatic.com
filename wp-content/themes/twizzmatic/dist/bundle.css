@@ -2865,18 +2865,10 @@ body.page-shop {
       body.page-shop ul.products li.product .wc-quick-view-button {
         display: none; }
 
-.page-cart #add_payment_method table.cart td,
-.page-cart #add_payment_method table.cart th,
-.page-cart .woocommerce-cart table.cart td,
-.page-cart .woocommerce-cart table.cart th,
-.page-cart .woocommerce-checkout table.cart td,
-.page-cart .woocommerce-checkout table.cart th,
-.page-checkout #add_payment_method table.cart td,
-.page-checkout #add_payment_method table.cart th,
-.page-checkout .woocommerce-cart table.cart td,
-.page-checkout .woocommerce-cart table.cart th,
-.page-checkout .woocommerce-checkout table.cart td,
-.page-checkout .woocommerce-checkout table.cart th {
+.page-cart .woocommerce table.shop_table th,
+.page-cart .woocommerce table.shop_table td,
+.page-checkout .woocommerce table.shop_table th,
+.page-checkout .woocommerce table.shop_table td {
   color: #ffffff; }
 
 #contact-info {
