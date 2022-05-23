@@ -167,13 +167,13 @@
 
 		setInterval(autoSlide, 5000);
 
-		var navbar = document.getElementById("main-header");
+		var navbar = $("#main-header");
 
 		window.onscroll = function () {
 			if (window.scrollY > 200) {
-				navbar.classList.add("scrolled animate__animated animate__fadeIn animate__faster");
+				navbar.addClass("scrolled animate__animated animate__fadeIn animate__faster");
 			} else {
-				navbar.classList.remove("scrolled animate__animated animate__fadeIn animate__faster");
+				navbar.removeClass("scrolled animate__animated animate__fadeIn animate__faster");
 			}
 		};
 	});

@@ -92,15 +92,15 @@
 
 		setInterval(autoSlide, 5000);
 
-		const navbar = document.getElementById("main-header");
+		const navbar = $("#main-header");
 
 		window.onscroll = () => {
 			if (window.scrollY > 200) {
-				navbar.classList.add(
+				navbar.addClass(
 					"scrolled animate__animated animate__fadeIn animate__faster"
 				);
 			} else {
-				navbar.classList.remove(
+				navbar.removeClass(
 					"scrolled animate__animated animate__fadeIn animate__faster"
 				);
 			}
