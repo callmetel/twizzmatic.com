@@ -5,6 +5,7 @@
 	@include size(100vw, auto);
 	z-index: 99999;
 	padding-bottom: 30px;
+	transition: background 0.3s ease-in-out;
 
 	&.scrolled {
 		background-color: #090d0f;

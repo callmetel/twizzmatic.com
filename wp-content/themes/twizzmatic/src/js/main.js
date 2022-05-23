@@ -92,17 +92,13 @@
 
 		setInterval(autoSlide, 5000);
 
-		const navbar = $("#main-header");
+		const navbar = document.getElementById("main-header");
 
 		window.onscroll = () => {
-			if (window.scrollY > 200) {
-				navbar.addClass(
-					"scrolled animate__animated animate__fadeIn animate__faster"
-				);
+			if (window.scrollY > 150) {
+				navbar.classList.add("scrolled");
 			} else {
-				navbar.removeClass(
-					"scrolled animate__animated animate__fadeIn animate__faster"
-				);
+				navbar.classList.remove("scrolled");
 			}
 		};
 	});

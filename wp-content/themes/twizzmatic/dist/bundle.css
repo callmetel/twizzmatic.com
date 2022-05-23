@@ -2215,7 +2215,8 @@ section {
   width: 100vw;
   height: auto;
   z-index: 99999;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  transition: background 0.3s ease-in-out; }
   #main-header.scrolled {
     background-color: #090d0f; }
   #main-header .header-container {
