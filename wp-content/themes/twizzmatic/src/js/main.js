@@ -66,7 +66,7 @@
 					.next()
 					.attr("data-slide");
 
-			if (currSlide === $(".featured-slide").is(":last").attr("data-slide")) {
+			if (currSlide === $(".featured-slide:last").attr("data-slide")) {
 				slide = $(".featured-slide:first").attr("data-slide");
 			} else {
 				slide = nextSlide;
