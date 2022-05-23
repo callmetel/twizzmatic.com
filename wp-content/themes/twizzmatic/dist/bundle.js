@@ -170,10 +170,10 @@
 		var navbar = document.getElementById("main-header");
 
 		window.onscroll = function () {
-			if (window.scrollY > 300) {
-				navbar.classList.add("scrolled");
+			if (window.scrollY > 200) {
+				navbar.addClass("scrolled animate__animated animate__fadeIn animate__faster");
 			} else {
-				navbar.classList.remove("scrolled");
+				navbar.removeClass("scrolled animate__animated animate__fadeIn animate__faster");
 			}
 		};
 	});
