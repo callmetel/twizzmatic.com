@@ -165,7 +165,15 @@
 			changeSlide(slide);
 		}
 
-		setInterval(autoSlide, 5000);
+		var setAutoSlide = setInterval(autoSlide, 5000);
+
+		$(".featured-slider .slider-link").hover(function () {
+			// Over
+			clearInterval(setAutoSlide);
+		}, function () {
+			// Out
+			setAutoSlide = setInterval(autoSlide, 5000);
+		});
 
 		var navbar = document.getElementById("main-header");
 
