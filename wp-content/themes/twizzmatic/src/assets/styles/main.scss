@@ -12,8 +12,11 @@
 // #Imports
 
 // Bower
-@import "bower_components/neat/app/assets/stylesheets/neat",
-	"bower_components/animate-css";
+@import "bower_components/neat", "bower_components/animate-css";
+
+// Helpers
+@import "helpers/grid", "helpers/visual-grid", "helpers/new-breakpoint",
+	"helpers/private";
 
 // #Utilities
 @import "utilities/mixins", "utilities/placeholders", "utilities/variables",

@@ -5,66 +5,65 @@
 // Usage:
 // @include size(value, value);
 @mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
+	width: $width;
+	height: $height;
 }
 
 @mixin min($min-width, $min-height: $min-width) {
-  min-width: $min-width;
-  min-height: $min-height;
+	min-width: $min-width;
+	min-height: $min-height;
 }
 
 @mixin max($max-width, $max-height: $max-width) {
-  max-width: $max-width;
-  max-height: $max-height;
+	max-width: $max-width;
+	max-height: $max-height;
 }
 
 @mixin aspect-ratio($width, $height) {
-  // position: relative;
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-  > .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+	// position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 }
-
 
 // #Positioning
 //
 // Usage:
 // @include absolute(value, value, value, value);
 @mixin position($position, $args) {
-  @each $o in top right bottom left {
-    $i: index($args, $o);
+	@each $o in top right bottom left {
+		$i: index($args, $o);
 
-    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number  {
-      #{$o}: nth($args, $i + 1);
-    }
-  }
+		@if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number
+		{
+			#{$o}: nth($args, $i + 1);
+		}
+	}
 
-  position: $position;
+	position: $position;
 }
 
 @mixin absolute($args) {
-  @include position(absolute, $args);
+	@include position(absolute, $args);
 }
 
 @mixin fixed($args) {
-  @include position(fixed, $args);
+	@include position(fixed, $args);
 }
 
 @mixin relative($args) {
-  @include position(relative, $args);
+	@include position(relative, $args);
 }
-
 
 // #Breakpoints
 //
@@ -73,38 +72,36 @@
 //    property: value;
 // }
 @mixin breakpoint($name) {
-  @if map-has-key($breakpoints, $name) {
-    @media #{inspect(map-get($breakpoints, $name))} {
-      @content;
-    }
-  }
-  @else {
-    @warn "Couldn't find a breakpoint named `#{$name}`.";
-  }
+	@if map-has-key($breakpoints, $name) {
+		@media #{inspect(map-get($breakpoints, $name))} {
+			@content;
+		}
+	} @else {
+		@warn "Couldn't find a breakpoint named `#{$name}`.";
+	}
 }
 
 $breakpoints: (
-    "phone":        480px,
-    "phone-wide":   560px,
-    "phablet":      640px,
-    "tablet-small": 768px,
-    "tablet":       980px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "desktop-wide": 1440px
+	"phone": 480px,
+	"phone-wide": 560px,
+	"phablet": 640px,
+	"tablet-small": 768px,
+	"tablet": 980px,
+	"tablet-wide": 1024px,
+	"desktop": 1248px,
+	"desktop-wide": 1440px,
 );
 @mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
-        @if $type == max {
-            $width: $width - 1px;
-        }
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
-    }
+	@if map_has_key($breakpoints, $width) {
+		$width: map_get($breakpoints, $width);
+		@if $type == max {
+			$width: $width - 1px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
 }
-
 
 // #PX-to-REM & Text
 //
@@ -112,64 +109,60 @@ $breakpoints: (
 // @include text(value, value, value, value);
 // @include rem(value);
 @function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
 }
 
 @mixin text($size, $l-height: null, $weight: null, $color: null) {
-  font-size: $size;
-  font-size: calculateRem($size);
-  line-height: $l-height;
-  font-weight: $weight;
-  color: $color;
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: $l-height;
+	font-weight: $weight;
+	color: $color;
 }
 
 @mixin rem($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
+	font-size: $size;
+	font-size: calculateRem($size);
 }
-
-
 
 // #Keyframes
 //
 // Usage:
 // @include keyframe(animation_name);
 @mixin keyframe($animation_name) {
-  @-webkit-keyframes #{$animation_name} {
-    @content;
-  }
+	@-webkit-keyframes #{$animation_name} {
+		@content;
+	}
 
-  @-moz-keyframes #{$animation_name} {
-    @content;
-  }
+	@-moz-keyframes #{$animation_name} {
+		@content;
+	}
 
-  @-o-keyframes #{$animation_name} {
-    @content;
-  }
+	@-o-keyframes #{$animation_name} {
+		@content;
+	}
 
-  @keyframes #{$animation_name} {
-    @content;
-  }
+	@keyframes #{$animation_name} {
+		@content;
+	}
 }
-
 
 // #Object Fit Polyfill
 //
 // Usage:
 // @include object-fit(cover, top right);
-@mixin object-fit($fit: fill, $position: null){
-  -o-object-fit: $fit;
-     object-fit: $fit;
-  @if $position {
-    -o-object-position: $position;
-       object-position: $position;
-    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
-  } @else {
-    font-family: 'object-fit: #{$fit}';
-  }
+@mixin object-fit($fit: fill, $position: null) {
+	-o-object-fit: $fit;
+	object-fit: $fit;
+	@if $position {
+		-o-object-position: $position;
+		object-position: $position;
+		font-family: "object-fit: #{$fit}; object-position: #{$position}";
+	} @else {
+		font-family: "object-fit: #{$fit}";
+	}
 }
-
 
 // #Input Placeholder
 //
@@ -178,11 +171,21 @@ $breakpoints: (
 //    font-size: 18px;
 // }
 @mixin input-placeholder {
-  &.placeholder { @content; }
-  &:-moz-placeholder { @content; }
-  &::-moz-placeholder { @content; }
-  &:-ms-input-placeholder { @content; }
-  &::-webkit-input-placeholder { @content; }
+	&.placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
 }
 
 // #Push auto
@@ -190,18 +193,60 @@ $breakpoints: (
 // Usage:
 // @include push--auto
 @mixin push--auto {
-    margin: { 
-        left: auto;
-        right: auto;
-    }
+	margin: {
+		left: auto;
+		right: auto;
+	}
 }
 
 // #Pseudo
 //
 // Usage:
 // @include pseudo(display, pos, content);
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
-    content: $content;
-    display: $display;
-    position: $pos;
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+
+@mixin media($query: $feature $value $columns, $total-columns: $grid-columns) {
+	@if length($query) == 1 {
+		@media screen and ($default-feature: nth($query, 1)) {
+			$default-grid-columns: $grid-columns;
+			$grid-columns: $total-columns !global;
+			@content;
+			$grid-columns: $default-grid-columns !global;
+		}
+	} @else {
+		$loop-to: length($query);
+		$media-query: "screen and ";
+		$default-grid-columns: $grid-columns;
+		$grid-columns: $total-columns !global;
+
+		@if is-not(is-even(length($query))) {
+			$grid-columns: nth($query, $loop-to) !global;
+			$loop-to: $loop-to - 1;
+		}
+
+		$i: 1;
+		@while $i <= $loop-to {
+			$media-query: $media-query +
+				"(" +
+				nth($query, $i) +
+				": " +
+				nth($query, $i + 1) +
+				") ";
+
+			@if ($i + 1) != $loop-to {
+				$media-query: $media-query + "and ";
+			}
+
+			$i: $i + 2;
+		}
+
+		@media #{$media-query} {
+			@content;
+			$grid-columns: $default-grid-columns !global;
+		}
+	}
 }
