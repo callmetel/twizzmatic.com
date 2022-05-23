@@ -106,6 +106,9 @@ body.page-shop {
 
 .page-cart,
 .page-checkout {
+	h3 {
+		font-size: 40px;
+	}
 	.woocommerce form .form-row .input-text,
 	.woocommerce-page form .form-row .input-text {
 		height: 40px;

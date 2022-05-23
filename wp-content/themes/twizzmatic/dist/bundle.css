@@ -2865,6 +2865,10 @@ body.page-shop {
       body.page-shop ul.products li.product .wc-quick-view-button {
         display: none; }
 
+.page-cart h3,
+.page-checkout h3 {
+  font-size: 40px; }
+
 .page-cart .woocommerce form .form-row .input-text,
 .page-cart .woocommerce-page form .form-row .input-text,
 .page-checkout .woocommerce form .form-row .input-text,
