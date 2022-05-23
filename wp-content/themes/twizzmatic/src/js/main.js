@@ -45,7 +45,9 @@
 			$(".featured-slide,.slider-indicator").removeClass("active");
 			$(".slider-title").removeClass("animate__animated animate__fadeInUpBig");
 			$(".slider-image").removeClass("animate__animated animate__slideInRight");
-			$(".slider-link").removeClass("animate__animated animate__fadeInUp");
+			$(".slider-link").removeClass(
+				"animate__animated animate__fadeInUp animate__delay-1s"
+			);
 			var nextSlide = $(
 				'.featured-slide[data-slide="' +
 					slide +
@@ -63,7 +65,7 @@
 				.addClass("animate__animated animate__slideInRight");
 			nextSlide
 				.find(".slider-link")
-				.addClass("animate__animated animate__fadeInUp");
+				.addClass("animate__animated animate__fadeInUp animate__delay-1s");
 		}
 
 		$("#featured-slider .slider-indicator").click(function (e) {
