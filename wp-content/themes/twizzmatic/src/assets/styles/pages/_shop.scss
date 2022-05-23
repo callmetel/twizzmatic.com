@@ -106,6 +106,16 @@ body.page-shop {
 
 .page-cart,
 .page-checkout {
+	.woocommerce form .form-row .input-text,
+	.woocommerce-page form .form-row .input-text {
+		height: 40px;
+		border: none;
+		padding: 10px;
+		border-radius: 3px;
+	}
+	#customer_details label {
+		color: #ffffff;
+	}
 	.woocommerce table.shop_table th,
 	.woocommerce table.shop_table td {
 		color: #ffffff;

@@ -2865,6 +2865,19 @@ body.page-shop {
       body.page-shop ul.products li.product .wc-quick-view-button {
         display: none; }
 
+.page-cart .woocommerce form .form-row .input-text,
+.page-cart .woocommerce-page form .form-row .input-text,
+.page-checkout .woocommerce form .form-row .input-text,
+.page-checkout .woocommerce-page form .form-row .input-text {
+  height: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 3px; }
+
+.page-cart #customer_details label,
+.page-checkout #customer_details label {
+  color: #ffffff; }
+
 .page-cart .woocommerce table.shop_table th,
 .page-cart .woocommerce table.shop_table td,
 .page-checkout .woocommerce table.shop_table th,
