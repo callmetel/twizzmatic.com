@@ -136,7 +136,13 @@
 
 		function changeSlide(slide) {
 			$(".featured-slide,.slider-indicator").removeClass("active");
-			$('.featured-slide[data-slide="' + slide + '"],.slider-indicator[data-slide="' + slide + '"]').addClass("active");
+			$(".slide-title").removeClass("animate__fadeInUpBig");
+			$(".slide-image").removeClass("animate__slideInRight");
+			var nextSlide = $('.featured-slide[data-slide="' + slide + '"],.slider-indicator[data-slide="' + slide + '"]');
+
+			nextSlide.addClass("active");
+			nextSlide.find("slider-title").addClass("animate__fadeInUpBig");
+			nextSlide.find("slider-image").addClass("animate__slideInRight");
 		}
 
 		$("#featured-slider .slider-indicator").click(function (e) {

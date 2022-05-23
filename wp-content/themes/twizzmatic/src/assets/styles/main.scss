@@ -12,38 +12,21 @@
 // #Imports
 
 // Bower
-@import 
-  'bower_components/neat/app/assets/stylesheets/neat';
+@import "bower_components/neat/app/assets/stylesheets/neat",
+	"bower_components/animate-css";
 
-// #Utiities
-@import
-  'utilities/mixins',
-  'utilities/placeholders',
-  'utilities/variables',
-  'utilities/grid-settings';
+// #Utilities
+@import "utilities/mixins", "utilities/placeholders", "utilities/variables",
+	"utilities/grid-settings";
 
 // #Base
-@import
-  'base/base',
-  'base/normalize',
-  'base/typography',
-  'base/colors';
+@import "base/base", "base/normalize", "base/typography", "base/colors";
 
 // #Layout
-@import
-  'layout/global',
-  'layout/header',
-  'layout/footer';
+@import "layout/global", "layout/header", "layout/footer";
 
 // #Modules
-@import
-  'modules/buttons',
-  'modules/featured-slider',
-  'modules/preloader';
+@import "modules/buttons", "modules/featured-slider", "modules/preloader";
 
 // #Pages
-@import
-  'pages/bio',
-  'pages/news',
-  'pages/shop',
-  'pages/contact';
+@import "pages/bio", "pages/news", "pages/shop", "pages/contact";
