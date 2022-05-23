@@ -91,59 +91,9 @@
   !*** ./src/js/main.js ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-(function main($) {
-  $(function () {
-    // Include your main JS generic code here
-
-    /*********************
-    ** Nav Menu Functions
-    **********************/
-
-    $('.nav-menu-trigger').click(function (e) {
-      e.preventDefault();
-      $('body').toggleClass('nav-open locked');
-    });
-
-    /*********************
-    ** Main Body Functions
-    **********************/
-
-    $(window).resize(function () {
-      var $headerHeight = $('#main-header').outerHeight();
-
-      $('main,#main-header .nav-wrapper').css('padding-top', $headerHeight + 10);
-    }).resize();
-
-    /*****************************
-    ** Filter News Click Function
-    ******************************/
-
-    $('.posts-filter .filter-title').click(function (e) {
-      e.preventDefault();
-      $('.filter-content').slideToggle(500);
-    });
-
-    /*****************************
-    ** Featured Slider Functions
-    ******************************/
-
-    function changeSlide(slide) {
-      $('.featured-slide,.slider-indicator').removeClass('active');
-      $('.featured-slide[data-slide="' + slide + '"],.slider-indicator[data-slide="' + slide + '"]').addClass('active');
-    }
-
-    $('#featured-slider .slider-indicator').click(function (e) {
-      e.preventDefault();
-      var slide = $(this).attr('data-slide');
-      changeSlide(slide);
-    });
-  });
-})(jQuery);
+throw new Error("Module build failed (from ./node_modules/eslint-loader/index.js):\nError: No ESLint configuration found.\n    at Config.getLocalConfigHierarchy (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:255:39)\n    at Config.getConfigHierarchy (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:179:43)\n    at Config.getConfigVector (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:286:21)\n    at Config.getConfig (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/config.js:329:29)\n    at processText (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/cli-engine.js:163:33)\n    at CLIEngine.executeOnText (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint/lib/cli-engine.js:620:17)\n    at lint (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint-loader/index.js:278:17)\n    at Object.module.exports (/Users/tel/Sites/twizzmatic.com/wp-content/themes/twizzmatic/node_modules/eslint-loader/index.js:273:21)");
 
 /***/ })
 

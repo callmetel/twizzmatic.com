@@ -1217,7 +1217,7 @@ button:not(.is-search-submit) {
     text-align: right;
     cursor: pointer; }
     .posts-filter .filter-title:before {
-      content: '+';
+      content: "+";
       font-family: "Space Grotesk", sans-serif;
       color: #ffffff;
       font-size: 28px;
@@ -1237,12 +1237,13 @@ button:not(.is-search-submit) {
       border-radius: 30px;
       border: 2px solid #fff;
       margin-top: 15px;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       width: 100%; }
       @media screen and (min-width: 981px) {
         .posts-filter .filter-content .filter-dropdown select#cat {
           width: auto; } }
-      .posts-filter .filter-content .filter-dropdown select#cat:focus, .posts-filter .filter-content .filter-dropdown select#cat :active {
+      .posts-filter .filter-content .filter-dropdown select#cat:focus,
+      .posts-filter .filter-content .filter-dropdown select#cat :active {
         border-color: #ffa62b; }
 
 .posts-grid {
@@ -1251,32 +1252,42 @@ button:not(.is-search-submit) {
   grid-row-gap: 35px;
   grid-auto-rows: 1fr; }
   .posts-grid article {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
     cursor: pointer; }
     @media screen and (min-width: 981px) {
       .posts-grid article {
-        -ms-grid-columns: (1fr)[2];
-            grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 1fr; } }
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+    @media screen and (min-width: 981px) {
+      .posts-grid article:nth-of-type(odd) {
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
     .posts-grid article .post-image {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
+      @media screen and (min-width: 981px) {
+        .posts-grid article .post-image {
+          width: 35%; } }
       @media screen and (max-width: 980px) {
         .posts-grid article .post-image {
           height: 300px;
           background-position: center top; } }
     .posts-grid article .post-content {
-      padding: 75px 16%;
+      padding: 75px 65px;
       background: #006a71; }
+      @media screen and (min-width: 981px) {
+        .posts-grid article .post-content {
+          width: 65%; } }
       .posts-grid article .post-content .post-title {
         font-family: "Morganite", sans-serif;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 100px;
-        line-height: .8;
+        line-height: 0.8;
         letter-spacing: 0.04em;
         display: table;
         position: relative;

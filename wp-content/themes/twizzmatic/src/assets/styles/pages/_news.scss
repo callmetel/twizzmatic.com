@@ -1,4 +1,3 @@
-
 // Posts Filter
 
 .posts-filter {
@@ -15,12 +14,12 @@
 		letter-spacing: 0.04em;
 		display: flex;
 		align-items: center;
-    margin-right: 0;
-    text-align: right;
-    cursor: pointer;
+		margin-right: 0;
+		text-align: right;
+		cursor: pointer;
 
 		&:before {
-			content: '+';
+			content: "+";
 			font-family: $bfont;
 			color: $white;
 			font-size: 28px;
@@ -35,11 +34,11 @@
 
 		.filter-dropdown {
 			h4 {
-				display: none!important;
+				display: none !important;
 			}
 
 			form.search {
-				display: none!important;
+				display: none !important;
 			}
 
 			select#cat {
@@ -49,14 +48,15 @@
 				border-radius: 30px;
 				border: 2px solid #fff;
 				margin-top: 15px;
-				transition: all .3s ease-in-out;
+				transition: all 0.3s ease-in-out;
 				width: 100%;
 
 				@include media($md-tablet) {
 					width: auto;
 				}
 
-				&:focus,:active {
+				&:focus,
+				:active {
 					border-color: $yellow;
 				}
 			}
@@ -72,19 +72,28 @@
 	grid-auto-rows: 1fr;
 
 	article {
-		display: grid;
-		grid-gap: 0;
+		display: flex;
+		flex-direction: column;
 		cursor: pointer;
 
 		@include media($md-tablet) {
-			grid-template-columns: repeat(2,1fr);
-			grid-auto-rows: 1fr;
+			flex-direction: row;
+		}
+
+		&:nth-of-type(odd) {
+			@include media($md-tablet) {
+				flex-direction: row-reverse;
+			}
 		}
 
 		.post-image {
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+
+			@include media($md-tablet) {
+				width: 35%;
+			}
 
 			@include media($max-phablet) {
 				height: 300px;
@@ -93,27 +102,31 @@
 		}
 
 		.post-content {
-			padding: 75px 16%;
+			padding: 75px 65px;
 			background: $green;
+
+			@include media($md-tablet) {
+				width: 65%;
+			}
 
 			.post-title {
 				font-family: $hfont;
-			  font-weight: bold;
-			  text-transform: uppercase;
-			  font-size: 100px;
-			  line-height: .8;
-			  letter-spacing: 0.04em;
-			  display: table;
-			  position: relative;
-			  margin-bottom: 50px;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 100px;
+				line-height: 0.8;
+				letter-spacing: 0.04em;
+				display: table;
+				position: relative;
+				margin-bottom: 50px;
 
-			  @include media($lg-mobile) {
-			    font-size: 132px;
-			  }
+				@include media($lg-mobile) {
+					font-size: 132px;
+				}
 
-			  @include media($md-tablet) {
-			  	font-size: 160px;
-			  }
+				@include media($md-tablet) {
+					font-size: 160px;
+				}
 			}
 
 			.post-category {
