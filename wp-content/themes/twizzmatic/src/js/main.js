@@ -112,5 +112,11 @@
 				navbar.classList.remove("scrolled");
 			}
 		};
+
+		$(".posts-grid .post-content").click(function (e) {
+			if (e.target.attr("href") === undefined) {
+				window.open($(this).find(".post-title a").attr("href"));
+			}
+		});
 	});
 })(jQuery);
