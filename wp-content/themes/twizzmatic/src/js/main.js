@@ -96,11 +96,11 @@
 
 		window.onscroll = () => {
 			if (window.scrollY > 200) {
-				navbar.addClass(
+				navbar.classList.add(
 					"scrolled animate__animated animate__fadeIn animate__faster"
 				);
 			} else {
-				navbar.removeClass(
+				navbar.classList.remove(
 					"scrolled animate__animated animate__fadeIn animate__faster"
 				);
 			}

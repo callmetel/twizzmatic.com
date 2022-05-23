@@ -171,9 +171,9 @@
 
 		window.onscroll = function () {
 			if (window.scrollY > 200) {
-				navbar.addClass("scrolled animate__animated animate__fadeIn animate__faster");
+				navbar.classList.add("scrolled animate__animated animate__fadeIn animate__faster");
 			} else {
-				navbar.removeClass("scrolled animate__animated animate__fadeIn animate__faster");
+				navbar.classList.remove("scrolled animate__animated animate__fadeIn animate__faster");
 			}
 		};
 	});
