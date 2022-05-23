@@ -1271,7 +1271,7 @@ button:not(.is-search-submit) {
       background-repeat: no-repeat; }
       @media screen and (min-width: 981px) {
         .posts-grid article .post-image {
-          width: 35%; } }
+          width: 50%; } }
       @media screen and (max-width: 980px) {
         .posts-grid article .post-image {
           height: 300px;
@@ -1281,7 +1281,7 @@ button:not(.is-search-submit) {
       background: #006a71; }
       @media screen and (min-width: 981px) {
         .posts-grid article .post-content {
-          width: 65%; } }
+          width: 50%; } }
       .posts-grid article .post-content .post-title {
         font-family: "Morganite", sans-serif;
         font-weight: bold;

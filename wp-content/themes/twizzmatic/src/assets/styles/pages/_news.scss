@@ -92,7 +92,7 @@
 			background-repeat: no-repeat;
 
 			@include media($md-tablet) {
-				width: 35%;
+				width: 50%;
 			}
 
 			@include media($max-phablet) {
@@ -106,7 +106,7 @@
 			background: $green;
 
 			@include media($md-tablet) {
-				width: 65%;
+				width: 50%;
 			}
 
 			.post-title {
