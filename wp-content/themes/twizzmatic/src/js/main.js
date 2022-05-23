@@ -90,6 +90,16 @@
 			changeSlide(slide);
 		}
 
-		setInterval(autoSlide, 4000);
+		setInterval(autoSlide, 5000);
+
+		const navbar = document.getElementById("main-header");
+
+		window.onscroll = () => {
+			if (window.scrollY > 300) {
+				navbar.classList.add("scrolled");
+			} else {
+				navbar.classList.remove("scrolled");
+			}
+		};
 	});
 })(jQuery);

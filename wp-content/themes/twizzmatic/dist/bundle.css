@@ -2214,7 +2214,10 @@ section {
   position: fixed;
   width: 100vw;
   height: auto;
-  z-index: 99999; }
+  z-index: 99999;
+  padding-bottom: 30px; }
+  #main-header.scrolled {
+    background-color: #090d0f; }
   #main-header .header-container {
     width: 80vw;
     margin: 35px auto 0;
@@ -2236,14 +2239,14 @@ section {
         font-size: 11px;
         font-family: "Space Grotesk", sans-serif;
         font-weight: bold;
-        letter-spacing: .16em;
+        letter-spacing: 0.16em;
         color: #ffa62b; }
         #main-header .header-container .nav-menu-trigger .bar:first-of-type {
           margin-bottom: 13px; }
         #main-header .header-container .nav-menu-trigger .bar:last-of-type:before {
           margin-right: 10px; }
         #main-header .header-container .nav-menu-trigger .bar:before {
-          content: '';
+          content: "";
           display: block;
           width: 100%;
           height: 8px;
@@ -2255,7 +2258,7 @@ section {
       margin: auto 0 auto auto;
       font-size: 12px;
       font-weight: bold;
-      letter-spacing: .16em;
+      letter-spacing: 0.16em;
       color: #ffffff; }
   #main-header .nav-wrapper {
     background: #ffa62b;
@@ -2270,7 +2273,7 @@ section {
     -ms-transform: translateY(-130%);
         transform: translateY(-130%);
     opacity: 0;
-    transition: transform .35s ease-in-out, opacity .2s ease-in-out; }
+    transition: transform 0.35s ease-in-out, opacity 0.2s ease-in-out; }
     #main-header .nav-wrapper nav {
       width: 100%;
       height: 100%;
@@ -2295,7 +2298,7 @@ section {
             font-family: "Morganite", sans-serif;
             text-transform: uppercase;
             font-size: 100px;
-            line-height: .8;
+            line-height: 0.8;
             letter-spacing: 0.04em; }
             @media screen and (min-width: 768px) {
               #main-header .nav-wrapper nav .menu-main-menu-container #header-menu .menu-item {

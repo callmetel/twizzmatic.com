@@ -4,6 +4,11 @@
 	@include position(fixed, top 0 left 0);
 	@include size(100vw, auto);
 	z-index: 99999;
+	padding-bottom: 30px;
+
+	&.scrolled {
+		background-color: #090d0f;
+	}
 
 	.header-container {
 		width: 80vw;
@@ -17,45 +22,45 @@
 			display: block;
 			margin: auto auto auto 0;
 
-	    .bar {
-	    	width: 100px;
-	    	display: flex;
-	    	align-items: center;
-	    	font-size: 11px;
-	    	font-family: $bfont;
-	    	font-weight: bold;
-	    	letter-spacing: .16em;
-	    	color: $yellow;
+			.bar {
+				width: 100px;
+				display: flex;
+				align-items: center;
+				font-size: 11px;
+				font-family: $bfont;
+				font-weight: bold;
+				letter-spacing: 0.16em;
+				color: $yellow;
 
-	    	&:first-of-type {
-	    		margin-bottom: 13px;
-	    	}
+				&:first-of-type {
+					margin-bottom: 13px;
+				}
 
-	    	&:last-of-type {
-	    		&:before {
-	    			margin-right: 10px;
-	    		}
-	    	}
+				&:last-of-type {
+					&:before {
+						margin-right: 10px;
+					}
+				}
 
-	    	&:before {
-	    		content: '';
-	    		display: block;
-	    		@include size(100%, 8px);
-	    		background: $white;
-	    	}
+				&:before {
+					content: "";
+					display: block;
+					@include size(100%, 8px);
+					background: $white;
+				}
 
-	    	.close {
-	    		display: none;
-	    	}
-	    }
-		}	
+				.close {
+					display: none;
+				}
+			}
+		}
 
 		.sound-trigger {
 			display: block;
 			margin: auto 0 auto auto;
 			font-size: 12px;
 			font-weight: bold;
-			letter-spacing: .16em;
+			letter-spacing: 0.16em;
 			color: $white;
 		}
 	}
@@ -69,8 +74,8 @@
 		padding: 50px 30px 0;
 		transform: translateY(-130%);
 		opacity: 0;
-		transition: transform .35s ease-in-out, opacity .2s ease-in-out;
-		
+		transition: transform 0.35s ease-in-out, opacity 0.2s ease-in-out;
+
 		nav {
 			@include size(100%, 100%);
 			display: flex;
@@ -87,16 +92,15 @@
 					margin: auto;
 				}
 
-
 				#header-menu {
 					list-style: none;
-					padding: 0!important;
+					padding: 0 !important;
 
 					.menu-item {
 						font-family: $hfont;
 						text-transform: uppercase;
 						font-size: 100px;
-						line-height: .8;
+						line-height: 0.8;
 						letter-spacing: 0.04em;
 
 						@include media($sm-tablet) {
@@ -111,8 +115,8 @@
 							color: $white;
 						}
 					}
-				}	
-			}	
+				}
+			}
 		}
 	}
 }
@@ -128,7 +132,7 @@ body.light-background {
 						background: $darkgreen;
 					}
 				}
-			}	
+			}
 
 			.sound-trigger {
 				color: $darkgreen;
@@ -144,7 +148,7 @@ body.yellow-background {
 				.bar {
 					color: $white;
 				}
-			}	
+			}
 		}
 	}
 }
@@ -153,7 +157,7 @@ body.nav-open {
 	#main-header {
 		.nav-menu-trigger {
 			.bar {
-				color: $white!important;
+				color: $white !important;
 
 				.open {
 					display: none;
