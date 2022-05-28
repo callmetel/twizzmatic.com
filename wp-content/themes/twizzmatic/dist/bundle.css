@@ -2600,7 +2600,8 @@ button:not(.is-search-submit) {
           @media screen and (max-width: 767px) {
             #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-link .arrow:before {
               width: 9px;
-              height: 15px; } }
+              height: 15px;
+              right: 8px; } }
     #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-indicators {
       display: -ms-flexbox;
       display: flex;
