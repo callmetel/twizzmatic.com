@@ -22,7 +22,6 @@
 					line-height: 0.8;
 					letter-spacing: 0.04em;
 					color: $yellow;
-					max-width: 60%;
 
 					.large {
 						@include media($lg-mobile) {
@@ -33,7 +32,9 @@
 					@include media($lg-mobile) {
 						font-size: 200px;
 					}
-
+					@include media($sm-tablet) {
+						max-width: 60%;
+					}
 					@include media($md-tablet) {
 						font-size: 230px;
 					}
@@ -44,11 +45,14 @@
 				}
 
 				.slider-image {
-					display: block;
-					@include size(40vw, 60vw);
-					@include position(absolute, top -80px right 0);
-					background-size: cover;
-					background-position: top center;
+					display: none;
+					@include media($sm-tablet) {
+						display: block;
+						@include size(40vw, 60vw);
+						@include position(absolute, top -80px right 0);
+						background-size: cover;
+						background-position: top center;
+					}
 				}
 
 				.slider-link {
