@@ -73,10 +73,19 @@
 						margin-top: 100px;
 					}
 
+					@include media($max-mobile) {
+						padding: 10px 60px 10px 14px;
+						margin-top: 30px;
+					}
+
 					.arrow {
 						background: $blue;
 						@include size(50px, 100%);
 						@include position(absolute, top 0 right 0);
+
+						@include media($max-mobile) {
+							width: 30px;
+						}
 
 						&:before {
 							content: "";
@@ -88,6 +97,10 @@
 							@include size(15px, 26px);
 							@include position(absolute, top 50% right 16px);
 							transform: translateY(-50%);
+
+							@include media($max-mobile) {
+								@include size(9px, 15px);
+							}
 						}
 					}
 				}
