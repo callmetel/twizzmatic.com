@@ -2333,7 +2333,7 @@ body.nav-open #main-header .nav-wrapper {
       transform: translateY(0);
   opacity: 1; }
 
-body.bio #main-header.scrolled {
+body.page-bio #main-header.scrolled {
   background-color: #ffa62b; }
 
 body.light-background #main-footer {
