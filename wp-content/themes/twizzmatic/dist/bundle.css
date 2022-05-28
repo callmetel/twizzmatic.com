@@ -2601,7 +2601,7 @@ button:not(.is-search-submit) {
             #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-link .arrow:before {
               width: 9px;
               height: 15px;
-              right: 8px; } }
+              right: 10px; } }
     #featured-slider-wrapper #featured-slider .slider-inner .featured-slide .slider-indicators {
       display: -ms-flexbox;
       display: flex;
