@@ -176,3 +176,11 @@ body.nav-open {
 		}
 	}
 }
+
+body.bio {
+	#main-header {
+		&.scrolled {
+			background-color: $yellow;
+		}
+	}
+}

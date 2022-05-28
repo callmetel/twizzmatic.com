@@ -2333,6 +2333,9 @@ body.nav-open #main-header .nav-wrapper {
       transform: translateY(0);
   opacity: 1; }
 
+body.bio #main-header.scrolled {
+  background-color: #ffa62b; }
+
 body.light-background #main-footer {
   background-color: #1b262c;
   background: linear-gradient(180deg, #1b262c 0%, #161f25 35%, #030506 100%); }
