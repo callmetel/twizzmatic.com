@@ -192,10 +192,17 @@
 		});
 
 		$("li.product").click(function (e) {
-			if ($(e.target).hasClass("add_to_cart_button") && !$(e.target).hasClass("product_type_simple")) {
-				e.preventDefault();
-				$(this).find("wc-quick-view-button").trigger("click");
+			e.stopPropagation();
+			if ($.inArray(e.currentTarget, $(this).children())) {
+				console.log(e.currentTarget);
 			}
+			// If (
+			// 	$(e.target).hasClass("add_to_cart_button") &&
+			// 	!$(e.target).hasClass("product_type_simple")
+			// ) {
+			// 	E.preventDefault();
+			// 	$(this).find("wc-quick-view-button").trigger("click");
+			// }
 		});
 	});
 })(jQuery);
