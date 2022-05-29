@@ -29,7 +29,8 @@
 @import "layout/global", "layout/header", "layout/footer";
 
 // #Modules
-@import "modules/buttons", "modules/featured-slider", "modules/preloader";
+@import "modules/buttons", "modules/featured-slider", "modules/preloader",
+	"modules/product";
 
 // #Pages
 @import "pages/bio", "pages/news", "pages/shop", "pages/contact";

@@ -118,5 +118,14 @@
 				window.open($(this).find(".post-title a").attr("href"));
 			}
 		});
+
+		$("li.product").click(function (e) {
+			if (
+				$(e.target).hasClass("add_to_cart_button") &&
+				!$(e.target).hasClass("product_type_simple")
+			) {
+				$(this).find("wc-quick-view-button").trigger("click");
+			}
+		});
 	});
 })(jQuery);
