@@ -123,6 +123,13 @@
 			e.stopPropagation();
 			if ($.inArray(e.currentTarget, $(this).children())) {
 				console.log(e.currentTarget);
+
+				if (
+					$(e.target).hasClass("add_to_cart_button") &&
+					!$(e.target).hasClass("product_type_simple")
+				) {
+					e.preventDefault();
+				}
 			}
 			// If (
 			// 	$(e.target).hasClass("add_to_cart_button") &&
