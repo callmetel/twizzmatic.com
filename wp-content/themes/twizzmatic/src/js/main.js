@@ -131,6 +131,7 @@
 					!$(e.target).hasClass("product_type_simple")
 				) {
 					e.preventDefault();
+					console.log($this.find(".wc-quick-view-button"));
 					$this.find(".wc-quick-view-button").trigger("click");
 				}
 			}
