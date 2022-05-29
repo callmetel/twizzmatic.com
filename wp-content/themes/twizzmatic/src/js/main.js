@@ -119,12 +119,11 @@
 			}
 		});
 
-		$("li.product").click(function (e) {
-			e.stopPropagation();
-			var $this = $(this);
-
-			if ($.inArray(e.currentTarget, $this.children())) {
-				console.log(e.currentTarget);
+		$("li.product")
+			.children()
+			.click(function (e) {
+				e.stopPropagation();
+				var $this = $(this);
 
 				if (
 					$(e.target).hasClass("add_to_cart_button") &&
@@ -135,7 +134,6 @@
 					e.preventDefault();
 					$this.find(".wc-quick-view-button").trigger("click");
 				}
-			}
-		});
+			});
 	});
 })(jQuery);
