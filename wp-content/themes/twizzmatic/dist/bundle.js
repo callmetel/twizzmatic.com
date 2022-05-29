@@ -195,10 +195,8 @@
 			e.stopPropagation();
 			var $this = $(this);
 
-			console.log("clicked");
-			if ($(e.target).hasClass("add_to_cart_button") && $(e.target).hasClass("product_type_simple")) {
-				// Do nothing
-			} else {
+			if ($(e.target).hasClass("add_to_cart_button") && !$(e.target).hasClass("product_type_simple")) {
+				console.log("clicked");
 				e.preventDefault();
 				$this.find(".wc-quick-view-button").trigger("click");
 			}
