@@ -2892,7 +2892,7 @@ body.page-shop {
         padding-top: 25px;
         line-height: 1.25;
         text-align: center; }
-      body.page-shop ul.products li.product .product_type_simple + .wc-quick-view-button {
+      body.page-shop ul.products li.product .wc-quick-view-button + .button.product_type_variable {
         display: none; }
 
 .page-cart h3,
