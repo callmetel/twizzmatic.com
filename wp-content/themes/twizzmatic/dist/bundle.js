@@ -193,20 +193,16 @@
 
 		$("li.product").click(function (e) {
 			e.stopPropagation();
-			if ($.inArray(e.currentTarget, $(this).children())) {
+			var $this = $(this);
+
+			if ($.inArray(e.currentTarget, $this.children())) {
 				console.log(e.currentTarget);
 
 				if ($(e.target).hasClass("add_to_cart_button") && !$(e.target).hasClass("product_type_simple")) {
 					e.preventDefault();
+					$this.find("wc-quick-view-button").trigger("click");
 				}
 			}
-			// If (
-			// 	$(e.target).hasClass("add_to_cart_button") &&
-			// 	!$(e.target).hasClass("product_type_simple")
-			// ) {
-			// 	E.preventDefault();
-			// 	$(this).find("wc-quick-view-button").trigger("click");
-			// }
 		});
 	});
 })(jQuery);
