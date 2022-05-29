@@ -128,10 +128,11 @@
 
 				if (
 					$(e.target).hasClass("add_to_cart_button") &&
-					!$(e.target).hasClass("product_type_simple")
+					$(e.target).hasClass("product_type_simple")
 				) {
+					// Do nothing
+				} else {
 					e.preventDefault();
-					console.log($this.children());
 					$this.find(".wc-quick-view-button").trigger("click");
 				}
 			}
