@@ -119,6 +119,10 @@
 			}
 		});
 
+		$("li.product").click(function (e) {
+			$(this).find(".wc-quick-view-button").trigger("click");
+		});
+
 		$("li.product")
 			.children()
 			.click(function (e) {
